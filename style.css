@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Rubis-black";
+  src: url(./Police/Rubik/static/Rubik-Black.ttf);
+}
+@font-face {
+  font-family: "Rubis-regular";
+  src: url(./Police/Rubik/static/Rubik-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubis-regular", serif;
+}
+
+header {
+  height: 80px;
+  background-color: #e4f3ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header figure {
+  height: 60%;
+  margin-left: 50px;
+}
+header figure img {
+  height: 100%;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  height: 100%;
+  margin-right: 50px;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 700px) {
+  header nav {
+    margin-right: 30px;
+  }
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 0 10px;
+  height: 100%;
+}
+@media screen and (max-width: 700px) {
+  header nav ul li {
+    display: none;
+  }
+}
+header nav ul li a {
+  text-align: center;
+  padding: 0 10px;
+  height: 100%;
+  display: block;
+  font-size: 1.5em;
+  line-height: 80px;
+  text-decoration: none;
+  color: #4b4b4b;
+  width: 100%;
+}
+header nav ul li a:hover {
+  background-color: #ffffff;
+  opacity: 70%;
+}
+@media screen and (max-width: 900px) {
+  header nav ul li a {
+    font-size: 1em;
+  }
+}
+header #burger {
+  overflow: hidden;
+  display: none;
+  margin-right: 50px;
+  height: 60%;
+}
+header #burger img {
+  height: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  header #burger {
+    display: block;
+  }
+}
+
+main {
+  height: calc(100vh - 80px);
+  background-color: #e4f3ff;
+}
+main #sky {
+  position: relative;
+  height: 50%;
+  background-color: #e4f3ff;
+  overflow: hidden;
+}
+main #sky #clouds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main #sky #clouds #cloud1 {
+  margin: 0 300px 300px 0;
+}
+main #sky #clouds #cloud2 {
+  margin: 0 150px 100px 0;
+}
+main #sky #clouds #cloud3 {
+  margin: 0 100px 200px 0;
+}
+main #sky #imgPecheur {
+  position: absolute;
+  left: 9%;
+  bottom: -159px;
+  height: 500px;
+  width: 750px;
+}
+main #sky #imgPecheur #pecheur {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main #sky #imgPecheur #pecheur img {
+  position: absolute;
+  left: -14%;
+  width: 100%;
+  bottom: 18%;
+  height: 99%;
+}
+@media screen and (max-width: 500px) {
+  main #sky #imgPecheur #pecheur img {
+    width: 130%;
+    height: 130%;
+    left: -25%;
+    bottom: 8%;
+  }
+}
+main #sky #imgPecheur #barque {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main #sky #imgPecheur #barque img {
+  bottom: 53%;
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  left: -16%;
+}
+@media screen and (max-width: 850px) {
+  main #sky #imgPecheur {
+    left: calc(100% - 750px);
+  }
+}
+@media screen and (max-width: 700px) {
+  main #sky #imgPecheur {
+    left: -9%;
+    bottom: -134px;
+    height: 450px;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #sky #imgPecheur {
+    left: -11%;
+    bottom: -90px;
+    height: 350px;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #sky #imgPecheur {
+    left: -16%;
+    bottom: -40px;
+    height: 250px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #sky #imgPecheur {
+    left: -20%;
+    bottom: -20px;
+    height: 200px;
+    width: 450px;
+  }
+}
+
+#sea {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #c4e6ff;
+  opacity: 0.8;
+}
+#sea::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url(./Img/sea.svg);
+  animation: waves 120s linear infinite;
+}
+@keyframes waves {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 3000px;
+  }
+}/*# sourceMappingURL=style.css.map */
