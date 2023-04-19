@@ -127,9 +127,9 @@ main {
 
     #sky {
         position: relative;
-    height: 70%;
-    background-color: #e4f3ff;
-    overflow: hidden;
+        height: 70%;
+        background-color: #e4f3ff;
+        overflow: hidden;
 
         #clouds {
             display: flex;
@@ -194,12 +194,100 @@ main {
                     bottom: 18%;
                     height: 99%;
 
-                    @media screen and (max-width: 500px) {
-                        width: 130%;
-                        height: 130%;
-                        left: -25%;
-                        bottom: 8%;
+                    @media screen and (max-width: 950px) {
+
+                        position: absolute;
+                        left: -14%;
+                        width: 100%;
+                        bottom: -3%;
+                        height: 160%;
                     }
+
+                    @media screen and (max-width: 700px) {
+                        position: absolute;
+                        left: -14%;
+                        width: 100%;
+                        bottom: -1%;
+                        height: 157%;
+
+                    }
+
+
+                    @media screen and (max-width: 600px) {
+                        position: absolute;
+                        left: -14%;
+                        width: 100%;
+                        bottom: -8%;
+                        height: 175%;
+                    }
+
+
+                    @media screen and (max-width: 500px) {
+                        width: 133%;
+                        height: 162%;
+                        left: -31%;
+                        bottom: -5%;
+                    }
+
+                    @media screen and (max-height: 550px) {
+                        left: -23%;
+                        bottom: 25%;
+                        height: 80%;
+                    }
+
+                    @media screen and (max-height: 475px) {
+                        left: -31%;
+                        bottom: 26%;
+                        height: 65%;
+                    }
+
+                    @media screen and (max-height: 390px) {
+                        left: -42%;
+                        bottom: 31%;
+                        height: 45%;
+                    }
+
+                    @media screen and (max-width: 600px) and (max-height: 550px) {
+                        left: -23%;
+                        bottom: -4%;
+                        height: 163%;
+                    }
+
+                    @media screen and (max-width: 600px) and (max-height: 475px) {
+                        left: -31%;
+                        bottom: 25%;
+                        height: 67%;
+                    }
+
+                    @media screen and (max-width: 600px) and (max-height: 390px) {
+                        left: -43%;
+                        bottom: 32%;
+                        height: 41%;
+                    }
+
+
+
+                    @media screen and (max-height: 550px) and (max-width: 500px) {
+                        left: -41%;
+                        bottom: -8%;
+                        height: 169%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 500px) {
+                        left: -49%;
+                        bottom: -12%;
+                        height: 169%;
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 500px) {
+                        left: -58%;
+                        bottom: -6%;
+                        height: 149%;
+                    }
+
+
+
+
                 }
 
 
@@ -216,48 +304,149 @@ main {
                     height: 200%;
                     width: 100%;
                     left: -16%;
+
+                    @media screen and (max-height: 550px) {
+                        width: 80%
+                    }
+
+                    @media screen and (max-height: 475px) {
+                        width: 65%;
+                        bottom: 49%;
+                    }
+
+                    @media screen and (max-height: 390px) {
+                        width: 45%;
+                        bottom: 47%;
+                    }
                 }
             }
 
-            
-            @media screen and (max-height: 550px){
-                left: -20%;
-    bottom: -38px;
-    height: 202px
+
+            @media screen and (max-height: 550px) {
+                left: 12%;
+                bottom: -170px;
+                height: 500px;
             }
 
-            @media screen and (max-width: 850px) {
-                left: calc(100% - 750px);
+            @media screen and (max-width: 950px) {
+                left: calc(100% - 800px);
+                height: 231px;
+                bottom: -36px;
+                width: 700px;
             }
 
             @media screen and (max-width: 700px) {
-                left: -9%;
-                bottom: -134px;
-                height: 450px;
+                left: -12%;
+                bottom: -31px;
+                height: 225px;
                 width: 700px;
             }
 
             @media screen and (max-width: 600px) {
-                left: -11%;
-                bottom: -90px;
-                height: 350px;
-                width: 600px;
+                left: -21%;
+                bottom: -17px;
+                height: 170px;
+                width: 700px;
             }
 
             @media screen and (max-width: 500px) {
-                left: -16%;
-                bottom: -40px;
-                height: 250px;
+                left: -13%;
+                bottom: -14px;
+                height: 170px;
                 width: 500px;
+
             }
 
             @media screen and (max-width: 400px) {
-                left: -20%;
-                bottom: -20px;
-                height: 200px;
+                left: -18%;
+                bottom: -8px;
+                height: 132px;
                 width: 450px;
             }
-            
+
+            @media screen and (max-width: 350px) {
+                left: -20%;
+                bottom: -2px;
+                height: 126px;
+                width: 450px;
+            }
+
+            @media screen and (max-width: 850px) and (max-height: 550px) {
+                left: calc(100% - 660px);
+            }
+
+            @media screen and (max-width: 700px) and (max-height: 550px) {
+                left: -2%;
+                bottom: -170px;
+                height: 500px;
+            }
+
+            @media screen and (max-width: 600px) and (max-height: 550px) {
+                left: -12%;
+                bottom: -17px;
+                height: 170px;
+                width: 700px;
+            }
+
+            @media screen and (max-width: 700px) and (max-height: 475px) {
+                left: -3%;
+                bottom: -126px;
+                height: 396px;
+            }
+
+            @media screen and (max-width: 700px) and (max-height: 390px) {
+                left: 7%;
+                bottom: -176px;
+                height: 500px;
+
+            }
+
+            @media screen and (max-width: 500px) and (max-height: 550px) {
+                left: -16%;
+                bottom: -8px;
+                height: 140px;
+                width: 700px;
+
+            }
+
+            @media screen and (max-width: 350px) and (max-height: 550px) {
+                left: -6%;
+                bottom: -2px;
+                height: 126px;
+                width: 450px;
+
+            }
+
+
+
+            @media screen and (max-width: 500px) and (max-height: 475px) {
+                left: -5%;
+            }
+
+            @media screen and (max-width: 350px) and (max-height: 475px) {
+                left: 4%;
+                bottom: -2px;
+                height: 126px;
+                width: 450px;
+
+            }
+
+
+
+            @media screen and (max-width: 500px) and (max-height: 390px) {
+                left: 8%;
+            }
+
+            @media screen and (max-width: 350px) and (max-height: 390px) {
+                left: 10%;
+                bottom: -2px;
+                height: 131px;
+                width: 622px;
+
+            }
+
+
+
 
 
 
@@ -275,13 +464,17 @@ main {
     &::before {
         content: "";
         position: absolute;
-        top: calc(70% + -24px);
+        top: calc(70% - 24px);
         left: 0;
         width: 100%;
         height: 14%;
         background: url(./Img/sea.svg);
         animation: waves 120s linear infinite;
+
+
     }
+
+
 
     @keyframes waves {
         0% {
@@ -298,4 +491,11 @@ main {
 
 
 
+
+}
+
+@media screen and (max-height: 350px) {
+    #sea::before {
+        top: calc(70% - 17px);
+    }
 }
