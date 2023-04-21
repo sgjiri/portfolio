@@ -51,6 +51,12 @@
                     <img src="./Img/barque 2.svg" alt="barque">
                 </figure>
             </div>
+            <figure id="reeds">
+                <img src="./Img/raoseaux.png" alt="reeds">
+            </figure>
+            <figure id="reeds2">
+                <img src="./Img/raoseaux2.png" alt="reeds">
+            </figure>
 
         </div>
         <figure id="sea">
