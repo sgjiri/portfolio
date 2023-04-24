@@ -33,49 +33,59 @@
 
     </header>
     <main>
-        <div id="sky">
-            <div id="clouds">
-                <figure id="cloud1">
-                    <img src="./Img/Nouage1.svg" alt="cloud1">
+        <section id="fullscreen">
+            <div id="sky">
+                <div id="clouds">
+                    <figure id="cloud1">
+                        <img src="./Img/Nouage1.svg" alt="cloud1">
+                    </figure>
+                    <figure id="cloud2">
+                        <img src="./Img/Nuage 2.svg" alt="cloud2">
+                    </figure>
+                    <figure id="cloud3">
+                        <img src="./Img/Nouage3.svg" alt="cloud3">
+                    </figure>
+
+                </div>
+                <div id="imgPecheur">
+                    <figure id="pecheur">
+                        <img src="./Img/pecheur.svg" alt="pecheur">
+                    </figure>
+                    <figure id="barque">
+                        <img src="./Img/barque 2.svg" alt="barque">
+                    </figure>
+                </div>
+                <figure id="reeds">
+                    <img src="./Img/raoseaux.png" alt="reeds">
                 </figure>
-                <figure id="cloud2">
-                    <img src="./Img/Nuage 2.svg" alt="cloud2">
+                <figure id="reeds2">
+                    <img src="./Img/raoseaux2.png" alt="reeds">
                 </figure>
-                <figure id="cloud3">
-                    <img src="./Img/Nouage3.svg" alt="cloud3">
-                </figure>
+                <div id="text">
+                    <h1>Jirka Fischer</h1>
+                    <h2>Developpeur web</h2>
+
+
+
+                </div>
+
 
             </div>
-            <div id="imgPecheur">
-                <figure id="pecheur">
-                    <img src="./Img/pecheur.svg" alt="pecheur">
-                </figure>
-                <figure id="barque">
-                    <img src="./Img/barque 2.svg" alt="barque">
-                </figure>
-            </div>
-            <figure id="reeds">
-                <img src="./Img/raoseaux.png" alt="reeds">
-            </figure>
-            <figure id="reeds2">
-                <img src="./Img/raoseaux2.png" alt="reeds">
-            </figure>
-            <div id="text">
-                <h1>Jirka Fischer</h1>
-                <h2>Developpeur web</h2>
-                
-
-
-            </div>
-
-
-        </div>
-        <figure id="sea">
-            <img src="./Img/sea.svg" alt="sea">
-            <p>
-                Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
+            <figure id="sea">
+                <img src="./Img/sea.svg" alt="sea">
+                <p>
+                    Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
                 </p>
-        </figure>
+            </figure>
+
+
+
+        </section>
+        <section id="wather">
+            
+        </section>
+
+
     </main>
     <!-- <script src="./main.js"></script> -->
 

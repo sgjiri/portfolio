@@ -29,6 +29,27 @@ header figure img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+  header figure {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header figure {
+    height: 45%;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header figure {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  header figure {
+    margin-right: 20px;
+  }
+}
 header nav {
   height: 100%;
   margin-right: 50px;
@@ -78,8 +99,8 @@ header nav ul li a:hover {
 header #burger {
   overflow: hidden;
   display: none;
-  margin-right: 50px;
-  height: 60%;
+  margin-right: 30px;
+  height: 45%;
 }
 header #burger img {
   height: 100%;
@@ -90,64 +111,71 @@ header #burger img {
     display: block;
   }
 }
+@media screen and (max-width: 400px) {
+  header #burger {
+    margin-right: 20px;
+  }
+}
 
 main {
-  height: calc(100vh - 80px);
   background-color: #e4f3ff;
 }
-main #sky {
+main #fullscreen {
+  height: calc(100vh - 80px);
+}
+main #fullscreen #sky {
   position: relative;
   height: 70%;
   background-color: #e4f3ff;
   overflow: hidden;
 }
-main #sky #clouds {
+main #fullscreen #sky #clouds {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   height: 100%;
 }
-main #sky #clouds #cloud1 {
+main #fullscreen #sky #clouds #cloud1 {
   margin: 10px 2% 0 3%;
   width: 400px;
   height: 100%;
 }
-main #sky #clouds #cloud1 img {
+main #fullscreen #sky #clouds #cloud1 img {
   width: 100%;
   height: 28%;
 }
-main #sky #clouds #cloud2 {
+main #fullscreen #sky #clouds #cloud2 {
   margin: 8% 15% 8% 0;
   width: 600px;
   height: 100%;
 }
-main #sky #clouds #cloud2 img {
+main #fullscreen #sky #clouds #cloud2 img {
   width: 100%;
   height: 67%;
 }
-main #sky #clouds #cloud3 {
+main #fullscreen #sky #clouds #cloud3 {
   margin: 9% 15% 7% 0;
   width: 500px;
   height: 100%;
 }
-main #sky #clouds #cloud3 img {
+main #fullscreen #sky #clouds #cloud3 img {
   width: 100%;
   height: 30%;
 }
-main #sky #imgPecheur {
+main #fullscreen #sky #imgPecheur {
   position: absolute;
   left: 138px;
   bottom: -159px;
   height: 500px;
   width: 750px;
 }
-main #sky #imgPecheur #pecheur {
+main #fullscreen #sky #imgPecheur #pecheur {
   position: relative;
   width: 100%;
   height: 100%;
 }
-main #sky #imgPecheur #pecheur img {
+main #fullscreen #sky #imgPecheur #pecheur img {
   position: absolute;
   left: -14%;
   width: 100%;
@@ -155,7 +183,7 @@ main #sky #imgPecheur #pecheur img {
   height: 99%;
 }
 @media screen and (max-width: 950px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     position: absolute;
     left: -14%;
     width: 100%;
@@ -164,7 +192,7 @@ main #sky #imgPecheur #pecheur img {
   }
 }
 @media screen and (max-width: 700px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     position: absolute;
     left: -14%;
     width: 100%;
@@ -173,7 +201,7 @@ main #sky #imgPecheur #pecheur img {
   }
 }
 @media screen and (max-width: 600px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     position: absolute;
     left: -14%;
     width: 100%;
@@ -182,152 +210,164 @@ main #sky #imgPecheur #pecheur img {
   }
 }
 @media screen and (max-width: 500px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     width: 133%;
-    height: 136%;
-    left: -31%;
-    bottom: 5%;
+    height: 149%;
+    left: -28%;
+    bottom: 1%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    height: 178%;
+    bottom: -9%;
   }
 }
 @media screen and (max-height: 550px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -23%;
     bottom: 25%;
     height: 80%;
   }
 }
 @media screen and (max-height: 475px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -31%;
     bottom: 26%;
     height: 65%;
   }
 }
 @media screen and (max-height: 390px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -42%;
     bottom: 31%;
     height: 45%;
   }
 }
 @media screen and (max-width: 600px) and (max-height: 550px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -23%;
     bottom: -4%;
     height: 163%;
   }
 }
 @media screen and (max-width: 600px) and (max-height: 475px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -31%;
     bottom: 25%;
     height: 67%;
   }
 }
 @media screen and (max-width: 600px) and (max-height: 390px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -43%;
     bottom: 32%;
     height: 41%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 500px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -41%;
     bottom: -8%;
     height: 169%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1200px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -10%;
     bottom: 13%;
     height: 115%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 950px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -23%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -13%;
     bottom: -2%;
     height: 154%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 700px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -25%;
-    bottom: 25%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -11%;
+    bottom: 27%;
     height: 76%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 600px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -24%;
-    bottom: -3%;
-    height: 155%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -12%;
+    bottom: -8%;
+    height: 178%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 500px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -42%;
-    bottom: -3%;
-    height: 155%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -29%;
+    bottom: -6%;
+    height: 169%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1200px) {
-  main #sky #imgPecheur #pecheur img {
+  main #fullscreen #sky #imgPecheur #pecheur img {
     left: -19%;
     bottom: 17%;
     height: 89%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 950px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -31%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
     bottom: -1%;
     height: 139%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 700px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -31%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -19%;
     bottom: 21%;
     height: 78%;
   }
 }
+@media screen and (max-height: 390px) and (max-width: 1200px) {
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -30%;
+    bottom: 25%;
+    height: 60%;
+  }
+}
 @media screen and (max-height: 390px) and (max-width: 950px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -41%;
-    bottom: 7%;
-    height: 112%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -29%;
+    bottom: 10%;
+    height: 101%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 700px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -43%;
-    bottom: 31%;
-    height: 45%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -30%;
+    bottom: 33%;
+    height: 39%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 500px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -49%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -37%;
     bottom: -12%;
     height: 169%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 500px) {
-  main #sky #imgPecheur #pecheur img {
-    left: -58%;
+  main #fullscreen #sky #imgPecheur #pecheur img {
+    left: -47%;
     bottom: -6%;
     height: 149%;
   }
 }
-main #sky #imgPecheur #barque {
+main #fullscreen #sky #imgPecheur #barque {
   position: relative;
   width: 100%;
   height: 100%;
 }
-main #sky #imgPecheur #barque img {
+main #fullscreen #sky #imgPecheur #barque img {
   bottom: 53%;
   position: absolute;
   height: 200%;
@@ -335,7 +375,7 @@ main #sky #imgPecheur #barque img {
   left: -16%;
 }
 @media screen and (max-width: 1200px) {
-  main #sky #imgPecheur #barque img {
+  main #fullscreen #sky #imgPecheur #barque img {
     bottom: 54%;
     position: absolute;
     height: 200%;
@@ -344,38 +384,38 @@ main #sky #imgPecheur #barque img {
   }
 }
 @media screen and (max-height: 550px) {
-  main #sky #imgPecheur #barque img {
+  main #fullscreen #sky #imgPecheur #barque img {
     width: 80%;
   }
 }
 @media screen and (max-height: 475px) {
-  main #sky #imgPecheur #barque img {
+  main #fullscreen #sky #imgPecheur #barque img {
     width: 65%;
     bottom: 49%;
   }
 }
 @media screen and (max-height: 390px) {
-  main #sky #imgPecheur #barque img {
+  main #fullscreen #sky #imgPecheur #barque img {
     width: 45%;
     bottom: 47%;
   }
 }
 @media screen and (max-height: 550px) {
-  main #sky #imgPecheur {
+  main #fullscreen #sky #imgPecheur {
     left: 13%;
     bottom: -170px;
     height: 500px;
   }
 }
 @media screen and (max-width: 1200px) {
-  main #sky #imgPecheur {
+  main #fullscreen #sky #imgPecheur {
     bottom: -130px;
     height: 400px;
     left: 60px;
   }
 }
 @media screen and (max-width: 950px) {
-  main #sky #imgPecheur {
+  main #fullscreen #sky #imgPecheur {
     left: calc(100% - 885px);
     height: 231px;
     bottom: -36px;
@@ -383,39 +423,50 @@ main #sky #imgPecheur #barque img {
   }
 }
 @media screen and (max-width: 950px) and (max-height: 390px) {
-  main #sky #imgPecheur {
-    left: calc(100% - 800px);
+  main #fullscreen #sky #imgPecheur {
+    left: calc(100% - 830px);
     height: 231px;
     bottom: -53px;
     width: 700px;
   }
 }
 @media screen and (max-width: 780px) {
-  main #sky #imgPecheur {
+  main #fullscreen #sky #imgPecheur {
     left: -12%;
     bottom: -31px;
     height: 225px;
     width: 700px;
   }
 }
+@media screen and (max-width: 700px) {
+  main #fullscreen #sky #imgPecheur {
+    left: -16%;
+  }
+}
+@media screen and (max-width: 780px) and (max-height: 390px) {
+  main #fullscreen #sky #imgPecheur {
+    left: -6%;
+    bottom: -50px;
+  }
+}
 @media screen and (max-width: 600px) {
-  main #sky #imgPecheur {
-    left: -24%;
+  main #fullscreen #sky #imgPecheur {
+    left: -20%;
     bottom: -17px;
     height: 170px;
     width: 700px;
   }
 }
 @media screen and (max-width: 500px) {
-  main #sky #imgPecheur {
-    left: -7%;
-    bottom: -14px;
+  main #fullscreen #sky #imgPecheur {
+    left: -13%;
+    bottom: -26px;
     height: 170px;
-    width: 360px;
+    width: 450px;
   }
 }
 @media screen and (max-width: 400px) {
-  main #sky #imgPecheur {
+  main #fullscreen #sky #imgPecheur {
     left: -18%;
     bottom: -8px;
     height: 132px;
@@ -423,122 +474,132 @@ main #sky #imgPecheur #barque img {
   }
 }
 @media screen and (max-width: 350px) {
-  main #sky #imgPecheur {
-    left: -20%;
-    bottom: -2px;
-    height: 126px;
+  main #fullscreen #sky #imgPecheur {
+    left: -25%;
+    bottom: 6px;
+    height: 104px;
     width: 450px;
   }
 }
-@media screen and (max-width: 850px) and (max-height: 550px) {
-  main #sky #imgPecheur {
-    left: calc(100% - 660px);
-  }
-}
 @media screen and (max-width: 700px) and (max-height: 550px) {
-  main #sky #imgPecheur {
-    left: -2%;
-    bottom: -170px;
+  main #fullscreen #sky #imgPecheur {
+    left: -15%;
+    bottom: -182px;
     height: 500px;
   }
 }
 @media screen and (max-width: 600px) and (max-height: 550px) {
-  main #sky #imgPecheur {
-    left: -12%;
+  main #fullscreen #sky #imgPecheur {
+    left: -22%;
     bottom: -17px;
     height: 170px;
     width: 700px;
   }
 }
 @media screen and (max-width: 700px) and (max-height: 475px) {
-  main #sky #imgPecheur {
-    left: 1%;
+  main #fullscreen #sky #imgPecheur {
+    left: -12%;
     bottom: -124px;
     height: 396px;
   }
 }
 @media screen and (max-width: 700px) and (max-height: 390px) {
-  main #sky #imgPecheur {
+  main #fullscreen #sky #imgPecheur {
     left: 10%;
     bottom: -176px;
     height: 500px;
   }
 }
 @media screen and (max-width: 500px) and (max-height: 550px) {
-  main #sky #imgPecheur {
-    left: -16%;
+  main #fullscreen #sky #imgPecheur {
+    left: -32%;
     bottom: -8px;
     height: 140px;
     width: 700px;
   }
 }
+@media screen and (max-width: 400px) and (max-height: 550px) {
+  main #fullscreen #sky #imgPecheur {
+    left: -40%;
+  }
+}
 @media screen and (max-width: 350px) and (max-height: 550px) {
-  main #sky #imgPecheur {
-    left: -6%;
-    bottom: -2px;
-    height: 126px;
+  main #fullscreen #sky #imgPecheur {
+    left: -27%;
+    bottom: 6px;
+    height: 104px;
     width: 450px;
   }
 }
 @media screen and (max-width: 500px) and (max-height: 475px) {
-  main #sky #imgPecheur {
-    left: -5%;
+  main #fullscreen #sky #imgPecheur {
+    left: -21%;
+  }
+}
+@media screen and (max-width: 400px) and (max-height: 475px) {
+  main #fullscreen #sky #imgPecheur {
+    left: -28%;
   }
 }
 @media screen and (max-width: 350px) and (max-height: 475px) {
-  main #sky #imgPecheur {
-    left: 4%;
+  main #fullscreen #sky #imgPecheur {
+    left: -12%;
     bottom: -2px;
     height: 126px;
     width: 450px;
   }
 }
 @media screen and (max-width: 500px) and (max-height: 390px) {
-  main #sky #imgPecheur {
-    left: 8%;
+  main #fullscreen #sky #imgPecheur {
+    left: -4%;
+  }
+}
+@media screen and (max-width: 400px) and (max-height: 390px) {
+  main #fullscreen #sky #imgPecheur {
+    left: -13%;
   }
 }
 @media screen and (max-width: 350px) and (max-height: 390px) {
-  main #sky #imgPecheur {
-    left: 10%;
-    bottom: -2px;
+  main #fullscreen #sky #imgPecheur {
+    left: -6%;
+    bottom: -6px;
     height: 131px;
     width: 622px;
   }
 }
-main #sky #reeds {
+main #fullscreen #sky #reeds {
   height: 200px;
   width: 200px;
   position: absolute;
   bottom: 4%;
 }
-main #sky #reeds img {
+main #fullscreen #sky #reeds img {
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 950px) {
-  main #sky #reeds {
+  main #fullscreen #sky #reeds {
     left: calc(100% - 950px);
   }
 }
 @media screen and (max-height: 550px) {
-  main #sky #reeds {
+  main #fullscreen #sky #reeds {
     height: 60%;
   }
 }
 @media screen and (max-height: 475px) {
-  main #sky #reeds {
+  main #fullscreen #sky #reeds {
     width: 150px;
     bottom: 8%;
   }
 }
 @media screen and (max-height: 390px) {
-  main #sky #reeds {
+  main #fullscreen #sky #reeds {
     width: 100px;
   }
 }
 @media screen and (max-width: 1200px) {
-  main #sky #reeds {
+  main #fullscreen #sky #reeds {
     height: 170px;
     width: 150px;
     position: absolute;
@@ -546,53 +607,170 @@ main #sky #reeds img {
   }
 }
 @media screen and (max-width: 1200px) and (max-height: 475px) {
-  main #sky #reeds {
+  main #fullscreen #sky #reeds {
     height: 60%;
     bottom: 6%;
   }
 }
-main #sky #reeds2 {
+@media screen and (max-width: 1200px) and (max-height: 390px) {
+  main #fullscreen #sky #reeds {
+    width: 100px;
+  }
+}
+main #fullscreen #sky #reeds2 {
   height: 200px;
   width: 200px;
   position: absolute;
   bottom: 4%;
   right: 0px;
 }
-main #sky #reeds2 img {
+main #fullscreen #sky #reeds2 img {
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 1700px) {
-  main #sky #reeds2 {
+  main #fullscreen #sky #reeds2 {
     display: none;
   }
 }
-main #sky #text {
+@media screen and (max-width: 700px) {
+  main #fullscreen #sky #reeds2 {
+    display: block;
+    height: 170px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #fullscreen #sky #reeds2 {
+    height: 150px;
+    width: 140px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #fullscreen #sky #reeds2 {
+    height: 120px;
+    width: 110px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #fullscreen #sky #reeds2 {
+    height: 110px;
+    width: 90px;
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 350px) {
+  main #fullscreen #sky #reeds2 {
+    height: 90px;
+    width: 70px;
+  }
+}
+@media screen and (max-height: 550px) {
+  main #fullscreen #sky #reeds2 {
+    height: 55%;
+  }
+}
+@media screen and (max-height: 475px) {
+  main #fullscreen #sky #reeds2 {
+    width: 150px;
+    bottom: 8%;
+  }
+}
+@media screen and (max-height: 390px) {
+  main #fullscreen #sky #reeds2 {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 550px) {
+  main #fullscreen #sky #reeds2 {
+    height: 45%;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 475px) {
+  main #fullscreen #sky #reeds2 {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 390px) {
+  main #fullscreen #sky #reeds2 {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 340px) {
+  main #fullscreen #sky #reeds2 {
+    height: 50%;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 500px) and (max-height: 550px) {
+  main #fullscreen #sky #reeds2 {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 500px) and (max-height: 475px) {
+  main #fullscreen #sky #reeds2 {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 400px) and (max-height: 475px) {
+  main #fullscreen #sky #reeds2 {
+    height: 45%;
+  }
+}
+@media screen and (max-width: 350px) and (max-height: 550px) {
+  main #fullscreen #sky #reeds2 {
+    height: 30%;
+    bottom: 8%;
+  }
+}
+@media screen and (max-width: 350px) and (max-height: 475px) {
+  main #fullscreen #sky #reeds2 {
+    width: 70px;
+    height: 35%;
+    bottom: 10%;
+  }
+}
+@media screen and (max-width: 350px) and (max-height: 390px) {
+  main #fullscreen #sky #reeds2 {
+    height: 40%;
+  }
+}
+main #fullscreen #sky #text {
   position: absolute;
   bottom: 14%;
   left: 55%;
 }
 @media screen and (max-width: 1500px) {
-  main #sky #text {
+  main #fullscreen #sky #text {
     left: 60%;
   }
 }
 @media screen and (max-width: 1350px) {
-  main #sky #text {
+  main #fullscreen #sky #text {
     left: 65%;
   }
 }
 @media screen and (max-width: 950px) {
-  main #sky #text {
+  main #fullscreen #sky #text {
     left: 60%;
   }
 }
 @media screen and (max-width: 700px) {
-  main #sky #text {
+  main #fullscreen #sky #text {
     display: none;
   }
 }
-main #sky #text h1 {
+@media screen and (max-height: 550px) {
+  main #fullscreen #sky #text {
+    bottom: 21%;
+  }
+}
+@media screen and (max-height: 390px) {
+  main #fullscreen #sky #text {
+    bottom: 26%;
+  }
+}
+main #fullscreen #sky #text h1 {
   position: relative;
   bottom: 47%;
   font-family: "Averia Gruesa Libre", cursive;
@@ -600,57 +778,106 @@ main #sky #text h1 {
   font-size: 4.5em;
 }
 @media screen and (max-width: 1500px) {
-  main #sky #text h1 {
+  main #fullscreen #sky #text h1 {
     font-size: 4em;
   }
 }
 @media screen and (max-width: 1350px) {
-  main #sky #text h1 {
+  main #fullscreen #sky #text h1 {
     font-size: 3em;
   }
 }
 @media screen and (max-width: 950px) {
-  main #sky #text h1 {
+  main #fullscreen #sky #text h1 {
     font-size: 2em;
   }
 }
-main #sky #text h2 {
+@media screen and (max-height: 550px) {
+  main #fullscreen #sky #text h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1350px) {
+  main #fullscreen #sky #text h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 850px) {
+  main #fullscreen #sky #text h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-height: 390px) {
+  main #fullscreen #sky #text h1 {
+    font-size: 2em;
+  }
+}
+main #fullscreen #sky #text h2 {
   position: relative;
   bottom: 47%;
-  left: -11%;
+  left: -18%;
   color: #f08136;
   font-size: 4.5em;
   font-weight: 100;
 }
 @media screen and (max-width: 1500px) {
-  main #sky #text h2 {
+  main #fullscreen #sky #text h2 {
     font-size: 4em;
+    left: -16%;
   }
 }
 @media screen and (max-width: 1350px) {
-  main #sky #text h2 {
+  main #fullscreen #sky #text h2 {
     font-size: 3em;
   }
 }
 @media screen and (max-width: 1200px) {
-  main #sky #text h2 {
+  main #fullscreen #sky #text h2 {
     font-size: 2.5em;
+    left: -9%;
   }
 }
 @media screen and (max-width: 950px) {
-  main #sky #text h2 {
+  main #fullscreen #sky #text h2 {
+    font-size: 2em;
+    left: -16%;
+  }
+}
+@media screen and (max-height: 550px) {
+  main #fullscreen #sky #text h2 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1350px) {
+  main #fullscreen #sky #text h2 {
+    font-size: 2.5em;
+    left: -8%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 850px) {
+  main #fullscreen #sky #text h2 {
+    font-size: 2em;
+    left: -15%;
+  }
+}
+@media screen and (max-height: 390px) {
+  main #fullscreen #sky #text h2 {
     font-size: 2em;
   }
 }
-
-#sea {
-  height: 40%;
+@media screen and (max-height: 390px) and (max-width: 1350px) {
+  main #fullscreen #sky #text h2 {
+    left: -16%;
+  }
+}
+main #sea {
+  height: 30%;
   width: 100%;
   overflow: hidden;
   background-color: #c4e6ff;
   opacity: 0.8;
 }
-#sea::before {
+main #sea::before {
   content: "";
   position: absolute;
   top: calc(70% - 24px);
@@ -668,44 +895,249 @@ main #sky #text h2 {
     background-position-x: 3000px;
   }
 }
-#sea p {
+main #sea p {
   position: absolute;
   top: 72%;
-  left: 48%;
+  left: 46%;
   width: 40%;
   color: #4B4B4B;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
+}
+@media screen and (max-width: 1600px) {
+  main #sea p {
+    left: 47%;
+  }
 }
 @media screen and (max-width: 1500px) {
-  #sea p {
-    left: 54%;
+  main #sea p {
+    left: 52%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  main #sea p {
+    left: 53%;
   }
 }
 @media screen and (max-width: 1350px) {
-  #sea p {
-    left: 57%;
-    font-size: 1.5em;
+  main #sea p {
+    left: 58%;
+    font-size: 1.2em;
+    width: 33%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  main #sea p {
+    left: 59%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main #sea p {
+    left: 60%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  main #sea p {
+    left: 61%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main #sea p {
+    left: 62%;
   }
 }
 @media screen and (max-width: 950px) {
-  #sea p {
-    left: 50%;
+  main #sea p {
+    left: 53%;
   }
 }
-@media screen and (max-width: 800px) {
-  #sea p {
+@media screen and (max-width: 850px) {
+  main #sea p {
     left: 54%;
   }
 }
+@media screen and (max-width: 800px) {
+  main #sea p {
+    left: 55%;
+  }
+}
 @media screen and (max-width: 700px) {
-  #sea p {
+  main #sea p {
     display: none;
   }
 }
-
+@media screen and (max-height: 550px) {
+  main #sea p {
+    font-size: 1.5em;
+    left: 47%;
+    width: 35%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1700px) {
+  main #sea p {
+    left: 47%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1600px) {
+  main #sea p {
+    left: 48%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1500px) {
+  main #sea p {
+    left: 54%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1400px) {
+  main #sea p {
+    left: 55%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1350px) {
+  main #sea p {
+    left: 58%;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1300px) {
+  main #sea p {
+    left: 58%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1150px) {
+  main #sea p {
+    left: 60%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 1000px) {
+  main #sea p {
+    left: 61%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 950px) {
+  main #sea p {
+    left: 57%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 900px) {
+  main #sea p {
+    left: 58%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 850px) {
+  main #sea p {
+    left: 54%;
+  }
+}
+@media screen and (max-height: 550px) and (max-width: 850px) {
+  main #sea p {
+    left: 55%;
+  }
+}
+@media screen and (max-height: 475px) {
+  main #sea p {
+    font-size: 1.2em;
+    width: 35%;
+    left: 47%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 1700px) {
+  main #sea p {
+    left: 48%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 1500px) {
+  main #sea p {
+    left: 54%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 1400px) {
+  main #sea p {
+    left: 55%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 1350px) {
+  main #sea p {
+    left: 58%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 1150px) {
+  main #sea p {
+    left: 60%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 1000px) {
+  main #sea p {
+    left: 61%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 950px) {
+  main #sea p {
+    left: 57%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 900px) {
+  main #sea p {
+    left: 58%;
+  }
+}
+@media screen and (max-height: 475px) and (max-width: 850px) {
+  main #sea p {
+    left: 54%;
+  }
+}
+@media screen and (max-height: 390px) {
+  main #sea p {
+    left: 49%;
+    width: 22%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 1500px) {
+  main #sea p {
+    left: 55%;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 1350px) {
+  main #sea p {
+    left: 61%;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 1250px) {
+  main #sea p {
+    left: 62%;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 1150px) {
+  main #sea p {
+    left: 58%;
+    width: 30%;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 1050px) {
+  main #sea p {
+    left: 59%;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 950px) {
+  main #sea p {
+    left: 55%;
+  }
+}
+@media screen and (max-height: 390px) and (max-width: 850px) {
+  main #sea p {
+    width: 40%;
+    left: 51%;
+  }
+}
+main #wather {
+  width: 100%;
+  height: 300px;
+  background-color: #c4e6ff;
+  opacity: 0.8;
+}
 @media screen and (max-height: 350px) {
-  #sea::before {
+  main #sea::before {
     top: calc(70% - 17px);
   }
 }/*# sourceMappingURL=style.css.map */
