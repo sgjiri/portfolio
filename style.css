@@ -1132,9 +1132,146 @@ main #sea p {
 }
 main #wather {
   width: 100%;
-  height: 300px;
+  height: 150px;
   background-color: #c4e6ff;
   opacity: 0.8;
+  position: relative;
+}
+main #wather .boule {
+  width: 100px;
+  position: absolute;
+}
+main #wather #js {
+  top: 33%;
+  left: 345px;
+}
+main #wather #js img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main #wather #js {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #wather #js {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #wather {
+    display: none;
+  }
+}
+main #wather #html {
+  top: -154px;
+  left: 542px;
+}
+main #wather #html img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main #wather #html {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #wather #html {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #wather {
+    display: none;
+  }
+}
+main #wather #css {
+  top: -246px;
+  left: 785px;
+}
+main #wather #css img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main #wather #css {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #wather #css {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #wather {
+    display: none;
+  }
+}
+main #wather #php {
+  top: -50px;
+  left: 178px;
+}
+main #wather #php img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main #wather #php {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #wather #php {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #wather {
+    display: none;
+  }
+}
+main #wather #sql {
+  top: 30px;
+  left: 1498px;
+}
+main #wather #sql img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main #wather #sql {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #wather #sql {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #wather {
+    display: none;
+  }
+}
+main #wather #python {
+  top: -145px;
+  left: 1147px;
+}
+main #wather #python img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main #wather #python {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #wather #python {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #wather {
+    display: none;
+  }
 }
 @media screen and (max-height: 350px) {
   main #sea::before {
