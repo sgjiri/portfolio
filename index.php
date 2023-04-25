@@ -82,12 +82,33 @@
 
         </section>
         <section id="wather">
+            <figure id="js" class="boule">
+                <img src="./Img/JS.png" alt="JS">
+            </figure>
+            <figure id="html" class="boule">
+                <img src="./Img/html.png" alt="html">
+            </figure>
+            <figure id="css" class="boule">
+                <img src="./Img/CSS.png" alt="css">
+            </figure>
+            <figure id="php" class="boule">
+                <img src="./Img/PHP.png" alt="php">
+            </figure>
+            <figure id="sql" class="boule">
+                <img src="./Img/SQL.png" alt="sql">
+            </figure>
+            <figure id="python" class="boule">
+                <img src="./Img/Python.png" alt="python">
+            </figure>
             
+        </section>
+        <section id="langages">
+
         </section>
 
 
     </main>
-    <!-- <script src="./main.js"></script> -->
+    <script src="./main.js"></script>
 
 </body>
 

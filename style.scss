@@ -1197,10 +1197,144 @@ main{
 }
 #wather{
     width: 100%;
-    height: 300px;
+    height: 150px;
     background-color: $blueSea;
     opacity: 0.8;
+    position: relative;
+    .boule{
+        width: 100px;
+        position: absolute;
+
+    }
+
+    #js{
+        
+        top: 33%;
+        left: 345px;
+
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 80px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            
+        }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    #html{
+        
+        top: -154px;
+        left: 542px;
+
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 80px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            
+        }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    #css{
+        
+        top: -246px;
+        left: 785px;
+
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 80px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            
+        }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    #php{
+        
+        top: -50px;
+        left: 178px;
+
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 80px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            
+        }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    #sql{
+        
+        top: 30px;
+        left: 1498px;
+
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 80px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            
+        }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    #python{
+        
+        top: -145px;
+        left: 1147px;
+
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 80px;
+            
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            
+        }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
 }
+
 
 @media screen and (max-height: 350px) {
     #sea::before {
