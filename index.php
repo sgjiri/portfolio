@@ -33,83 +33,96 @@
 
     </header>
     <main>
-        <section id="fullscreen">
-            <div id="sky">
-                <div id="clouds">
-                    <figure id="cloud1">
-                        <img src="./Img/Nouage1.svg" alt="cloud1">
+        <section>
+            <div id="fullscreen">
+                <div id="sky">
+                    <div id="clouds">
+                        <figure id="cloud1">
+                            <img src="./Img/Nouage1.svg" alt="cloud1">
+                        </figure>
+                        <figure id="cloud2">
+                            <img src="./Img/Nuage 2.svg" alt="cloud2">
+                        </figure>
+                        <figure id="cloud3">
+                            <img src="./Img/Nouage3.svg" alt="cloud3">
+                        </figure>
+
+                    </div>
+                    <div id="imgPecheur">
+                        <figure id="pecheur">
+                            <img src="./Img/pecheur.svg" alt="pecheur">
+                        </figure>
+                        <figure id="barque">
+                            <img src="./Img/barque 2.svg" alt="barque">
+                        </figure>
+                    </div>
+                    <figure id="reeds">
+                        <img src="./Img/raoseaux.png" alt="reeds">
                     </figure>
-                    <figure id="cloud2">
-                        <img src="./Img/Nuage 2.svg" alt="cloud2">
+                    <figure id="reeds2">
+                        <img src="./Img/raoseaux2.png" alt="reeds">
                     </figure>
-                    <figure id="cloud3">
-                        <img src="./Img/Nouage3.svg" alt="cloud3">
-                    </figure>
+                    <div id="text">
+                        <h1>Jirka Fischer</h1>
+                        <h2>Developpeur web</h2>
+
+
+
+                    </div>
+
 
                 </div>
-                <div id="imgPecheur">
-                    <figure id="pecheur">
-                        <img src="./Img/pecheur.svg" alt="pecheur">
-                    </figure>
-                    <figure id="barque">
-                        <img src="./Img/barque 2.svg" alt="barque">
-                    </figure>
-                </div>
-                <figure id="reeds">
-                    <img src="./Img/raoseaux.png" alt="reeds">
+                <figure id="sea">
+                    <img src="./Img/sea.svg" alt="sea">
+
+
+                    <div id="wather">
+                        <p>
+                            Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
+                        </p>
+                        <figure id="js" class="boule">
+                            <img src="./Img/JS.png" alt="JS">
+                        </figure>
+                        <figure id="html" class="boule">
+                            <img src="./Img/html.png" alt="html">
+                        </figure>
+                        <figure id="css" class="boule">
+                            <img src="./Img/CSS.png" alt="css">
+                        </figure>
+                        <figure id="php" class="boule">
+                            <img src="./Img/PHP.png" alt="php">
+                        </figure>
+                        <figure id="sql" class="boule">
+                            <img src="./Img/SQL.png" alt="sql">
+                        </figure>
+                        <figure id="python" class="boule">
+                            <img src="./Img/Python.png" alt="python">
+                        </figure>
+                        <figure class="fish" id="fish1">
+                            <img src="./Img/Fish1.png" alt="fish">
+                        </figure>
+                        <figure class="fish" id="fish2">
+                            <img src="./Img/Fish2.png" alt="fish">
+                        </figure>
+                        <figure class="fish" id="fish3">
+                            <img src="./Img/Fish3.png" alt="fish">
+                        </figure>
+
+                    </div>
                 </figure>
-                <figure id="reeds2">
-                    <img src="./Img/raoseaux2.png" alt="reeds">
-                </figure>
-                <div id="text">
-                    <h1>Jirka Fischer</h1>
-                    <h2>Developpeur web</h2>
 
-
-
-                </div>
 
 
             </div>
-            <figure id="sea">
-                <img src="./Img/sea.svg" alt="sea">
-                <p>
-                    Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
-                </p>
-            </figure>
-
-
-
-        </section>
-        <section id="wather">
-            <figure id="js" class="boule">
-                <img src="./Img/JS.png" alt="JS">
-            </figure>
-            <figure id="html" class="boule">
-                <img src="./Img/html.png" alt="html">
-            </figure>
-            <figure id="css" class="boule">
-                <img src="./Img/CSS.png" alt="css">
-            </figure>
-            <figure id="php" class="boule">
-                <img src="./Img/PHP.png" alt="php">
-            </figure>
-            <figure id="sql" class="boule">
-                <img src="./Img/SQL.png" alt="sql">
-            </figure>
-            <figure id="python" class="boule">
-                <img src="./Img/Python.png" alt="python">
-            </figure>
-            
-        </section>
-        <section id="langages">
-
         </section>
 
 
     </main>
+    <footer>
+        
+    </footer>
     <script src="./main.js"></script>
-
+    <!-- <script src="./sc.js"></script> -->
 </body>
 
 </html>

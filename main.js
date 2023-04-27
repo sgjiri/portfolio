@@ -1,227 +1,31 @@
 // 1)je veux cree une animation, qui envoi ma boule vers une destination choisi au hasar entre les valeur pareciser
 // une fois la boule ariver en destination, je refait l'operation
 
-let js = document.getElementById('js');
+const js = document.getElementById('js');
 js.style.animation = 'moveJS 2000s infinite linear';
-
 
 const moveJS = `
 @keyframes moveJS {
-  0% {
-    top: 33%;
-    left: 22%;
-    transform: scale(1);
-  }
-  2% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  4% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  6% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  8% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  10% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  12% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  14% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  16% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  18% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  20% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.95) scaleX(1.05);
-  }
-  22% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  24% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  26% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  28% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  30% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  32% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  34% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  36% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  38% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  40% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  42% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  44% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  46% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  48% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-  
-  50% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(1.1) scaleX(0.9);
-  }
-  52% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  54% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  56% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  58% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  60% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  62% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  64% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  66% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  68% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  70% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  72% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  74% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  76% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  78% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  80% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  82% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  84% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  86% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  88% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  90% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  92% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  94% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  96% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  98% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
+  ${createKeyframes()}
+}
+`;
 
-  100% {
-    top: 33%;
-    left: 22%;
-    transform: scale(1);
+function createKeyframes() {
+  let keyframes = '';
+  for (let i = 0; i <= 48; i += 2) {
+    const top = Math.floor(Math.random() * 73);
+    const left = Math.floor(Math.random() * 85);
+    const transform = i === 20 ? 'transform: scaleY(0.95) scaleX(1.05);' : '';
+    keyframes += `
+      ${i}% {
+        top: ${top}%;
+        left: ${left}%;
+        ${transform}
+      }
+    `;
   }
-}`;
+  return keyframes;
+}
 
 
 const style = document.createElement('style');
@@ -235,220 +39,7 @@ html.style.animation = 'moveHTML 2000s infinite linear';
 
 const moveHTML = `
 @keyframes moveHTML {
-  0% {
-    top: -42%;
-    left: 37%;
-    transform: scale(1);
-  }
-  2% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  4% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  6% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  8% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  10% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  12% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  14% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  16% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  18% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  20% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.95) scaleX(1.05);
-  }
-  22% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  24% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  26% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  28% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  30% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  32% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  34% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  36% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  38% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  40% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  42% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  44% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  46% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  48% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-  
-  50% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(1.1) scaleX(0.9);
-  }
-  52% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  54% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  56% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  58% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  60% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  62% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  64% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  66% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  68% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  70% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  72% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  74% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  76% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  78% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  80% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  82% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  84% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  86% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  88% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  90% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  92% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  94% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  96% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  98% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-
-  100% {
-    top: -42%;
-    left: 37%;
-    transform: scale(1);
-  }
+  ${createKeyframes()}
 }`;
 
 const styleHTML = document.createElement('style');
@@ -462,220 +53,7 @@ css.style.animation = 'moveCSS 2000s infinite linear';
 
 const moveCSS = `
 @keyframes moveCSS {
-  0% {
-    top: -65%;
-    left: 55%;
-    transform: scale(1);
-  }
-  2% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  4% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  6% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  8% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  10% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  12% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  14% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  16% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  18% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  20% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.95) scaleX(1.05);
-  }
-  22% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  24% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  26% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  28% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  30% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  32% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  34% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  36% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  38% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  40% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  42% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  44% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  46% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  48% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-  
-  50% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(1.1) scaleX(0.9);
-  }
-  52% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  54% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  56% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  58% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  60% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  62% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  64% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  66% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  68% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  70% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  72% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  74% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  76% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  78% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  80% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  82% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  84% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  86% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  88% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  90% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  92% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  94% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  96% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  98% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-
-  100% {
-    top: -65%;
-    left: 55%;
-    transform: scale(1);
-  }
+  ${createKeyframes()}
 }`;
 
 const styleCSS = document.createElement('style');
@@ -689,220 +67,7 @@ php.style.animation = 'movePHP 2000s infinite linear';
 
 const movePHP = `
 @keyframes movePHP {
-  0% {
-    top: -5%;
-    left: 7%;
-    transform: scale(1);
-  }
-  2% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  4% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  6% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  8% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  10% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  12% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  14% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  16% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  18% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  20% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.95) scaleX(1.05);
-  }
-  22% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  24% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  26% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  28% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  30% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  32% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  34% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  36% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  38% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  40% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  42% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  44% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  46% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  48% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-  
-  50% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(1.1) scaleX(0.9);
-  }
-  52% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  54% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  56% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  58% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  60% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  62% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  64% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  66% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  68% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  70% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  72% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  74% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  76% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  78% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  80% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  82% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  84% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  86% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  88% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  90% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  92% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  94% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  96% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  98% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-
-  100% {
-    top: -5%;
-    left: 7%;
-    transform: scale(1);
-  }
+  ${createKeyframes()}
 }`;
 
 const stylePHP = document.createElement('style');
@@ -916,220 +81,7 @@ sql.style.animation = 'moveSQL 2000s infinite linear';
 
 const moveSQL = `
 @keyframes moveSQL {
-  0% {
-    top: 3%;
-    left: 84%;
-    transform: scale(1);
-  }
-    2% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    4% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    6% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    8% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    10% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    12% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    14% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    16% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    18% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    20% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-      transform: scaleY(0.95) scaleX(1.05);
-    }
-    22% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    24% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    26% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    28% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    30% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    32% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    34% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    36% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    38% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    40% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    42% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    44% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    46% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    48% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    
-    
-    50% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-      transform: scaleY(1.1) scaleX(0.9);
-    }
-    52% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    54% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    56% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    58% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    60% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    62% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    64% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    66% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    68% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    70% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-      transform: scaleY(0.98) scaleX(1.02);
-    }
-    72% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    74% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    76% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    78% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    80% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-      transform: scaleY(0.98) scaleX(1.02);
-    }
-    82% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    84% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    86% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    88% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    90% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    92% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    94% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    96% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-    98% {
-      top: calc(${Math.floor(Math.random() * (50, -250))}px);
-      left: ${Math.floor(Math.random() * 100)}%;
-    }
-  
-
-  100% {
-    top: 3%;
-    left: 84%;
-    transform: scale(1);
-  }
+  ${createKeyframes()}
 }`;
 
 const styleSQL = document.createElement('style');
@@ -1142,220 +94,7 @@ python.style.animation = 'movepython 2000s infinite linear';
 
 const movepython = `
 @keyframes movepython {
-  0% {
-    top: -20%;
-    left: 75%;
-    transform: scale(1);
-  }
-  2% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  4% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  6% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  8% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  10% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  12% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  14% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  16% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  18% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  20% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.95) scaleX(1.05);
-  }
-  22% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  24% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  26% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  28% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  30% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  32% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  34% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  36% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  38% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  40% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  42% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  44% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  46% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  48% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-  
-  50% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(1.1) scaleX(0.9);
-  }
-  52% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  54% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  56% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  58% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  60% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  62% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  64% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  66% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  68% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  70% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  72% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  74% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  76% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  78% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  80% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-    transform: scaleY(0.98) scaleX(1.02);
-  }
-  82% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  84% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  86% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  88% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  90% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  92% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  94% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  96% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  98% {
-    top: calc(${Math.floor(Math.random() * (50, -250))}px);
-    left: ${Math.floor(Math.random() * 100)}%;
-  }
-  
-
-  100% {
-    top: -20%;
-    left: 75%;
-    transform: scale(1);
-  }
+  ${createKeyframes()}
 }`;
 
 const stylepython = document.createElement('style');
@@ -1363,3 +102,231 @@ stylepython.innerHTML = movepython;
 document.head.appendChild(stylepython);
 
 
+// let fish1 = document.getElementById('fish1');
+// fish1.style.animation = 'movefish1 2000s infinite linear';
+
+// const movefish1 = `
+// @keyframes movefish1 {
+//   0% {
+//     top: 60%;
+//     left: 60%;
+//   }
+  
+//   2% {
+//     top: ${Math.floor(Math.random() * 60)}%;
+//     left: ${Math.floor(Math.random() * (80 - 61) + 61)}%;
+//   }
+//   2.1% {
+//     transform: rotateY(180deg);
+//     transition-duration: 0.5s;
+//     transition-property: transform, opacity;
+//   }
+
+
+//   4% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   6% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   8% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   10% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   12% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   14% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   16% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   18% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   20% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//     transform: scaleY(0.95) scaleX(1.05);
+//   }
+//   22% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   24% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   26% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   28% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   30% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   32% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   34% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   36% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   38% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   40% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   42% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   44% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   46% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   48% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+  
+  
+//   50% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//     transform: scaleY(1.1) scaleX(0.9);
+//   }
+//   52% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   54% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   56% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   58% {
+//     top: ${Math.floor(Math.random() * 73)}%;;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   60% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   62% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   64% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   66% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   68% {
+//     top: ${Math.floor(Math.random() * 73)}%;;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   70% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//     transform: scaleY(0.98) scaleX(1.02);
+//   }
+//   72% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   74% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   76% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   78% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   80% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//     transform: scaleY(0.98) scaleX(1.02);
+//   }
+//   82% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   84% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   86% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   88% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   90% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   92% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   94% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+//   96% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 100)}%;
+//   }
+//   98% {
+//     top: ${Math.floor(Math.random() * 73)}%;
+//     left: ${Math.floor(Math.random() * 85)}%;
+//   }
+  
+//   100% {
+//     top: 60%;
+//     left: 60%;
+//   }`
+
+// const stylefish1 = document.createElement('style');
+// stylefish1.innerHTML = movefish1;
+// document.head.appendChild(stylefish1);
