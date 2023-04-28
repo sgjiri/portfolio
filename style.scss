@@ -16,6 +16,7 @@ $blueSky: #e4f3ff;
 $blueSea: #c4e6ff;
 $orange: #f08136;
 $font-color-grey: #4b4b4b;
+$bluesection: #cbe9ff;
 
 
 
@@ -149,6 +150,10 @@ header {
 
 main {
     background-color: $blueSky;
+
+    .h2 {
+        color: #f08136;
+    }
 
     #fullscreen {
         height: calc(100vh - 80px);
@@ -773,7 +778,7 @@ main {
 
             #text {
                 position: absolute;
-                bottom: 14%;
+                bottom: 17%;
                 left: 55%;
 
                 @media screen and (max-width: 1500px) {
@@ -849,7 +854,6 @@ main {
                     position: relative;
                     bottom: 47%;
                     left: -18%;
-                    color: #f08136;
                     font-size: 4.5em;
                     font-weight: 100;
 
@@ -940,29 +944,9 @@ main {
             }
         }
 
-        
-
-
-
-
-
-
-
-
-
-
-    }
-
-    #wather {
-        width: 100%;
-        height: 52%;
-        background-color: #c4e6ff;
-        position: absolute;
-        top: 72%;
-
         p {
             position: absolute;
-            top: 3%;
+            top: 70%;
             left: 46%;
             width: 40%;
             color: #4B4B4B;
@@ -1189,7 +1173,7 @@ main {
 
         #js {
 
-            top: 33%;
+            top: 71%;
             left: 22%;
 
             img {
@@ -1199,11 +1183,11 @@ main {
         }
 
 
-        
+
 
         #html {
 
-            top: 42%;
+            top: 73%;
             left: 37%;
 
             img {
@@ -1215,7 +1199,7 @@ main {
 
         #css {
 
-            top: 65%;
+            top: 84%;
             left: 55%;
 
             img {
@@ -1226,7 +1210,7 @@ main {
 
         #php {
 
-            top: 42%;
+            top: 79%;
             left: 37%;
 
             img {
@@ -1239,7 +1223,7 @@ main {
 
         #sql {
 
-            top: 3%;
+            top: 67%;
             left: 84%;
 
             img {
@@ -1251,7 +1235,7 @@ main {
 
         #python {
 
-            top: 20%;
+            top: 71%;
             left: 75%;
 
             img {
@@ -1261,15 +1245,24 @@ main {
 
         .fish {
             position: absolute;
-            height: 38%;
+            width: 15%;
 
             @media screen and (max-height: 400px) {
+                display: none;
+            }
+            @media screen and (max-width: 1000px) {
+                width: 20%;
+            }
+            @media screen and (max-width: 650px) {
+                width: 25%;
+            }
+            @media screen and (max-width: 400px) {
                 display: none;
             }
         }
 
         #fish1 {
-            top: 60%;
+            top: 95%;
             left: 60%;
             animation: bus1 18s ease-in-out infinite;
 
@@ -1280,17 +1273,23 @@ main {
         }
 
         #fish2 {
-            top: 40%;
+            top: 80%;
             left: 83%;
 
             img {
                 width: 100%;
                 height: 100%;
             }
+            @media screen and (max-width: 1000px) {
+                left: 77%;
+            }
+            @media screen and (max-width: 650px) {
+                left: 74%;
+            }
         }
 
         #fish3 {
-            top: 13%;
+            top: 70%;
             left: 8%;
 
             img {
@@ -1300,7 +1299,23 @@ main {
         }
 
 
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
 
 
     @media screen and (max-height: 350px) {
@@ -1308,42 +1323,206 @@ main {
             top: calc(70% - 17px);
         }
     }
+
+    .section {
+        height: 100vh;
+        width: 100%;
+        background-color: $bluesection;
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            max-width: 1500px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+
+    #projects {
+        padding: 50px 0;
+
+        #text {
+            position: absolute;
+            z-index: 3;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 2em;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                line-height: 44px;
+                font-weight: 600;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 1.5em;
+                }
+            }
+
+            span {
+                color: #ffffff;
+                background-color: $orange;
+                cursor: pointer;
+                padding: 5px 8px;
+                font-size: 1.2em;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        #grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+            grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+
+
+            .divGrid {
+                background-position: 50% 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 20px;
+                box-shadow: 0px 0px 10px $orange;
+            }
+
+            #biblook {
+                background-image: url(./Img/Biblook.png);
+                grid-row-start: 4;
+                grid-row-end: 9;
+                grid-column-start: 3;
+                grid-column-end: 9;
+
+                @media screen and (max-width: 750px) {
+                    grid-row-start: 6;
+                }
+                @media screen and (max-width: 500px) {
+                    background-image: url(./Img/fille.png);
+                }
+                @media screen and (max-width: 400px) {
+                    grid-row-start: 7;
+                }
+            }
+
+            #vache {
+                background-image: url(./Img/vache.png);
+                grid-row-start: 11;
+                grid-row-end: 16;
+                grid-column-start: 2;
+                grid-column-end: 5;
+
+                @media screen and (max-width: 750px) {
+                    grid-row-end: 15;
+                    grid-column-end: 6;
+                }
+
+                @media screen and (max-width: 400px) {
+                    grid-row-end: 14;
+                }
+            }
+
+
+            #lotus {
+                background-image: url(./Img/lotus.png);
+                grid-row-start: 6;
+                grid-row-end: 12;
+                grid-column-start: 15;
+                grid-column-end: 17;
+                background-position: 50% 0;
+
+                @media screen and (max-width: 1050px) {
+                    grid-column-end: 18;
+                }
+
+                @media screen and (max-width: 750px) {
+                    grid-column-start: 16;
+                    grid-column-end: 19;
+                    grid-row-start: 8;
+                }
+                @media screen and (max-width: 600px) {
+                    grid-column-end: 20;
+
+                }
+
+                @media screen and (max-width: 400px) {
+                    grid-row-start: 12;
+                    grid-row-end: 14;
+                    
+
+                }
+            }
+
+            #jadoo {
+                background-image: url(./Img/jadoo.png);
+                grid-row-start: 14;
+                grid-row-end: 18;
+                grid-column-start: 8;
+                grid-column-end: 14;
+                ;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-end: 16;
+                }
+
+                @media screen and (max-width: 750px) {
+                    grid-row-end: 16;
+                }
+            }
+
+        }
+
+
+
+
+    }
 }
 
-footer{
-    background-color: #ffe23c;
-    height: 200px;
-}
 
 
-
-.bus-1 {
-    transform: translate(650px, 490px) rotateX(-90deg);
-    animation: bus1 18s ease-in-out infinite;
-}
 
 @keyframes bus1 {
     5% {
         transform: rotateY(180deg);
-        top: 60%;
+        top: 95%;
         left: 62%;
     }
 
     50% {
-        top: 40%;
-    left: 20%;
-    transform: rotateY(180deg);
+        top: 80%;
+        left: 20%;
+        transform: rotateY(180deg);
     }
-    51%{
-        top: 41%;
-    left: 20%;
-    transform: rotateY(360deg);
+
+    51% {
+        top: 80%;
+        left: 20%;
+        transform: rotateY(360deg);
     }
 
 
     100% {
-        top: 60%;
-    left: 60%;
-    transform: rotateY(360deg);
+        top: 95%;
+        left: 60%;
+        transform: rotateY(360deg);
     }
+
+
+
+}
+
+
+footer {
+    background-color: #ffe23c;
+    height: 200px;
 }

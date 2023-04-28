@@ -12,8 +12,8 @@ const moveJS = `
 
 function createKeyframes() {
   let keyframes = '';
-  for (let i = 0; i <= 48; i += 2) {
-    const top = Math.floor(Math.random() * 73);
+  for (let i = 0; i <= 98; i += 2) {
+    const top = Math.floor(Math.random() * (110 - 65) + 65);
     const left = Math.floor(Math.random() * 85);
     const transform = i === 20 ? 'transform: scaleY(0.95) scaleX(1.05);' : '';
     keyframes += `

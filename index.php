@@ -64,7 +64,7 @@
                     </figure>
                     <div id="text">
                         <h1>Jirka Fischer</h1>
-                        <h2>Developpeur web</h2>
+                        <h2 class="h2">Developpeur web</h2>
 
 
 
@@ -76,50 +76,67 @@
                     <img src="./Img/sea.svg" alt="sea">
 
 
-                    <div id="wather">
-                        <p>
-                            Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
-                        </p>
-                        <figure id="js" class="boule">
-                            <img src="./Img/JS.png" alt="JS">
-                        </figure>
-                        <figure id="html" class="boule">
-                            <img src="./Img/html.png" alt="html">
-                        </figure>
-                        <figure id="css" class="boule">
-                            <img src="./Img/CSS.png" alt="css">
-                        </figure>
-                        <figure id="php" class="boule">
-                            <img src="./Img/PHP.png" alt="php">
-                        </figure>
-                        <figure id="sql" class="boule">
-                            <img src="./Img/SQL.png" alt="sql">
-                        </figure>
-                        <figure id="python" class="boule">
-                            <img src="./Img/Python.png" alt="python">
-                        </figure>
-                        <figure class="fish" id="fish1">
-                            <img src="./Img/Fish1.png" alt="fish">
-                        </figure>
-                        <figure class="fish" id="fish2">
-                            <img src="./Img/Fish2.png" alt="fish">
-                        </figure>
-                        <figure class="fish" id="fish3">
-                            <img src="./Img/Fish3.png" alt="fish">
-                        </figure>
 
-                    </div>
+                    <p>
+                        Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
+                    </p>
+                    <figure id="js" class="boule">
+                        <img src="./Img/JS.png" alt="JS">
+                    </figure>
+                    <figure id="html" class="boule">
+                        <img src="./Img/html.png" alt="html">
+                    </figure>
+                    <figure id="css" class="boule">
+                        <img src="./Img/CSS.png" alt="css">
+                    </figure>
+                    <figure id="php" class="boule">
+                        <img src="./Img/PHP.png" alt="php">
+                    </figure>
+                    <figure id="sql" class="boule">
+                        <img src="./Img/SQL.png" alt="sql">
+                    </figure>
+                    <figure id="python" class="boule">
+                        <img src="./Img/Python.png" alt="python">
+                    </figure>
+                    <figure class="fish" id="fish1">
+                        <img src="./Img/Fish1.png" alt="fish">
+                    </figure>
+                    <figure class="fish" id="fish2">
+                        <img src="./Img/Fish2.png" alt="fish">
+                    </figure>
+                    <figure class="fish" id="fish3">
+                        <img src="./Img/Fish3.png" alt="fish">
+                    </figure>
+
                 </figure>
 
 
 
             </div>
         </section>
+        <section class="section" id="projects">
+            <div class="content" id="contentProjects">
+                <div id="text">
+                    <h2 class="h2">Mes realisation</h2>
+                    <span>Voir mes realisation</span>
+                </div>
+                <div id="grid">
+                    <div class="divGrid" id="biblook"></div>
+                    <div class="divGrid" id="vache"></div>
+                    <div class="divGrid" id="lotus"></div>
+                    <div class="divGrid" id="jadoo"></div>
+                </div>
+                <div></div>
+
+            </div>
+        </section>
+        <section class="section" id="presentation"></section>
+        <section class="section" id="contact"></section>
 
 
     </main>
     <footer>
-        
+
     </footer>
     <script src="./main.js"></script>
     <!-- <script src="./sc.js"></script> -->

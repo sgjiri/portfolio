@@ -124,6 +124,9 @@ header #burger img {
 main {
   background-color: #e4f3ff;
 }
+main .h2 {
+  color: #f08136;
+}
 main #fullscreen {
   height: calc(100vh - 80px);
 }
@@ -741,7 +744,7 @@ main #fullscreen #sky #reeds2 img {
 }
 main #fullscreen #sky #text {
   position: absolute;
-  bottom: 14%;
+  bottom: 17%;
   left: 55%;
 }
 @media screen and (max-width: 1500px) {
@@ -820,7 +823,6 @@ main #fullscreen #sky #text h2 {
   position: relative;
   bottom: 47%;
   left: -18%;
-  color: #f08136;
   font-size: 4.5em;
   font-weight: 100;
 }
@@ -899,16 +901,9 @@ main #sea::before {
     background-position-x: 3000px;
   }
 }
-main #wather {
-  width: 100%;
-  height: 52%;
-  background-color: #c4e6ff;
+main #sea p {
   position: absolute;
-  top: 72%;
-}
-main #wather p {
-  position: absolute;
-  top: 3%;
+  top: 70%;
   left: 46%;
   width: 40%;
   color: #4B4B4B;
@@ -917,323 +912,348 @@ main #wather p {
   z-index: 99;
 }
 @media screen and (max-width: 1600px) {
-  main #wather p {
+  main #sea p {
     left: 47%;
   }
 }
 @media screen and (max-width: 1500px) {
-  main #wather p {
+  main #sea p {
     left: 52%;
   }
 }
 @media screen and (max-width: 1400px) {
-  main #wather p {
+  main #sea p {
     left: 53%;
   }
 }
 @media screen and (max-width: 1350px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
     font-size: 1.2em;
     width: 33%;
   }
 }
 @media screen and (max-width: 1300px) {
-  main #wather p {
+  main #sea p {
     left: 59%;
   }
 }
 @media screen and (max-width: 1200px) {
-  main #wather p {
+  main #sea p {
     left: 60%;
   }
 }
 @media screen and (max-width: 1100px) {
-  main #wather p {
+  main #sea p {
     left: 61%;
   }
 }
 @media screen and (max-width: 1000px) {
-  main #wather p {
+  main #sea p {
     left: 62%;
   }
 }
 @media screen and (max-width: 950px) {
-  main #wather p {
+  main #sea p {
     left: 53%;
   }
 }
 @media screen and (max-width: 850px) {
-  main #wather p {
+  main #sea p {
     left: 54%;
   }
 }
 @media screen and (max-width: 800px) {
-  main #wather p {
+  main #sea p {
     left: 55%;
   }
 }
 @media screen and (max-width: 700px) {
-  main #wather p {
+  main #sea p {
     display: none;
   }
 }
 @media screen and (max-height: 550px) {
-  main #wather p {
+  main #sea p {
     font-size: 1.5em;
     left: 47%;
     width: 35%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1700px) {
-  main #wather p {
+  main #sea p {
     left: 47%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1600px) {
-  main #wather p {
+  main #sea p {
     left: 48%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1500px) {
-  main #wather p {
+  main #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1400px) {
-  main #wather p {
+  main #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1350px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
     font-size: 1.2em;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1300px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1150px) {
-  main #wather p {
+  main #sea p {
     left: 60%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1000px) {
-  main #wather p {
+  main #sea p {
     left: 61%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 950px) {
-  main #wather p {
+  main #sea p {
     left: 57%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 900px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 850px) {
-  main #wather p {
+  main #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 850px) {
-  main #wather p {
+  main #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 475px) {
-  main #wather p {
+  main #sea p {
     font-size: 1.2em;
     width: 35%;
     left: 47%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1700px) {
-  main #wather p {
+  main #sea p {
     left: 48%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1500px) {
-  main #wather p {
+  main #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1400px) {
-  main #wather p {
+  main #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1350px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1150px) {
-  main #wather p {
+  main #sea p {
     left: 60%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1000px) {
-  main #wather p {
+  main #sea p {
     left: 61%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 950px) {
-  main #wather p {
+  main #sea p {
     left: 57%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 900px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 850px) {
-  main #wather p {
+  main #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 390px) {
-  main #wather p {
+  main #sea p {
     left: 49%;
     width: 22%;
     font-size: 1em;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1500px) {
-  main #wather p {
+  main #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1350px) {
-  main #wather p {
+  main #sea p {
     left: 61%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1250px) {
-  main #wather p {
+  main #sea p {
     left: 62%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1150px) {
-  main #wather p {
+  main #sea p {
     left: 58%;
     width: 30%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1050px) {
-  main #wather p {
+  main #sea p {
     left: 59%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 950px) {
-  main #wather p {
+  main #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 850px) {
-  main #wather p {
+  main #sea p {
     width: 40%;
     left: 51%;
   }
 }
-main #wather .boule {
+main #sea .boule {
   width: 100px;
   position: absolute;
 }
 @media screen and (max-width: 1000px) {
-  main #wather .boule {
+  main #sea .boule {
     width: 80px;
   }
 }
 @media screen and (max-width: 450px) {
-  main #wather .boule {
+  main #sea .boule {
     width: 70px;
   }
 }
 @media screen and (max-height: 475px) {
-  main #wather .boule {
+  main #sea .boule {
     width: 40px;
   }
 }
-main #wather #js {
-  top: 33%;
+main #sea #js {
+  top: 71%;
   left: 22%;
 }
-main #wather #js img {
+main #sea #js img {
   width: 100%;
 }
-main #wather #html {
-  top: 42%;
+main #sea #html {
+  top: 73%;
   left: 37%;
 }
-main #wather #html img {
+main #sea #html img {
   width: 100%;
 }
-main #wather #css {
-  top: 65%;
+main #sea #css {
+  top: 84%;
   left: 55%;
 }
-main #wather #css img {
+main #sea #css img {
   width: 100%;
 }
-main #wather #php {
-  top: 42%;
+main #sea #php {
+  top: 79%;
   left: 37%;
 }
-main #wather #php img {
+main #sea #php img {
   width: 100%;
 }
-main #wather #sql {
-  top: 3%;
+main #sea #sql {
+  top: 67%;
   left: 84%;
 }
-main #wather #sql img {
+main #sea #sql img {
   width: 100%;
 }
-main #wather #python {
-  top: 20%;
+main #sea #python {
+  top: 71%;
   left: 75%;
 }
-main #wather #python img {
+main #sea #python img {
   width: 100%;
 }
-main #wather .fish {
+main #sea .fish {
   position: absolute;
-  height: 38%;
+  width: 15%;
 }
 @media screen and (max-height: 400px) {
-  main #wather .fish {
+  main #sea .fish {
     display: none;
   }
 }
-main #wather #fish1 {
-  top: 60%;
+@media screen and (max-width: 1000px) {
+  main #sea .fish {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 650px) {
+  main #sea .fish {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #sea .fish {
+    display: none;
+  }
+}
+main #sea #fish1 {
+  top: 95%;
   left: 60%;
   animation: bus1 18s ease-in-out infinite;
 }
-main #wather #fish1 img {
+main #sea #fish1 img {
   width: 100%;
   height: 100%;
 }
-main #wather #fish2 {
-  top: 40%;
+main #sea #fish2 {
+  top: 80%;
   left: 83%;
 }
-main #wather #fish2 img {
+main #sea #fish2 img {
   width: 100%;
   height: 100%;
 }
-main #wather #fish3 {
-  top: 13%;
+@media screen and (max-width: 1000px) {
+  main #sea #fish2 {
+    left: 77%;
+  }
+}
+@media screen and (max-width: 650px) {
+  main #sea #fish2 {
+    left: 74%;
+  }
+}
+main #sea #fish3 {
+  top: 70%;
   left: 8%;
 }
-main #wather #fish3 img {
+main #sea #fish3 img {
   width: 100%;
   height: 100%;
 }
@@ -1242,36 +1262,185 @@ main #wather #fish3 img {
     top: calc(70% - 17px);
   }
 }
-
-footer {
-  background-color: #ffe23c;
-  height: 200px;
+main .section {
+  height: 100vh;
+  width: 100%;
+  background-color: #cbe9ff;
 }
-
-.bus-1 {
-  transform: translate(650px, 490px) rotateX(-90deg);
-  animation: bus1 18s ease-in-out infinite;
+main .section .content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+main #projects {
+  padding: 50px 0;
+}
+main #projects #text {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #projects #text h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 44px;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  main #projects #text h2 {
+    font-size: 1.5em;
+  }
+}
+main #projects #text span {
+  color: #ffffff;
+  background-color: #f08136;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 600px) {
+  main #projects #text span {
+    font-size: 1em;
+  }
+}
+main #projects #grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+  grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+}
+main #projects #grid .divGrid {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #f08136;
+}
+main #projects #grid #biblook {
+  background-image: url(./Img/Biblook.png);
+  grid-row-start: 4;
+  grid-row-end: 9;
+  grid-column-start: 3;
+  grid-column-end: 9;
+}
+@media screen and (max-width: 750px) {
+  main #projects #grid #biblook {
+    grid-row-start: 6;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #projects #grid #biblook {
+    background-image: url(./Img/fille.png);
+  }
+}
+@media screen and (max-width: 400px) {
+  main #projects #grid #biblook {
+    grid-row-start: 7;
+  }
+}
+main #projects #grid #vache {
+  background-image: url(./Img/vache.png);
+  grid-row-start: 11;
+  grid-row-end: 16;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+@media screen and (max-width: 750px) {
+  main #projects #grid #vache {
+    grid-row-end: 15;
+    grid-column-end: 6;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #projects #grid #vache {
+    grid-row-end: 14;
+  }
+}
+main #projects #grid #lotus {
+  background-image: url(./Img/lotus.png);
+  grid-row-start: 6;
+  grid-row-end: 12;
+  grid-column-start: 15;
+  grid-column-end: 17;
+  background-position: 50% 0;
+}
+@media screen and (max-width: 1050px) {
+  main #projects #grid #lotus {
+    grid-column-end: 18;
+  }
+}
+@media screen and (max-width: 750px) {
+  main #projects #grid #lotus {
+    grid-column-start: 16;
+    grid-column-end: 19;
+    grid-row-start: 8;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #projects #grid #lotus {
+    grid-column-end: 20;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #projects #grid #lotus {
+    grid-row-start: 12;
+    grid-row-end: 14;
+  }
+}
+main #projects #grid #jadoo {
+  background-image: url(./Img/jadoo.png);
+  grid-row-start: 14;
+  grid-row-end: 18;
+  grid-column-start: 8;
+  grid-column-end: 14;
+}
+@media screen and (max-width: 900px) {
+  main #projects #grid #jadoo {
+    grid-column-end: 16;
+  }
+}
+@media screen and (max-width: 750px) {
+  main #projects #grid #jadoo {
+    grid-row-end: 16;
+  }
 }
 
 @keyframes bus1 {
   5% {
     transform: rotateY(180deg);
-    top: 60%;
+    top: 95%;
     left: 62%;
   }
   50% {
-    top: 40%;
+    top: 80%;
     left: 20%;
     transform: rotateY(180deg);
   }
   51% {
-    top: 41%;
+    top: 80%;
     left: 20%;
     transform: rotateY(360deg);
   }
   100% {
-    top: 60%;
+    top: 95%;
     left: 60%;
     transform: rotateY(360deg);
   }
+}
+footer {
+  background-color: #ffe23c;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
