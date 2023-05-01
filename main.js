@@ -101,6 +101,59 @@ const stylepython = document.createElement('style');
 stylepython.innerHTML = movepython;
 document.head.appendChild(stylepython);
 
+let zoom = document.getElementById('realisations');
+let biblook = document.getElementById('biblook');
+let lotus = document.getElementById('lotus');
+let jadoo = document.getElementById('jadoo');
+let vache = document.getElementById('vache');
+let h2Projects = document.getElementById('h2Projects');
+
+
+zoom.addEventListener('click', function () {
+
+  biblook.classList.toggle('active');
+  vache.classList.toggle('active');
+  lotus.classList.toggle('active');
+  jadoo.classList.toggle('active');
+  h2Projects.classList.toggle('active');
+
+})
+
+
+
+
+
+
+  // biblook.style.gridRowStart = "1";
+  // biblook.style.gridRowEnd = "12";
+  // biblook.style.gridColumnStart = "1";
+  // biblook.style.gridColumnEnd = "16";
+  // biblook.style.borderRadius = "20px 0 0 0";
+
+  // lotus.style.gridRowStart = "1";
+  // lotus.style.gridRowEnd = "21";
+  // lotus.style.gridColumnStart = "16";
+  // lotus.style.gridColumnEnd = "21";
+
+  // vache.style.gridRowStart = "12";
+  // vache.style.gridRowEnd = "21";
+  // vache.style.gridColumnStart = "1";
+  // vache.style.gridColumnEnd = "6";
+  
+  // jadoo.style.gridRowStart = "12";
+  // jadoo.style.gridRowEnd = "21";
+  // jadoo.style.gridColumnStart = "6";
+  // jadoo.style.gridColumnEnd = "16";
+
+
+
+
+
+
+
+
+
+
 
 // let fish1 = document.getElementById('fish1');
 // fish1.style.animation = 'movefish1 2000s infinite linear';

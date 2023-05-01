@@ -1247,16 +1247,16 @@ main {
             position: absolute;
             width: 15%;
 
-            @media screen and (max-height: 400px) {
-                display: none;
-            }
+
             @media screen and (max-width: 1000px) {
                 width: 20%;
             }
+
             @media screen and (max-width: 650px) {
                 width: 25%;
             }
-            @media screen and (max-width: 400px) {
+
+            @media screen and (max-width: 500px) {
                 display: none;
             }
         }
@@ -1280,9 +1280,11 @@ main {
                 width: 100%;
                 height: 100%;
             }
+
             @media screen and (max-width: 1000px) {
                 left: 77%;
             }
+
             @media screen and (max-width: 650px) {
                 left: 74%;
             }
@@ -1341,7 +1343,7 @@ main {
 
 
     #projects {
-        padding: 50px 0;
+        padding: 100px 0;
 
         #text {
             position: absolute;
@@ -1366,6 +1368,10 @@ main {
                 }
             }
 
+            h2.active {
+                display: none;
+            }
+
             span {
                 color: #ffffff;
                 background-color: $orange;
@@ -1385,8 +1391,8 @@ main {
             display: grid;
             width: 100%;
             height: 100%;
-            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
-            grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+            grid-template-columns: repeat(20, 5%);
+            grid-template-rows: repeat(20, 5%);
 
 
             .divGrid {
@@ -1395,134 +1401,257 @@ main {
                 background-repeat: no-repeat;
                 border-radius: 20px;
                 box-shadow: 0px 0px 10px $orange;
+                transition: all 1s ease-in-out;
+                background-color: #ffffff;
+
+                &.active:hover {
+                    opacity: 0.8;
+                    cursor: pointer;
+                  }
             }
+
 
             #biblook {
                 background-image: url(./Img/Biblook.png);
-                grid-row-start: 4;
-                grid-row-end: 9;
-                grid-column-start: 3;
-                grid-column-end: 9;
+                position: absolute;
+                width: 35%;
+                height: 25%;
+                top: 15%;
+                left: 15%;
 
-                @media screen and (max-width: 750px) {
-                    grid-row-start: 6;
-                }
+
+
+                // @media screen and (max-width: 750px) {
+                //     grid-row-start: 6;
+                // }
+
                 @media screen and (max-width: 500px) {
                     background-image: url(./Img/fille.png);
                 }
-                @media screen and (max-width: 400px) {
-                    grid-row-start: 7;
+
+                // @media screen and (max-width: 400px) {
+                //     grid-row-start: 7;
+                // }
+            }
+
+            #biblook.active {
+                width: 70%;
+                height: 50%;
+                top: 0;
+                left: 0;
+                border-radius: 20px 0 0 0;
+
+                @media screen and (max-width: 500px) {
+                    width: 50%;
+                }
+                & :hover{
+                    opacity: 0.8;
+                    cursor: pointer; 
                 }
             }
 
+
             #vache {
                 background-image: url(./Img/vache.png);
-                grid-row-start: 11;
-                grid-row-end: 16;
-                grid-column-start: 2;
-                grid-column-end: 5;
+                position: absolute;
+                width: 20%;
+                height: 40%;
+                top: 55%;
+                left: 5%;
 
-                @media screen and (max-width: 750px) {
-                    grid-row-end: 15;
-                    grid-column-end: 6;
+
+                @media screen and (max-width: 850px) {
+                    height: 25%;
                 }
 
-                @media screen and (max-width: 400px) {
-                    grid-row-end: 14;
+                @media screen and (max-width: 600px) {
+                    height: 20%;
+                    width: 25%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    height: 22%;
+                    width: 31%;
+                }
+
+
+            }
+
+            #vache.active {
+                width: 30%;
+                height: 50%;
+                top: 50%;
+                left: 0;
+                border-radius: 0 0 0 20px;
+
+                @media screen and (max-width: 900px)
+                 {
+                    width: 40%;
                 }
             }
 
 
             #lotus {
+                position: absolute;
                 background-image: url(./Img/lotus.png);
-                grid-row-start: 6;
-                grid-row-end: 12;
-                grid-column-start: 15;
-                grid-column-end: 17;
-                background-position: 50% 0;
+                width: 12%;
+                height: 40%;
+                top: 20%;
+                left: 70%;
+                background-position: 0% 0;
 
-                @media screen and (max-width: 1050px) {
-                    grid-column-end: 18;
+                @media screen and (max-width: 1200PX) {
+                    width: 16%;
                 }
 
-                @media screen and (max-width: 750px) {
-                    grid-column-start: 16;
-                    grid-column-end: 19;
-                    grid-row-start: 8;
-                }
-                @media screen and (max-width: 600px) {
-                    grid-column-end: 20;
-
+                @media screen and (max-width: 900PX) {
+                    width: 20%;
+                    left: 75%;
+                    ;
                 }
 
-                @media screen and (max-width: 400px) {
-                    grid-row-start: 12;
-                    grid-row-end: 14;
-                    
+                @media screen and (max-width: 900PX) {
+                    width: 20%;
+                    left: 75%;
+                    ;
+                }
+
+                @media screen and (max-width: 700PX) {
+                    top: 22%;
+                    width: 16%;
+                    height: 25%;
+                }
+
+                @media screen and (max-width: 500PX) {
+                    top: 29%;
+                    width: 18%;
+                    height: 18%;
+                    left: 70%;
+                }
+
+                @media screen and (max-width: 400PX) {
+                    top: 26%;
+                    width: 27%;
+                    height: 20%;
+                    left: 63%;
 
                 }
+            }
+
+            #lotus.active {
+                width: 30%;
+                height: 100%;
+                top: 0;
+                left: 70%;
+                border-radius: 0 20px 20px 0;
+                background-position: 20% 0;
+
+                @media screen and (max-width: 900px) {
+                    height: 50%;
+                    border-radius: 0 20px 0 0;
+                }
+
+                @media screen and (max-width: 900px) {
+                    left: 50%;
+                    width: 50%;
+                }
+
+
             }
 
             #jadoo {
+                position: absolute;
                 background-image: url(./Img/jadoo.png);
-                grid-row-start: 14;
-                grid-row-end: 18;
-                grid-column-start: 8;
-                grid-column-end: 14;
+                width: 40%;
+                height: 20%;
+                top: 65%;
+                left: 30%;
                 ;
 
                 @media screen and (max-width: 900px) {
-                    grid-column-end: 16;
+                    left: 40%
                 }
 
-                @media screen and (max-width: 750px) {
-                    grid-row-end: 16;
+                @media screen and (max-width: 700px) {
+                    height: 14%;
+                    top: 62%;
+                }
+
+                @media screen and (max-width: 500px) {
+                    height: 12%;
+                    top: 57%;
+                    left: 44%;
+                    width: 48%
                 }
             }
 
+
+
+
+
+            
+
+            #jadoo.active {
+                width: 40%;
+                height: 50%;
+                top: 50%;
+                left: 30%;
+                border-radius: 0;
+                background-image: url(./Img/jadooimg.png);
+                background-position: 44% 50%;
+
+
+                @media screen and (max-width: 900px)
+                 {
+                    width: 60%;
+                    left: 40%;
+                    border-radius: 0 0 20px 0;
+                }
+
+                
+            }
+
+
+
+
+        }}
+    }
+
+
+
+
+    @keyframes bus1 {
+        5% {
+            transform: rotateY(180deg);
+            top: 95%;
+            left: 62%;
+        }
+
+        50% {
+            top: 80%;
+            left: 20%;
+            transform: rotateY(180deg);
+        }
+
+        51% {
+            top: 80%;
+            left: 20%;
+            transform: rotateY(360deg);
+        }
+
+
+        100% {
+            top: 95%;
+            left: 60%;
+            transform: rotateY(360deg);
         }
 
 
 
-
-    }
-}
-
-
-
-
-@keyframes bus1 {
-    5% {
-        transform: rotateY(180deg);
-        top: 95%;
-        left: 62%;
-    }
-
-    50% {
-        top: 80%;
-        left: 20%;
-        transform: rotateY(180deg);
-    }
-
-    51% {
-        top: 80%;
-        left: 20%;
-        transform: rotateY(360deg);
     }
 
 
-    100% {
-        top: 95%;
-        left: 60%;
-        transform: rotateY(360deg);
+    footer {
+        background-color: #ffe23c;
+        height: 200px;
     }
-
-
-
-}
-
-
-footer {
-    background-color: #ffe23c;
-    height: 200px;
-}

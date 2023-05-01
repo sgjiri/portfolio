@@ -78,7 +78,7 @@
 
 
                     <p>
-                        Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, pret à apporter une contribution significative à tout projet.
+                        Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, prêt à apporter une contribution significative à tout projet.
                     </p>
                     <figure id="js" class="boule">
                         <img src="./Img/JS.png" alt="JS">
@@ -117,8 +117,8 @@
         <section class="section" id="projects">
             <div class="content" id="contentProjects">
                 <div id="text">
-                    <h2 class="h2">Mes realisation</h2>
-                    <span>Voir mes realisation</span>
+                    <h2 class="h2" id="h2Projects">Mes realisations</h2>
+                    <span id="realisations">Voir mes réalisations</span>
                 </div>
                 <div id="grid">
                     <div class="divGrid" id="biblook"></div>
