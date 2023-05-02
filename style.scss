@@ -1339,21 +1339,14 @@ main {
             margin-right: auto;
             margin-left: auto;
         }
-    }
 
-
-    #projects {
-        padding: 100px 0;
-
-        #text {
-            position: absolute;
-            z-index: 3;
+        #contentProjects {
+            padding: 150px 0;
             display: flex;
-            width: 100%;
-            height: 100vh;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
 
             h2 {
                 text-transform: uppercase;
@@ -1362,6 +1355,7 @@ main {
                 margin-bottom: 10px;
                 line-height: 44px;
                 font-weight: 600;
+                transition: all 1s ease-in-out;
 
                 @media screen and (max-width: 600px) {
                     font-size: 1.5em;
@@ -1369,7 +1363,7 @@ main {
             }
 
             h2.active {
-                display: none;
+                opacity: 0;
             }
 
             span {
@@ -1378,87 +1372,114 @@ main {
                 cursor: pointer;
                 padding: 5px 8px;
                 font-size: 1.2em;
+                transition: all 1s;
+                z-index: 200;
 
                 @media screen and (max-width: 600px) {
                     font-size: 1em;
                 }
             }
-        }
-
-        #grid {
-            position: relative;
-            z-index: 1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: repeat(20, 5%);
-            grid-template-rows: repeat(20, 5%);
 
 
-            .divGrid {
-                background-position: 50% 50%;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 20px;
-                box-shadow: 0px 0px 10px $orange;
+            .card {
                 transition: all 1s ease-in-out;
-                background-color: #ffffff;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                position: relative;
 
-                &.active:hover {
-                    opacity: 0.8;
-                    cursor: pointer;
-                  }
+                .divGrid {
+                    position: absolute;
+                    background-position: 50% 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 10px;
+                    height: 100%;
+                    width: 100%;
+                    backface-visibility: hidden;
+                }
+
+                .textCard {
+                    position: absolute;
+                    background-color: $orange;
+                    height: 100%;
+                    width: 100%;
+                    transform: rotateY(-180deg);
+                    backface-visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3,
+                    p {
+                        color: #ffffff;
+                        margin: 20px 0;
+                    }
+
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 3em;
+                    }
+
+                    p {
+                        font-size: 2.5em;
+                    }
+                }
             }
 
+            .card.active {
+                transform: rotateY(180deg);
+            }
 
-            #biblook {
-                background-image: url(./Img/Biblook.png);
+            .cardBiblook {
                 position: absolute;
                 width: 35%;
                 height: 25%;
                 top: 15%;
                 left: 15%;
 
+                .biblook {
+                    position: absolute;
+
+                    background-image: url(./Img/Biblook.png);
 
 
-                // @media screen and (max-width: 750px) {
-                //     grid-row-start: 6;
-                // }
+                    @media screen and (max-width: 500px) {
+                        background-image: url(./Img/fille.png);
+                    }
 
-                @media screen and (max-width: 500px) {
-                    background-image: url(./Img/fille.png);
+                    &.active {
+                        border-radius: 20px 0 0 0;
+
+                        @media screen and (max-width: 900px) {
+                            width: 50%;
+                            background-image: url(./Img/fille.png);
+                        }
+                    }
                 }
 
-                // @media screen and (max-width: 400px) {
-                //     grid-row-start: 7;
-                // }
+                #textBiblook {
+                    border-radius: 20px 0 0 0;
+                }
+
+                &.active {
+                    width: 70%;
+                    height: calc(50% - 150px);
+                    top: 150px;
+                    left: 0;
+                    transform: rotateY(0deg);
+
+                }
             }
 
-            #biblook.active {
-                width: 70%;
-                height: 50%;
-                top: 0;
-                left: 0;
-                border-radius: 20px 0 0 0;
-
-                @media screen and (max-width: 500px) {
-                    width: 50%;
-                }
-                & :hover{
-                    opacity: 0.8;
-                    cursor: pointer; 
-                }
-            }
-
-
-            #vache {
+            .vache {
                 background-image: url(./Img/vache.png);
                 position: absolute;
                 width: 20%;
                 height: 40%;
                 top: 55%;
                 left: 5%;
-
 
                 @media screen and (max-width: 850px) {
                     height: 25%;
@@ -1473,25 +1494,21 @@ main {
                     height: 22%;
                     width: 31%;
                 }
-
-
             }
 
-            #vache.active {
+            .vache.active {
                 width: 30%;
-                height: 50%;
+                height: calc(50% - 150px);
                 top: 50%;
                 left: 0;
                 border-radius: 0 0 0 20px;
 
-                @media screen and (max-width: 900px)
-                 {
+                @media screen and (max-width: 900px) {
                     width: 40%;
                 }
             }
 
-
-            #lotus {
+            .lotus {
                 position: absolute;
                 background-image: url(./Img/lotus.png);
                 width: 12%;
@@ -1507,13 +1524,6 @@ main {
                 @media screen and (max-width: 900PX) {
                     width: 20%;
                     left: 75%;
-                    ;
-                }
-
-                @media screen and (max-width: 900PX) {
-                    width: 20%;
-                    left: 75%;
-                    ;
                 }
 
                 @media screen and (max-width: 700PX) {
@@ -1538,10 +1548,10 @@ main {
                 }
             }
 
-            #lotus.active {
+            .lotus.active {
                 width: 30%;
-                height: 100%;
-                top: 0;
+                height: calc(100% - 300px);
+                top: 150px;
                 left: 70%;
                 border-radius: 0 20px 20px 0;
                 background-position: 20% 0;
@@ -1559,7 +1569,7 @@ main {
 
             }
 
-            #jadoo {
+            .jadoo {
                 position: absolute;
                 background-image: url(./Img/jadoo.png);
                 width: 40%;
@@ -1589,11 +1599,11 @@ main {
 
 
 
-            
 
-            #jadoo.active {
+
+            .jadoo.active {
                 width: 40%;
-                height: 50%;
+                height: calc(50% - 150px);
                 top: 50%;
                 left: 30%;
                 border-radius: 0;
@@ -1601,57 +1611,99 @@ main {
                 background-position: 44% 50%;
 
 
-                @media screen and (max-width: 900px)
-                 {
+                @media screen and (max-width: 900px) {
                     width: 60%;
                     left: 40%;
                     border-radius: 0 0 20px 0;
                 }
 
-                
+
+            }
+
+            .action {
+                opacity: 0;
+                transition: all 1s;
+                z-index: 100;
+            }
+
+            .divGrid:hover {
+                background-image: none;
+                background-color: $orange;
+            }
+
+            .action.active:hover+.card.active {
+                transform: rotateY(180deg);
+            }
+
+
+
+            #biblookHover {
+
+                &.active:hover+.biblook {
+                    border-radius: 0 20px 0 0;
+
+                }
+            }
+
+            #vacheHover {
+
+                &.active:hover+.vache {
+                    border-radius: 0 0 20px 0;
+                }
+            }
+
+            #lotusHover {
+
+                &.active:hover+.lotus {
+                    border-radius: 20px 0 0 20px;
+                }
             }
 
 
 
 
-        }}
+        }
     }
 
 
 
-
-    @keyframes bus1 {
-        5% {
-            transform: rotateY(180deg);
-            top: 95%;
-            left: 62%;
-        }
-
-        50% {
-            top: 80%;
-            left: 20%;
-            transform: rotateY(180deg);
-        }
-
-        51% {
-            top: 80%;
-            left: 20%;
-            transform: rotateY(360deg);
-        }
-
-
-        100% {
-            top: 95%;
-            left: 60%;
-            transform: rotateY(360deg);
-        }
+}
 
 
 
+
+@keyframes bus1 {
+    5% {
+        transform: rotateY(180deg);
+        top: 95%;
+        left: 62%;
+    }
+
+    50% {
+        top: 80%;
+        left: 20%;
+        transform: rotateY(180deg);
+    }
+
+    51% {
+        top: 80%;
+        left: 20%;
+        transform: rotateY(360deg);
     }
 
 
-    footer {
-        background-color: #ffe23c;
-        height: 200px;
+    100% {
+        top: 95%;
+        left: 60%;
+        transform: rotateY(360deg);
     }
+
+
+
+}
+
+
+footer {
+    background-color: #ffe23c;
+    height: 200px;
+}

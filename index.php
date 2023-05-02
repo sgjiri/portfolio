@@ -116,17 +116,32 @@
         </section>
         <section class="section" id="projects">
             <div class="content" id="contentProjects">
-                <div id="text">
-                    <h2 class="h2" id="h2Projects">Mes realisations</h2>
-                    <span id="realisations">Voir mes réalisations</span>
+
+
+                <h2 class="h2" id="h2Projects">Mes realisations</h2>
+                <span id="realisations">Voir mes réalisations</span>
+
+                <a href="#" class="action cardBiblook" id="biblookHover"></a>
+                <div class="card cardBiblook">
+                    
+                    <div class="textCard" id="textBiblook">
+                        <h3>Biblook</h3>
+                        <p>Realisitaion d'un sit de biblioteque</p>
+                    </div>
+                    <div class="divGrid biblook"></div>
                 </div>
-                <div id="grid">
-                    <div class="divGrid" id="biblook"></div>
-                    <div class="divGrid" id="vache"></div>
-                    <div class="divGrid" id="lotus"></div>
-                    <div class="divGrid" id="jadoo"></div>
-                </div>
-                <div></div>
+
+
+
+                <a href="#" class="action vache" id="vacheHover"></a>
+                <div class="divGrid vache"></div>
+
+                <a href="#" class="action lotus" id="lotusHover"></a>
+                <div class="divGrid lotus"></div>
+                <a href="#" class="action jadoo" id="jadooHover"></a>
+                <div class="divGrid jadoo"></div>
+
+
 
             </div>
         </section>
