@@ -122,8 +122,7 @@
                 <span id="realisations">Voir mes réalisations</span>
 
                 <a href="#" class="action cardBiblook" id="biblookHover"></a>
-                <div class="card cardBiblook">
-                    
+                <div class="card cardBiblook">                   
                     <div class="textCard" id="textBiblook">
                         <h3>Biblook</h3>
                         <p>Realisitaion d'un sit de biblioteque</p>
@@ -131,15 +130,40 @@
                     <div class="divGrid biblook"></div>
                 </div>
 
+                <a href="#" class="action cardVache" id="vacheHover"></a>
+                <div class="card cardVache">                   
+                    <div class="textCard" id="textVache">
+                        <h3>La vache qui cuit</h3>
+                        <p>Realisitaion d'un sit de recetets coulinaires</p>
+                    </div>
+                    <div class="divGrid vache"></div>
+                </div>
+
+                
+
+                <a href="#" class="action cardLotus" id="lotusHover"></a>
+                <div class="card cardLotus">                   
+                    <div class="textCard" id="textLotus">
+                        <h3>Lotus</h3>
+                        <p>Realisitaion d'un site de salon de beauté                    
+                        </p>
+                    </div>
+                    <div class="divGrid lotus"></div>
+                </div>
+                
 
 
-                <a href="#" class="action vache" id="vacheHover"></a>
-                <div class="divGrid vache"></div>
 
-                <a href="#" class="action lotus" id="lotusHover"></a>
-                <div class="divGrid lotus"></div>
-                <a href="#" class="action jadoo" id="jadooHover"></a>
-                <div class="divGrid jadoo"></div>
+                <a href="#" class="action cardJadoo" id="jadooHover"></a>
+                <div class="card cardJadoo">                   
+                    <div class="textCard" id="textJadoo">
+                        <h3>Jadoo</h3>
+                        <p>Realisitaion d'un site de restaurant japonaise                   
+                        </p>
+                    </div>
+                    <div class="divGrid jadoo"></div>
+                </div>
+                
 
 
 

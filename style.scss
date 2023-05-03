@@ -1299,26 +1299,7 @@ main {
                 height: 100%;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
 
     @media screen and (max-height: 350px) {
         #sea::before {
@@ -1415,6 +1396,9 @@ main {
                     p {
                         color: #ffffff;
                         margin: 20px 0;
+                        padding: 0 10%;
+                        text-align: center;
+                        width: 100%;
                     }
 
                     h3 {
@@ -1434,10 +1418,15 @@ main {
 
             .cardBiblook {
                 position: absolute;
-                width: 35%;
-                height: 25%;
-                top: 15%;
+                width: 46%;
+                height: 24%;
+                top: 20%;
                 left: 15%;
+
+                @media screen and (max-width: 400px) {
+                    top: 30%;
+                    height: 15%;
+                }
 
                 .biblook {
                     position: absolute;
@@ -1445,7 +1434,7 @@ main {
                     background-image: url(./Img/Biblook.png);
 
 
-                    @media screen and (max-width: 500px) {
+                    @media screen and (max-width: 800px) {
                         background-image: url(./Img/fille.png);
                     }
 
@@ -1453,7 +1442,6 @@ main {
                         border-radius: 20px 0 0 0;
 
                         @media screen and (max-width: 900px) {
-                            width: 50%;
                             background-image: url(./Img/fille.png);
                         }
                     }
@@ -1470,55 +1458,84 @@ main {
                     left: 0;
                     transform: rotateY(0deg);
 
+
+                    @media screen and (max-width: 900px) {
+                        width: 50%;
+                    }
                 }
             }
 
-            .vache {
-                background-image: url(./Img/vache.png);
+
+            .cardVache {
                 position: absolute;
                 width: 20%;
-                height: 40%;
+                height: 33%;
                 top: 55%;
                 left: 5%;
 
-                @media screen and (max-width: 850px) {
+                @media screen and (max-width: 1200px) {
                     height: 25%;
                 }
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 1000px) {
                     height: 20%;
-                    width: 25%;
                 }
 
-                @media screen and (max-width: 600px) {
-                    height: 22%;
-                    width: 31%;
+                @media screen and (max-width: 800px) {
+                    width: 30%;
+                }
+
+                @media screen and (max-width: 500px) {
+                    height: 12%;
+
+                }
+
+                .vache {
+                    background-image: url(./Img/vache.png);
+                    position: absolute;
+
+                    @media screen and (max-width: 1000px) {
+                        background-image: url(./Img/vache2.png);
+                    }
+
+                    &.active {
+                        border-radius: 0 0 0 20px;
+
+
+                    }
+                }
+
+                #textVache {
+                    border-radius: 0 0 0 20px;
+                }
+
+                &.active {
+                    width: 30%;
+                    height: calc(50% - 150px);
+                    top: 50%;
+                    left: 0;
+                    transform: rotateY(0deg);
+
+                    @media screen and (max-width: 900px) {
+                        width: 40%;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 50%;
+                    }
                 }
             }
 
-            .vache.active {
-                width: 30%;
-                height: calc(50% - 150px);
-                top: 50%;
-                left: 0;
-                border-radius: 0 0 0 20px;
 
-                @media screen and (max-width: 900px) {
-                    width: 40%;
-                }
-            }
-
-            .lotus {
+            .cardLotus {
                 position: absolute;
-                background-image: url(./Img/lotus.png);
-                width: 12%;
-                height: 40%;
-                top: 20%;
+                width: 17%;
+                height: 28%;
+                top: 30%;
                 left: 70%;
-                background-position: 0% 0;
 
                 @media screen and (max-width: 1200PX) {
-                    width: 16%;
+                    width: 22%;
+                    height: 23%;
                 }
 
                 @media screen and (max-width: 900PX) {
@@ -1526,65 +1543,88 @@ main {
                     left: 75%;
                 }
 
-                @media screen and (max-width: 700PX) {
-                    top: 22%;
-                    width: 16%;
-                    height: 25%;
+                @media screen and (max-width: 750PX) {
+                    top: 32%;
+                    width: 35%;
+                    height: 14%;
+                    left: 51%;
                 }
 
-                @media screen and (max-width: 500PX) {
-                    top: 29%;
-                    width: 18%;
-                    height: 18%;
-                    left: 70%;
-                }
-
-                @media screen and (max-width: 400PX) {
-                    top: 26%;
-                    width: 27%;
-                    height: 20%;
-                    left: 63%;
-
-                }
-            }
-
-            .lotus.active {
-                width: 30%;
-                height: calc(100% - 300px);
-                top: 150px;
-                left: 70%;
-                border-radius: 0 20px 20px 0;
-                background-position: 20% 0;
 
                 @media screen and (max-width: 900px) {
-                    height: 50%;
                     border-radius: 0 20px 0 0;
                 }
 
-                @media screen and (max-width: 900px) {
-                    left: 50%;
-                    width: 50%;
+
+                .lotus {
+                    position: absolute;
+                    background-image: url(./Img/lotus.png);
+
+                    background-position: 20% 0;
+
+
+                    &.active {
+                        border-radius: 0 20px 20px 0;
+                        background-position: 20% 0;
+
+                    }
                 }
+
+                #textLotus {
+                    border-radius: 0 20px 20px 0;
+                }
+
+                &.active {
+                    width: 30%;
+                    height: calc(100% - 300px);
+                    top: 150px;
+                    left: 70%;
+                    transform: rotateY(0deg);
+
+                    @media screen and (max-width: 900px) {
+                        height: calc(50% - 150px);
+                        border-radius: 0 20px 0 0;
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        left: 50%;
+                        width: 50%;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 50%;
+                        left: 50%;
+                    }
+                }
+
+
 
 
             }
 
-            .jadoo {
+
+
+            .cardJadoo {
                 position: absolute;
-                background-image: url(./Img/jadoo.png);
                 width: 40%;
                 height: 20%;
                 top: 65%;
                 left: 30%;
-                ;
+
+                @media screen and (max-width: 1200px) {
+                    width: 35%;
+                }
+
+
 
                 @media screen and (max-width: 900px) {
-                    left: 40%
+                    left: 40%;
+                    height: 16%;
                 }
 
                 @media screen and (max-width: 700px) {
-                    height: 14%;
-                    top: 62%;
+                    height: 12%;
+                    top: 56%;
+                    left: 49%;
                 }
 
                 @media screen and (max-width: 500px) {
@@ -1593,43 +1633,66 @@ main {
                     left: 44%;
                     width: 48%
                 }
-            }
+
+                .jadoo {
+                    position: absolute;
+                    background-image: url(./Img/jadoo.png);
+
+                    @media screen and (max-width: 1200px) {
+                        background-image: url(./Img/jadooimg.png);
+                    }
 
 
 
+                    &.active {
+                        border-radius: 0;
+                        background-image: url(./Img/jadooimg.png);
+                        background-position: 44% 50%;
+
+                        @media screen and (max-width: 900px) {
+                            border-radius: 0 0 20px 0;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            background-image: url(./Img/jadoo2.png);
+                        }
 
 
 
-
-            .jadoo.active {
-                width: 40%;
-                height: calc(50% - 150px);
-                top: 50%;
-                left: 30%;
-                border-radius: 0;
-                background-image: url(./Img/jadooimg.png);
-                background-position: 44% 50%;
-
-
-                @media screen and (max-width: 900px) {
-                    width: 60%;
-                    left: 40%;
-                    border-radius: 0 0 20px 0;
+                    }
                 }
 
+                &.active {
+                    width: 40%;
+                    height: calc(50% - 150px);
+                    top: 50%;
+                    left: 30%;
+                    transform: rotateY(0deg);
 
+                    @media screen and (max-width: 900px) {
+                        width: 60%;
+                        left: 40%;
+                        border-radius: 0 0 20px 0;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width: 50%;
+                        left: 50%;
+                    }
+
+                }
             }
+
 
             .action {
                 opacity: 0;
                 transition: all 1s;
-                z-index: 100;
+
+                &.active {
+                    z-index: 100;
+                }
             }
 
-            .divGrid:hover {
-                background-image: none;
-                background-color: $orange;
-            }
 
             .action.active:hover+.card.active {
                 transform: rotateY(180deg);
