@@ -1,9 +1,9 @@
 // 1)je veux cree une animation, qui envoi ma boule vers une destination choisi au hasar entre les valeur pareciser
 // une fois la boule ariver en destination, je refait l'operation
 
-function animateElement(id, animationName, keyframes) {
+function animateElement(id, animationName, keyframes, speed) {
   const element = document.getElementById(id);
-  element.style.animation = `${animationName} 2000s infinite linear`;
+  element.style.animation = `${animationName} ${speed} infinite linear`;
 
   const moveAnimation = `
     @keyframes ${animationName} {
@@ -50,19 +50,19 @@ function createKeyframesCompetences() {
   return keyframes;
 }
 
-animateElement('js', 'moveJS', createKeyframes());
-animateElement('html', 'moveHTML', createKeyframes());
-animateElement('css', 'moveCSS', createKeyframes());
-animateElement('php', 'movePHP', createKeyframes());
-animateElement('sql', 'moveSQL', createKeyframes());
-animateElement('python', 'movepython', createKeyframes());
-animateElement('jsCompetences', 'movejsCompetences', createKeyframesCompetences());
-animateElement('htmlCompetences', 'movehtmlCompetences', createKeyframesCompetences());
-animateElement('cssCompetences', 'movecssCompetences', createKeyframesCompetences());
-animateElement('phpCompetences', 'movephpCompetences', createKeyframesCompetences());
-animateElement('sqlCompetences', 'movesqlCompetences', createKeyframesCompetences());
-animateElement('pythonCompetences', 'movepythonCompetences', createKeyframesCompetences());
-animateElement('gitCompetences', 'movegitCompetences', createKeyframesCompetences());
+animateElement('js', 'moveJS', createKeyframes(), '2000s');
+animateElement('html', 'moveHTML', createKeyframes(), '2000s');
+animateElement('css', 'moveCSS', createKeyframes(), '2000s');
+animateElement('php', 'movePHP', createKeyframes(), '2000s');
+animateElement('sql', 'moveSQL', createKeyframes(), '2000s');
+animateElement('python', 'movepython', createKeyframes(), '2000s');
+animateElement('jsCompetences', 'movejsCompetences', createKeyframesCompetences(), '1000s');
+animateElement('htmlCompetences', 'movehtmlCompetences', createKeyframesCompetences(), '1000s');
+animateElement('cssCompetences', 'movecssCompetences', createKeyframesCompetences(), '1000s');
+animateElement('phpCompetences', 'movephpCompetences', createKeyframesCompetences(), '1000s');
+animateElement('sqlCompetences', 'movesqlCompetences', createKeyframesCompetences(), '1000s');
+animateElement('pythonCompetences', 'movepythonCompetences', createKeyframesCompetences(), '1000s');
+animateElement('gitCompetences', 'movegitCompetences', createKeyframesCompetences(), '1000s');
 
 
 
