@@ -1786,21 +1786,137 @@ main {
                     border-radius: 20px 0 0 20px;
                 }
             }
-        } 
-        
-        #contentPresentation{
+        }
+    }
+
+    #presentation {
+        height: 1500px;
+
+        #contentPresentation {
             padding: 150px 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100%;
 
-            .left{
+            .left {
                 width: 55%;
                 height: 100%;
                 padding: 150px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .h2Presentation {
+                    width: 100%;
+                    border-bottom: #4B4B4B solid 2px;
+                    height: 15%;
+                    font-size: 2em;
+                }
+
+                .contentPresentation {
+                    width: 100%;
+                    height: 85%;
+                    position: relative;
+                }
+
+                #aquariom {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 20%;
+
+                    .boule {
+                        height: 70px;
+                        width: 70px;
+                        position: absolute;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    #jsCompetences {
+                        top: 40%;
+                        left: 62%;
+                    }
+
+                    #htmlCompetences {
+                        top: 68%;
+                        left: 24%;
+                    }
+
+                    #cssCompetences {
+                        top: 26%;
+                        left: 47%;
+                    }
+
+                    #phpCompetences {
+                        top: 73%;
+                        left: 52%;
+                    }
+
+                    #sqlCompetences {
+                        top: 12%;
+                        left: 14%;
+                    }
+
+                    #pythonCompetences {
+                        top: 9%;
+                        left: 85%;
+                    }
+
+                    #gitCompetences {
+                        top: 64%;
+                        left: 79%;
+                    }
+
+                }
+
+                .CV {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 10%;
+                    margin-top: 15%;
+
+                    .btn {
+                        cursor: pointer;
+                        width: 200px;
+                        border: none;
+                        background-color: $orange;
+                        height: 50px;
+                        color: #ffffff;
+                        font-size: 1.2em;
+                        transition: all 0.5s;
+
+                        &:hover{
+                            opacity: 0.9;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                .text {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 55%;
+
+                    .h2Presentation {
+                        height: 6%;
+                    }
+                }
             }
 
-            .right{
+            .right {
                 width: 45%;
                 height: 100%;
                 padding: 150px 0;

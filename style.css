@@ -1676,18 +1676,115 @@ main .section #contentProjects #vacheHover.active:hover + .vache {
 main .section #contentProjects #lotusHover.active:hover + .lotus {
   border-radius: 20px 0 0 20px;
 }
-main .section #contentPresentation {
+main #presentation {
+  height: 1500px;
+}
+main #presentation #contentPresentation {
   padding: 150px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
-main .section #contentPresentation .left {
+main #presentation #contentPresentation .left {
   width: 55%;
   height: 100%;
   padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main .section #contentPresentation .right {
+main #presentation #contentPresentation .left .h2Presentation {
+  width: 100%;
+  border-bottom: #4B4B4B solid 2px;
+  height: 15%;
+  font-size: 2em;
+}
+main #presentation #contentPresentation .left .contentPresentation {
+  width: 100%;
+  height: 85%;
+  position: relative;
+}
+main #presentation #contentPresentation .left #aquariom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+main #presentation #contentPresentation .left #aquariom .boule {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+}
+main #presentation #contentPresentation .left #aquariom .boule img {
+  height: 100%;
+  width: 100%;
+}
+main #presentation #contentPresentation .left #aquariom #jsCompetences {
+  top: 40%;
+  left: 62%;
+}
+main #presentation #contentPresentation .left #aquariom #htmlCompetences {
+  top: 68%;
+  left: 24%;
+}
+main #presentation #contentPresentation .left #aquariom #cssCompetences {
+  top: 26%;
+  left: 47%;
+}
+main #presentation #contentPresentation .left #aquariom #phpCompetences {
+  top: 73%;
+  left: 52%;
+}
+main #presentation #contentPresentation .left #aquariom #sqlCompetences {
+  top: 12%;
+  left: 14%;
+}
+main #presentation #contentPresentation .left #aquariom #pythonCompetences {
+  top: 9%;
+  left: 85%;
+}
+main #presentation #contentPresentation .left #aquariom #gitCompetences {
+  top: 64%;
+  left: 79%;
+}
+main #presentation #contentPresentation .left .CV {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  margin-top: 15%;
+}
+main #presentation #contentPresentation .left .CV .btn {
+  cursor: pointer;
+  width: 200px;
+  border: none;
+  background-color: #f08136;
+  height: 50px;
+  color: #ffffff;
+  font-size: 1.2em;
+  transition: all 0.5s;
+}
+main #presentation #contentPresentation .left .CV .btn:hover {
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+main #presentation #contentPresentation .left .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55%;
+}
+main #presentation #contentPresentation .left .text .h2Presentation {
+  height: 6%;
+}
+main #presentation #contentPresentation .right {
   width: 45%;
   height: 100%;
   padding: 150px 0;
