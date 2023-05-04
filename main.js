@@ -1,14 +1,20 @@
 // 1)je veux cree une animation, qui envoi ma boule vers une destination choisi au hasar entre les valeur pareciser
 // une fois la boule ariver en destination, je refait l'operation
 
-const js = document.getElementById('js');
-js.style.animation = 'moveJS 2000s infinite linear';
+function animateElement(id, animationName, keyframes) {
+  const element = document.getElementById(id);
+  element.style.animation = `${animationName} 2000s infinite linear`;
 
-const moveJS = `
-@keyframes moveJS {
-  ${createKeyframes()}
+  const moveAnimation = `
+    @keyframes ${animationName} {
+      ${keyframes}
+    }
+  `;
+
+  const style = document.createElement('style');
+  style.innerHTML = moveAnimation;
+  document.head.appendChild(style);
 }
-`;
 
 function createKeyframes() {
   let keyframes = '';
@@ -27,79 +33,44 @@ function createKeyframes() {
   return keyframes;
 }
 
+function createKeyframesCompetences() {
+  let keyframes = '';
+  for (let i = 0; i <= 98; i += 2) {
+    const top = Math.floor(Math.random() * (110 - 0) + 0);
+    const left = Math.floor(Math.random() * 80);
+    const transform = i === 20 ? 'transform: scaleY(0.95) scaleX(1.05);' : '';
+    keyframes += `
+      ${i}% {
+        top: ${top}%;
+        left: ${left}%;
+        ${transform}
+      }
+    `;
+  }
+  return keyframes;
+}
 
-const style = document.createElement('style');
-style.innerHTML = moveJS;
-document.head.appendChild(style);
-
-
-let html = document.getElementById('html');
-html.style.animation = 'moveHTML 2000s infinite linear';
-
-
-const moveHTML = `
-@keyframes moveHTML {
-  ${createKeyframes()}
-}`;
-
-const styleHTML = document.createElement('style');
-styleHTML.innerHTML = moveHTML;
-document.head.appendChild(styleHTML);
-
-
-let css = document.getElementById('css');
-css.style.animation = 'moveCSS 2000s infinite linear';
-
-
-const moveCSS = `
-@keyframes moveCSS {
-  ${createKeyframes()}
-}`;
-
-const styleCSS = document.createElement('style');
-styleCSS.innerHTML = moveCSS;
-document.head.appendChild(styleCSS);
+animateElement('js', 'moveJS', createKeyframes());
+animateElement('html', 'moveHTML', createKeyframes());
+animateElement('css', 'moveCSS', createKeyframes());
+animateElement('php', 'movePHP', createKeyframes());
+animateElement('sql', 'moveSQL', createKeyframes());
+animateElement('python', 'movepython', createKeyframes());
+animateElement('jsCompetences', 'movejsCompetences', createKeyframesCompetences());
+animateElement('htmlCompetences', 'movehtmlCompetences', createKeyframesCompetences());
+animateElement('cssCompetences', 'movecssCompetences', createKeyframesCompetences());
+animateElement('phpCompetences', 'movephpCompetences', createKeyframesCompetences());
+animateElement('sqlCompetences', 'movesqlCompetences', createKeyframesCompetences());
+animateElement('pythonCompetences', 'movepythonCompetences', createKeyframesCompetences());
+animateElement('gitCompetences', 'movegitCompetences', createKeyframesCompetences());
 
 
-let php = document.getElementById('php');
-php.style.animation = 'movePHP 2000s infinite linear';
 
 
-const movePHP = `
-@keyframes movePHP {
-  ${createKeyframes()}
-}`;
-
-const stylePHP = document.createElement('style');
-stylePHP.innerHTML = movePHP;
-document.head.appendChild(stylePHP);
 
 
-let sql = document.getElementById('sql');
-sql.style.animation = 'moveSQL 2000s infinite linear';
 
 
-const moveSQL = `
-@keyframes moveSQL {
-  ${createKeyframes()}
-}`;
-
-const styleSQL = document.createElement('style');
-styleSQL.innerHTML = moveSQL;
-document.head.appendChild(styleSQL);
-
-let python = document.getElementById('python');
-python.style.animation = 'movepython 2000s infinite linear';
-
-
-const movepython = `
-@keyframes movepython {
-  ${createKeyframes()}
-}`;
-
-const stylepython = document.createElement('style');
-stylepython.innerHTML = movepython;
-document.head.appendChild(stylepython);
 
 let zoom = document.getElementById('btnRealisation');
 let projects = document.getElementsByClassName('divGrid');

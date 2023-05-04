@@ -177,8 +177,38 @@
             <div class="content" id="contentPresentation">
                 <div class="left">
                     <div id="aquariom">
-                        <h2 class="h2">Mes competences:</h2>
-                        <div class="competences"></div>
+                        <h2 class="h2 h2Presentation">Mes competences:</h2>
+                        <div class="contentPresentation">
+                            <figure id="jsCompetences" class="boule">
+                                <img src="./Img/JS.png" alt="JS">
+                            </figure>
+                            <figure id="htmlCompetences" class="boule">
+                                <img src="./Img/html.png" alt="html">
+                            </figure>
+                            <figure id="cssCompetences" class="boule">
+                                <img src="./Img/CSS.png" alt="css">
+                            </figure>
+                            <figure id="phpCompetences" class="boule">
+                                <img src="./Img/PHP.png" alt="php">
+                            </figure>
+                            <figure id="sqlCompetences" class="boule">
+                                <img src="./Img/SQL.png" alt="sql">
+                            </figure>
+                            <figure id="pythonCompetences" class="boule">
+                                <img src="./Img/Python.png" alt="python">
+                            </figure>
+                            <figure id="gitCompetences" class="boule">
+                                <img src="./Img/GIT.png" alt="git">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="CV">
+                        <button class="btn"> Telecharger mon CV</button>
+                    </div>
+                    <div class="text">
+                        <h2 class="h2 h2Presentation">Qui suis-je</h2>
+                        <div class="contentPresentation"></div>
+
                     </div>
                 </div>
                 <div class="right"></div>
