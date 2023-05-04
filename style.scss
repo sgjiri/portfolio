@@ -1311,6 +1311,7 @@ main {
         height: 100vh;
         width: 100%;
         background-color: $bluesection;
+        padding: 150px 0;
 
         .content {
             position: relative;
@@ -1427,9 +1428,6 @@ main {
 
 
             }
-
-
-
 
             .card {
                 transition: all 1s ease-in-out;
@@ -1788,19 +1786,28 @@ main {
                     border-radius: 20px 0 0 20px;
                 }
             }
+        } 
+        
+        #contentPresentation{
+            padding: 150px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            .left{
+                width: 55%;
+                height: 100%;
+                padding: 150px 0;
+            }
 
-
+            .right{
+                width: 45%;
+                height: 100%;
+                padding: 150px 0;
+            }
 
         }
-
-
-
-        
     }
-
-
-
 }
 
 

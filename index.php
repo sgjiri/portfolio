@@ -174,7 +174,16 @@
             </div>
         </section>
         <section class="section" id="presentation">
-            <h2>Mes competences:</h2>
+            <div class="content" id="contentPresentation">
+                <div class="left">
+                    <div id="aquariom">
+                        <h2 class="h2">Mes competences:</h2>
+                        <div class="competences"></div>
+                    </div>
+                </div>
+                <div class="right"></div>
+
+            </div>
         </section>
         <section class="section" id="contact"></section>
 
