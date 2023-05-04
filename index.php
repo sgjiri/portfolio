@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="">Accueil</a></li>
-                <li><a href="">Mes realisation</a></li>
+                <li><a href="">Mes réalisations</a></li>
                 <li><a href="">Qui suis-je</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -118,7 +118,7 @@
             <div class="content" id="contentProjects">
 
 
-                <h2 class="h2" id="h2Projects">Mes realisations</h2>
+                <h2 class="h2" id="h2Projects">Mes réalisations</h2>
                 <button id="btnRealisation">
                     <span id="realisations">Voir mes réalisations</span>
                     <span id="X">X</span>
@@ -129,7 +129,7 @@
                 <div class="card cardBiblook">
                     <div class="textCard" id="textBiblook">
                         <h3>Biblook</h3>
-                        <p>Realisitaion d'un sit de biblioteque</p>
+                        <p>Réalisation d'un site de bibliothèque</p>
                     </div>
                     <div class="divGrid biblook"></div>
                 </div>
@@ -138,7 +138,7 @@
                 <div class="card cardVache">
                     <div class="textCard" id="textVache">
                         <h3>La vache qui cuit</h3>
-                        <p>Realisitaion d'un sit de recetets coulinaires</p>
+                        <p>Réalisation d'un site de recettes culinaires</p>
                     </div>
                     <div class="divGrid vache"></div>
                 </div>
@@ -149,7 +149,7 @@
                 <div class="card cardLotus">
                     <div class="textCard" id="textLotus">
                         <h3>Lotus</h3>
-                        <p>Realisitaion d'un site de salon de beauté
+                        <p>Réalisation d'un site de salon de beauté
                         </p>
                     </div>
                     <div class="divGrid lotus"></div>
@@ -162,7 +162,7 @@
                 <div class="card cardJadoo">
                     <div class="textCard" id="textJadoo">
                         <h3>Jadoo</h3>
-                        <p>Realisitaion d'un site de restaurant japonaise
+                        <p>Réalisation d'un site de restaurant japonais
                         </p>
                     </div>
                     <div class="divGrid jadoo"></div>
@@ -177,7 +177,7 @@
             <div class="content" id="contentPresentation">
                 <div class="left">
                     <div id="aquariom">
-                        <h2 class="h2 h2Presentation">Mes competences:</h2>
+                        <h2 class="h2 h2Presentation">Mes compétences:</h2>
                         <div class="contentPresentation">
                             <figure id="jsCompetences" class="boule">
                                 <img src="./Img/JS.png" alt="JS">
@@ -203,19 +203,89 @@
                         </div>
                     </div>
                     <div class="CV">
-                        <button class="btn"> Telecharger mon CV</button>
+                        <button class="btn"> Télécharger mon CV</button>
                     </div>
                     <div class="text">
                         <h2 class="h2 h2Presentation">Qui suis-je</h2>
-                        <div class="contentPresentation"></div>
+                        <div class="contentPresentation">
+                            <p>
+                                Je suis Jirka Fischer, un développeur web passionné par la technologie et la création de sites web.
+                            </p>
+                            <br>
+                            <p>
+                                Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et créatif, prêt à apporter une contribution significative à tout projet.
+                            </p>
+                            <br>
+                            <p>
+                                Ma formation en développement web m'a permise d'acquérir de solides compétences en HTML, CSS, JavaScript, ainsi que des connaissances en PHP et en bases de données. Je suis également familié avec les outils tels que Git et les frameworks tels que React.
+                            </p>
+                            <br>
+                            <p>
+                                Bien que je sois relativement nouveau dans le domaine du développement web, j'ai une solide compréhension des meilleures pratiques de codage et de conception. Je suis également prêt à apprendre de nouvelles technologies et à relever de nouveaux défis.
+                            </p>
+                            <br>
+                            <p>
+                                Si vous recherchez un développeur web déterminé, capable de résoudre des problèmes , désireux de continuer à apprendre et à se développer dans le domaine, je serais ravi de discuter de vos besoins en matière de développement web.
+                            </p>
+                        </div>
 
                     </div>
                 </div>
-                <div class="right"></div>
+                <div class="right">
+                    <figure class="foto foto1">
+                        <img src="./Img/foto.png" alt="">
+                    </figure>
+                    <figure class="foto foto2">
+                        <img src="./Img/foto1.png" alt="">
+                    </figure>
+                </div>
 
             </div>
         </section>
-        <section class="section" id="contact"></section>
+        <section class="section" id="contact">
+            <div class="content" id="contentContact">
+                <h2 class="h2 h2Presentation">Contact</h2>
+                <form action="">
+                    <div class="zonneForm zonneForm1">
+                        <div class="name deuxinfo">
+                            <div class="champ lastname">
+                                <label class="label" for="lastname">Nom*</label>
+                                <input type="text" class="info" name="lastname" required>
+                            </div>
+                            <div class="firstname champ">
+                                <label for="firstname" class="label">Prénom*</label>
+                                <input type="text" class="info" name="firstname" required>
+                            </div>
+                        </div>
+                        <div class="contacts deuxinfo">
+                            <div class="champ email">
+                                <label for="email" class="label">E-mail*</label>
+                                <input type="email" class="info" name="email" required>
+                            </div>
+                            <div class="champ tel">
+                                <label for="phone" class="label">Telephone*</label>
+                                <input class="info" type="text" name="phone" required>
+                            </div>
+
+                        </div>
+
+                        <div class="champ object">
+                            <label for="object" class="label">Object*</label>
+                            <input type="text" class="info" name="object" required>
+                        </div>
+                        <div class="champ message">
+                            <label for="message" class="label">Message*</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="info"></textarea>
+                        </div>
+                    </div>
+                    <div class="zonneForm zonneForm2">
+
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
 
 
     </main>
