@@ -101,11 +101,13 @@ const stylepython = document.createElement('style');
 stylepython.innerHTML = movepython;
 document.head.appendChild(stylepython);
 
-let zoom = document.getElementById('realisations');
+let zoom = document.getElementById('btnRealisation');
 let projects = document.getElementsByClassName('divGrid');
 let action = document.getElementsByClassName('action');
 let card = document.getElementsByClassName('card');
 let h2Projects = document.getElementById('h2Projects');
+let realisations = document.getElementById('realisations');
+let X = document.getElementById('X');
 
 
 zoom.addEventListener('click', function () {
@@ -115,6 +117,9 @@ zoom.addEventListener('click', function () {
     card[i].classList.toggle('active');
   }
   h2Projects.classList.toggle('active');
+  X.classList.toggle('active');
+  realisations.classList.toggle('active');
+  zoom.classList.toggle('active');
 })
 
 

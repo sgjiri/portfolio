@@ -1245,7 +1245,7 @@ main {
 
         .fish {
             position: absolute;
-            width: 15%;
+            width: 10%;
 
 
             @media screen and (max-width: 1000px) {
@@ -1311,6 +1311,7 @@ main {
         height: 100vh;
         width: 100%;
         background-color: $bluesection;
+        padding: 150px 0;
 
         .content {
             position: relative;
@@ -1331,7 +1332,7 @@ main {
 
             h2 {
                 text-transform: uppercase;
-                font-size: 2em;
+                font-size: 3em;
                 margin-top: 20px;
                 margin-bottom: 10px;
                 line-height: 44px;
@@ -1339,7 +1340,11 @@ main {
                 transition: all 1s ease-in-out;
 
                 @media screen and (max-width: 600px) {
-                    font-size: 1.5em;
+                    font-size: 2.5em;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 1.8em;
                 }
             }
 
@@ -1347,20 +1352,82 @@ main {
                 opacity: 0;
             }
 
-            span {
-                color: #ffffff;
-                background-color: $orange;
-                cursor: pointer;
-                padding: 5px 8px;
-                font-size: 1.2em;
-                transition: all 1s;
+            #btnRealisation {
+                margin-top: 20px;
+                margin-bottom: 10px;
                 z-index: 200;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                width: 200px;
+                border: none;
+                background-color: $orange;
+                height: 50px;
+                transition: all 1s ease-Out;
 
-                @media screen and (max-width: 600px) {
-                    font-size: 1em;
+                @media screen and (max-width: 700px) {
+                    margin-top: 0;
                 }
-            }
 
+                &.active {
+                    opacity: 0.5;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    transform: translateY(-73%);
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &:hover #X {
+                        background-color: $orange;
+                    }
+                }
+
+
+                span {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 1.4em;
+                    transition: all 1s;
+                    width: 200px;
+                    line-height: 100%;
+                }
+
+                #realisations {
+                    position: relative;
+                    left: 0;
+                    transition: all 1s ease-Out;
+                    background-color: $orange;
+
+                    &.active {
+                        left: 200px;
+                    }
+                }
+
+                #X {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 1s ease-Out;
+                    bottom: 0;
+                    left: -200px;
+                    font-weight: 900;
+                    font-size: 2em;
+                    background-color: #4B4B4B;
+
+                    &.active {
+                        left: 0px;
+                    }
+                }
+
+
+            }
 
             .card {
                 transition: all 1s ease-in-out;
@@ -1374,7 +1441,6 @@ main {
                     background-size: cover;
                     background-repeat: no-repeat;
                     border-radius: 20px;
-                    box-shadow: 0px 0px 10px;
                     height: 100%;
                     width: 100%;
                     backface-visibility: hidden;
@@ -1420,7 +1486,7 @@ main {
                 position: absolute;
                 width: 46%;
                 height: 24%;
-                top: 20%;
+                top: 15%;
                 left: 15%;
 
                 @media screen and (max-width: 400px) {
@@ -1470,7 +1536,7 @@ main {
                 position: absolute;
                 width: 20%;
                 height: 33%;
-                top: 55%;
+                top: 58%;
                 left: 5%;
 
                 @media screen and (max-width: 1200px) {
@@ -1519,6 +1585,7 @@ main {
                     @media screen and (max-width: 900px) {
                         width: 40%;
                     }
+
                     @media screen and (max-width: 600px) {
                         width: 50%;
                     }
@@ -1536,18 +1603,15 @@ main {
                 @media screen and (max-width: 1200PX) {
                     width: 22%;
                     height: 23%;
-                }
-
-                @media screen and (max-width: 900PX) {
-                    width: 20%;
                     left: 75%;
                 }
 
-                @media screen and (max-width: 750PX) {
-                    top: 32%;
-                    width: 35%;
-                    height: 14%;
-                    left: 51%;
+                @media screen and (max-width: 900PX) {
+                    top: 26%;
+                    width: 22%;
+                    height: 17%;
+                    left: 58%;
+
                 }
 
 
@@ -1590,6 +1654,7 @@ main {
                         left: 50%;
                         width: 50%;
                     }
+
                     @media screen and (max-width: 600px) {
                         width: 50%;
                         left: 50%;
@@ -1721,15 +1786,28 @@ main {
                     border-radius: 20px 0 0 20px;
                 }
             }
+        } 
+        
+        #contentPresentation{
+            padding: 150px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            .left{
+                width: 55%;
+                height: 100%;
+                padding: 150px 0;
+            }
 
-
+            .right{
+                width: 45%;
+                height: 100%;
+                padding: 150px 0;
+            }
 
         }
     }
-
-
-
 }
 
 
