@@ -244,46 +244,74 @@
         </section>
         <section class="section" id="contact">
             <div class="content" id="contentContact">
-                <h2 class="h2 h2Presentation">Contact</h2>
-                <form action="">
-                    <div class="zonneForm zonneForm1">
-                        <div class="name deuxinfo">
-                            <div class="champ lastname">
-                                <label class="label" for="lastname">Nom*</label>
-                                <input type="text" class="info" name="lastname" required>
+                <div class="padding">
+                    <h2 class="h2 h2Presentation">Contact</h2>
+                    <form action="">
+                        <div class="zonneForm zonneForm1">
+                            <div class="name deuxinfo">
+                                <div class="champ lastname">
+                                    <label class="label" for="lastname">Nom*</label>
+                                    <input type="text" class="info" name="lastname" required>
+                                </div>
+                                <div class="firstname champ">
+                                    <label for="firstname" class="label">Prénom*</label>
+                                    <input type="text" class="info" name="firstname" required>
+                                </div>
                             </div>
-                            <div class="firstname champ">
-                                <label for="firstname" class="label">Prénom*</label>
-                                <input type="text" class="info" name="firstname" required>
+                            <div class="contacts deuxinfo">
+                                <div class="champ email">
+                                    <label for="email" class="label">E-mail*</label>
+                                    <input type="email" class="info" name="email" required>
+                                </div>
+                                <div class="champ tel">
+                                    <label for="phone" class="label">Telephone*</label>
+                                    <input class="info" type="text" name="phone" required>
+                                </div>
+
+                            </div>
+
+                            <div class="champ object">
+                                <label for="object" class="label">Object*</label>
+                                <input type="text" class="info" name="object" required>
+                            </div>
+                            <div class="champ message">
+                                <label for="message" class="label">Message*</label>
+                                <textarea name="message" id="message" cols="30" rows="10" class="info"></textarea>
+                            </div>
+                            <div class="champ confidencionality">
+                                <input type="checkbox" class="info" name="confidencionality" require>
+                                <label for="confidencionality" class="label"> En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
+                            </div>
+                            <input class="champ submit" type="submit" value="envoyer"/>
+                        </div>
+                        <div class="zonneForm zonneForm2">
+                            <div class="contactRight">
+                                <div class="contentContactRight momMail">
+                                    <figure>
+                                        <img src="./Img/icons8-email-64 1.png" alt="">
+                                    </figure>
+                                    <p>sg.jiri@yahoo.fr</p>
+                                </div>
+                                <div class="contentContactRight monAdresse">
+                                <figure>
+                                        <img src="./Img/icons8-country-house-100 1.png" alt="">
+                                    </figure>
+                                    <p>01000, Bourg en Bresse</p>
+                                </div>
+                                <div class="contentContactRight mesReseaux">
+                                    <figure>
+                                        <img src="./Img/icons8-github-100.png" alt="">
+                                    </figure>
+                                    <figure>
+                                        <img src="./Img/icons8-linkedin-entouré-100.png" alt="">
+                                    </figure>
+                                </div>
                             </div>
                         </div>
-                        <div class="contacts deuxinfo">
-                            <div class="champ email">
-                                <label for="email" class="label">E-mail*</label>
-                                <input type="email" class="info" name="email" required>
-                            </div>
-                            <div class="champ tel">
-                                <label for="phone" class="label">Telephone*</label>
-                                <input class="info" type="text" name="phone" required>
-                            </div>
 
-                        </div>
-
-                        <div class="champ object">
-                            <label for="object" class="label">Object*</label>
-                            <input type="text" class="info" name="object" required>
-                        </div>
-                        <div class="champ message">
-                            <label for="message" class="label">Message*</label>
-                            <textarea name="message" id="message" cols="30" rows="10" class="info"></textarea>
-                        </div>
-                    </div>
-                    <div class="zonneForm zonneForm2">
-
-                    </div>
-
-
-                </form>
+                        
+                    </form>
+                </div>
             </div>
         </section>
 

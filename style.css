@@ -1856,61 +1856,263 @@ main #presentation #contentPresentation .right .foto2 {
   top: 53%;
   left: 4%;
 }
+main #contact {
+  height: 800px;
+}
+@media screen and (max-width: 1000px) {
+  main #contact {
+    height: 950px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main #contact {
+    height: 950px;
+  }
+}
 main #contact .content {
   padding: 0;
+  height: 100%;
+}
+main #contact .content .padding {
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
-main #contact .content h2 {
+@media screen and (max-height: 700px) {
+  main #contact .content .padding {
+    flex-direction: row;
+  }
+}
+main #contact .content .padding h2 {
   height: 5%;
   margin: 0 50px;
 }
-main #contact .content form {
+main #contact .content .padding form {
   background-color: #f08136;
-  width: 80%;
-  height: 89%;
+  width: 90%;
+  height: 90%;
   border-radius: 20px;
-}
-main #contact .content form .zonneForm {
-  height: 100%;
-}
-main #contact .content form .zonneForm1 {
-  width: 60%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-main #contact .content form .zonneForm1 .champ {
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form {
+    flex-direction: column;
+  }
+}
+main #contact .content .padding form .zonneForm {
+  height: 100%;
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm {
+    height: 50%;
+  }
+}
+main #contact .content .padding form .zonneForm1 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1300px) {
+  main #contact .content .padding form .zonneForm1 {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm1 {
+    width: 100%;
+  }
+}
+main #contact .content .padding form .zonneForm1 .champ {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 90%;
+  margin-top: 10px;
 }
-main #contact .content form .zonneForm1 .champ .label {
+main #contact .content .padding form .zonneForm1 .champ .label {
   color: #ffffff;
   font-size: 1.5em;
   width: 100%;
   margin-bottom: 5px;
 }
-main #contact .content form .zonneForm1 .champ .info {
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm1 .champ .label {
+    font-size: 1.2em;
+  }
+}
+main #contact .content .padding form .zonneForm1 .champ .info {
   width: 100%;
   font-size: 1.2em;
   color: #4b4b4b;
   border-radius: 5px;
 }
-main #contact .content form .zonneForm1 .deuxinfo {
+main #contact .content .padding form .zonneForm1 .confidencionality {
+  flex-direction: row;
+  position: relative;
+}
+main #contact .content .padding form .zonneForm1 .confidencionality .info {
+  position: absolute;
+  width: 7%;
+  height: 20px;
+  margin-right: 5px;
+  top: 1%;
+}
+@media screen and (max-width: 1368px) {
+  main #contact .content .padding form .zonneForm1 .confidencionality .info {
+    top: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm1 .confidencionality .info {
+    height: 15px;
+    top: 2px;
+  }
+}
+main #contact .content .padding form .zonneForm1 .confidencionality .label {
+  font-size: 1.2em;
+  text-indent: 7%;
+}
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm1 .confidencionality .label {
+    text-indent: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm1 .confidencionality .label {
+    font-size: 1rem;
+  }
+}
+main #contact .content .padding form .zonneForm1 .submit {
+  width: 20%;
+  border: none;
+  background-color: #3b9be1;
+  height: 50px;
+  align-self: start;
+  margin-left: 5%;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in;
+  margin-bottom: 20px;
+}
+main #contact .content .padding form .zonneForm1 .submit:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+main #contact .content .padding form .zonneForm1 .deuxinfo {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
 }
-main #contact .content form .zonneForm1 .deuxinfo .champ {
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm1 .deuxinfo {
+    flex-direction: column;
+  }
+}
+main #contact .content .padding form .zonneForm1 .deuxinfo .champ {
   width: 40%;
+}
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm1 .deuxinfo .champ {
+    width: 90%;
+  }
+}
+main #contact .content .padding form .zonneForm2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+@media screen and (max-width: 1300px) {
+  main #contact .content .padding form .zonneForm2 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm2 {
+    width: 100%;
+    height: 30%;
+  }
+}
+main #contact .content .padding form .zonneForm2 .contactRight {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm2 .contactRight {
+    margin-left: 5px;
+  }
+}
+main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight {
+  height: 33%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight {
+    height: 20%;
+  }
+}
+main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight figure {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight figure img {
+  height: 60%;
+}
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight figure img {
+    height: 50%;
+  }
+}
+main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight p {
+  margin-left: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight p {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm2 .contactRight .contentContactRight p {
+    font-size: 1.2rem;
+  }
+}
+main #contact .content .padding form .zonneForm2 .contactRight .mesReseaux {
+  justify-content: center;
+}
+main #contact .content .padding form .zonneForm2 .contactRight .mesReseaux figure {
+  margin: 0 10px;
 }
 
 @keyframes bus1 {
