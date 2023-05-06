@@ -288,23 +288,23 @@
                             <div class="contactRight">
                                 <div class="contentContactRight momMail">
                                     <figure>
-                                        <img src="./Img/icons8-email-64 1.png" alt="">
+                                        <img src="./Img/icons8-email-64 1.png" alt="iconmail">
                                     </figure>
                                     <p>sg.jiri@yahoo.fr</p>
                                 </div>
                                 <div class="contentContactRight monAdresse">
                                 <figure>
-                                        <img src="./Img/icons8-country-house-100 1.png" alt="">
+                                        <img src="./Img/icons8-country-house-100 1.png" alt="iconhause">
                                     </figure>
                                     <p>01000, Bourg en Bresse</p>
                                 </div>
                                 <div class="contentContactRight mesReseaux">
-                                    <figure>
-                                        <img src="./Img/icons8-github-100.png" alt="">
-                                    </figure>
-                                    <figure>
-                                        <img src="./Img/icons8-linkedin-entouré-100.png" alt="">
-                                    </figure>
+                                    <a>
+                                        <img src="./Img/icons8-github-100.png" alt="icongit">
+</a>
+                                    <a>
+                                        <img src="./Img/icons8-linkedin-entouré-100.png" alt="ikonlinkedin">
+</a>
                                 </div>
                             </div>
                         </div>
