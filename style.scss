@@ -24,6 +24,7 @@ $bluesection: #cbe9ff;
     margin: 0;
     padding: 0;
     font-family: 'Rubis-regular', serif;
+    transition: all 0.2s ease-in;
 }
 
 body {
@@ -2005,10 +2006,12 @@ main {
             height: 950px;
         }
 
-        @media screen and (max-width: 1000px) {
-            height: 950px;
+        @media screen and (max-width: 799px) {
+            height: 1060px;
         }
-
+        @media screen and (max-width: 566px) {
+            height: 1300px;
+        }
         .content {
             padding: 0;
             height: 100%;
@@ -2065,7 +2068,16 @@ main {
                         }
 
                         @media screen and (max-width: 900px) {
+                            margin-top: 30px;
                             width: 100%;
+                            height: 90%;
+                        }
+
+                        @media screen and (max-width: 799px) {
+                            height: 80%;
+                        }
+                        @media screen and (max-width: 566px) {
+                            height: 70%;
                         }
 
                         .champ {
@@ -2185,7 +2197,7 @@ main {
                         width: 30%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: flex-start;
                         height: 100%;
 
                         @media screen and (max-width: 1300px) {
@@ -2194,6 +2206,15 @@ main {
 
                         @media screen and (max-width: 900px) {
                             width: 100%;
+                            height: 10%;
+                            margin-bottom: 30px;
+                        }
+
+                        @media screen and (max-width: 799px) {
+                            height: 20%;
+                        }
+
+                        @media screen and (max-width: 566px) {
                             height: 30%;
                         }
 
@@ -2209,6 +2230,14 @@ main {
                                 margin-left: 5px;
                             }
 
+                            @media screen and (max-width: 900px) {
+                                height: 100%;
+                                flex-direction: row;
+                                margin-left: none;
+                                justify-content: space-around;
+                                flex-wrap: wrap;
+                            }
+
                             .contentContactRight {
                                 height: 33%;
                                 width: 90%;
@@ -2217,15 +2246,23 @@ main {
                                 align-items: center;
 
                                 @media screen and (max-width: 900px) {
-                                    height: 20%;
+                                    height: 100%;
+                                    width: 210px;
+                                }
+                                @media screen and (max-width: 799px) {         
+                                    height: 50%;          
+                                }
+                                @media screen and (max-width: 566px) {
+                                    height: 33%;
                                 }
 
-                                figure{
+                                figure {
                                     height: 100%;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    img{
+
+                                    img {
                                         height: 60%;
 
                                         @media screen and (max-width: 1000px) {
@@ -2234,11 +2271,11 @@ main {
                                     }
                                 }
 
-                                p{
+                                p {
                                     margin-left: 25px;
                                     display: flex;
                                     justify-content: flex-start;
-                                    align-items: center;        
+                                    align-items: center;
                                     height: 100%;
                                     color: #ffffff;
                                     font-size: 1.5rem;
@@ -2246,18 +2283,32 @@ main {
                                     @media screen and (max-width: 1000px) {
                                         margin-left: 10px;
                                     }
+
                                     @media screen and (max-width: 900px) {
                                         font-size: 1.2rem;
                                     }
-        
-        
+
+
                                 }
                             }
-                            .mesReseaux{
+
+                            .mesReseaux {
                                 justify-content: center;
-                                
-                                figure{
+
+                                a {
                                     margin: 0 10px;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    img {
+                                        height: 60%;
+
+                                        @media screen and (max-width: 1000px) {
+                                            height: 50%;
+                                        }
+                                    }
+
                                 }
                             }
 
