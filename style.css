@@ -1297,6 +1297,11 @@ main .section #contentProjects {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 400px) {
+  main .section #contentProjects {
+    margin: -250px 0;
+  }
+}
 main .section #contentProjects h2 {
   text-transform: uppercase;
   font-size: 3em;
@@ -1698,12 +1703,37 @@ main .section #contentProjects #lotusHover.active:hover + .lotus {
 main #presentation {
   height: 1500px;
 }
+@media screen and (max-width: 800px) {
+  main #presentation {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #presentation {
+    padding: 50px 0 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #presentation {
+    padding: 0 0 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #presentation {
+    margin: -200px 0 0;
+  }
+}
 main #presentation #contentPresentation {
   padding: 150px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+@media screen and (max-width: 500px) {
+  main #presentation #contentPresentation {
+    padding: 0;
+  }
 }
 main #presentation #contentPresentation .left {
   width: 55%;
@@ -1732,6 +1762,11 @@ main #presentation #contentPresentation .left #aquariom {
   align-items: center;
   justify-content: center;
   height: 20%;
+}
+@media screen and (max-width: 800px) {
+  main #presentation #contentPresentation .left #aquariom {
+    height: 40%;
+  }
 }
 main #presentation #contentPresentation .left #aquariom .boule {
   height: 70px;
@@ -1779,6 +1814,11 @@ main #presentation #contentPresentation .left .CV {
   height: 10%;
   margin-top: 15%;
 }
+@media screen and (max-width: 800px) {
+  main #presentation #contentPresentation .left .CV {
+    height: 20%;
+  }
+}
 main #presentation #contentPresentation .left .CV .btn {
   cursor: pointer;
   width: 200px;
@@ -1802,17 +1842,37 @@ main #presentation #contentPresentation .left .text {
   justify-content: center;
   height: 55%;
 }
+@media screen and (max-width: 800px) {
+  main #presentation #contentPresentation .left .text {
+    height: 40%;
+  }
+}
 main #presentation #contentPresentation .left .text .h2Presentation {
   height: 6%;
 }
+@media screen and (max-width: 800px) {
+  main #presentation #contentPresentation .left .text .h2Presentation {
+    height: 12%;
+  }
+}
 @media screen and (max-width: 500px) {
   main #presentation #contentPresentation .left .text .h2Presentation {
-    height: 4%;
+    height: 9%;
   }
 }
 main #presentation #contentPresentation .left .text p {
   font-size: 1.5em;
   color: #4b4b4b;
+}
+@media screen and (max-width: 1050px) {
+  main #presentation #contentPresentation .left .text p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 950px) {
+  main #presentation #contentPresentation .left .text p {
+    font-size: 1.3em;
+  }
 }
 @media screen and (max-width: 800px) {
   main #presentation #contentPresentation .left .text p {
@@ -1867,12 +1927,23 @@ main #contact {
 }
 @media screen and (max-width: 799px) {
   main #contact {
-    height: 1060px;
+    height: 1120px;
   }
 }
 @media screen and (max-width: 566px) {
   main #contact {
-    height: 1300px;
+    height: 1100px;
+    padding: 200px 0 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main #contact {
+    padding: 350px 0 100px;
+  }
+}
+@media screen and (max-width: 350px) {
+  main #contact {
+    padding: 550px 0 100px;
   }
 }
 main #contact .content {
@@ -1896,6 +1967,22 @@ main #contact .content .padding h2 {
   height: 5%;
   margin: 0 50px;
 }
+@media screen and (max-width: 799px) {
+  main #contact .content .padding h2 {
+    height: 4%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #contact .content .padding h2 {
+    height: 3%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 341px) {
+  main #contact .content .padding h2 {
+    width: 125%;
+  }
+}
 main #contact .content .padding form {
   background-color: #f08136;
   width: 90%;
@@ -1908,6 +1995,16 @@ main #contact .content .padding form {
 @media screen and (max-width: 900px) {
   main #contact .content .padding form {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  main #contact .content .padding form {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 341px) {
+  main #contact .content .padding form {
+    width: 130%;
   }
 }
 main #contact .content .padding form .zonneForm {
@@ -1944,7 +2041,7 @@ main #contact .content .padding form .zonneForm1 {
 }
 @media screen and (max-width: 566px) {
   main #contact .content .padding form .zonneForm1 {
-    height: 70%;
+    height: 85%;
   }
 }
 main #contact .content .padding form .zonneForm1 .champ {
@@ -1966,11 +2063,21 @@ main #contact .content .padding form .zonneForm1 .champ .label {
     font-size: 1.2em;
   }
 }
+@media screen and (max-width: 374px) {
+  main #contact .content .padding form .zonneForm1 .champ .label {
+    font-size: 1em;
+  }
+}
 main #contact .content .padding form .zonneForm1 .champ .info {
   width: 100%;
   font-size: 1.2em;
   color: #4b4b4b;
   border-radius: 5px;
+}
+@media screen and (max-width: 374px) {
+  main #contact .content .padding form .zonneForm1 .champ .info {
+    font-size: 1em;
+  }
 }
 main #contact .content .padding form .zonneForm1 .confidencionality {
   flex-direction: row;
@@ -2009,7 +2116,7 @@ main #contact .content .padding form .zonneForm1 .confidencionality .label {
   }
 }
 main #contact .content .padding form .zonneForm1 .submit {
-  width: 20%;
+  width: 200px;
   border: none;
   background-color: #3b9be1;
   height: 50px;
@@ -2026,6 +2133,11 @@ main #contact .content .padding form .zonneForm1 .submit {
   align-items: center;
   transition: all 0.5s ease-in;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  main #contact .content .padding form .zonneForm1 .submit {
+    align-self: center;
+  }
 }
 main #contact .content .padding form .zonneForm1 .submit:hover {
   opacity: 0.8;
@@ -2076,7 +2188,7 @@ main #contact .content .padding form .zonneForm2 {
 }
 @media screen and (max-width: 566px) {
   main #contact .content .padding form .zonneForm2 {
-    height: 30%;
+    height: 15%;
   }
 }
 main #contact .content .padding form .zonneForm2 .contactRight {
@@ -2196,8 +2308,4 @@ main #contact .content .padding form .zonneForm2 .contactRight .mesReseaux a img
     left: 60%;
     transform: rotateY(360deg);
   }
-}
-footer {
-  background-color: #ffe23c;
-  height: 200px;
 }/*# sourceMappingURL=style.css.map */

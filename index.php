@@ -317,9 +317,6 @@
 
 
     </main>
-    <footer>
-
-    </footer>
     <script src="./main.js"></script>
     <!-- <script src="./sc.js"></script> -->
 </body>
