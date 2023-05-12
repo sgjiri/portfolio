@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>PortfolioJF</title>
 </head>
 
 <body>
@@ -19,10 +19,10 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Mes réalisations</a></li>
-                <li><a href="">Qui suis-je</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#fullscreen">Accueil</a></li>
+                <li><a href="#lienProjects" data-scroll="smooth">Mes réalisations</a></li>
+                <li><a href="#contentPresentation">Qui suis-je</a></li>
+                <li><a href="#contentContact">Contact</a></li>
             </ul>
         </nav>
 
@@ -115,7 +115,9 @@
             </div>
         </section>
         <section class="section" id="projects">
+        
             <div class="content" id="contentProjects">
+                
 
 
                 <h2 class="h2" id="h2Projects">Mes réalisations</h2>
@@ -124,8 +126,8 @@
                     <span id="X">X</span>
                 </button>
 
-
-                <a href="#" class="action cardBiblook" id="biblookHover"></a>
+                <div id="lienProjects"></div>
+                <a href="./detailProject/biblook.php" class="action cardBiblook" id="biblookHover"></a>
                 <div class="card cardBiblook">
                     <div class="textCard" id="textBiblook">
                         <h3>Biblook</h3>
@@ -170,14 +172,14 @@
 
 
 
-
+                
             </div>
         </section>
         <section class="section" id="presentation">
             <div class="content" id="contentPresentation">
                 <div class="left">
                     <div id="aquariom">
-                        <h2 class="h2 h2Presentation">Mes compétences:</h2>
+                        <h2 class="h2 h2Presentation" id="h2Presentation">Mes compétences:</h2>
                         <div class="contentPresentation">
                             <figure id="jsCompetences" class="boule">
                                 <img src="./Img/JS.png" alt="JS">
@@ -206,7 +208,7 @@
                         <button class="btn"> Télécharger mon CV</button>
                     </div>
                     <div class="text">
-                        <h2 class="h2 h2Presentation">Qui suis-je</h2>
+                        <h2 class="h2 h2Presentation">Qui est Jirka</h2>
                         <div class="contentPresentation">
                             <p>
                                 Je suis Jirka Fischer, un développeur web passionné par la technologie et la création de sites web.
@@ -243,7 +245,9 @@
             </div>
         </section>
         <section class="section" id="contact">
+            
             <div class="content" id="contentContact">
+            <div id="lien contact"></div>
                 <div class="padding">
                     <h2 class="h2 h2Presentation">Contact</h2>
                     <form action="">
