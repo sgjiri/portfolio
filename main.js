@@ -94,6 +94,26 @@ zoom.addEventListener('click', function () {
 })
 
 
+// sélectionnez tous les liens de navigation
+const navLinks = document.querySelectorAll('nav a');
+
+// ajoutez un gestionnaire d'événements de clic à chaque lien
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    // empêche le comportement de lien par défaut
+    event.preventDefault();
+
+    // récupère la cible du lien (l'ID de la section de destination)
+    const targetId = link.getAttribute('href');
+
+    // fait défiler la page vers la section de destination de manière progressive
+    document.querySelector(targetId).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
 
 
 
