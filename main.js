@@ -114,6 +114,32 @@ navLinks.forEach(link => {
 });
 
 
+// const burger = document.querySelectorAll('.hamburger-lines');
+// let line = document.getElementsByClassName('line');
+// burger.addEventListener('click', function () {
+//   line.classList.toggle('active');
+// })
+
+
+
+
+
+// Realisatition un menu sticky qui change d'oppacté lorsque l'utilisateur fait défiler la page
+
+
+// Sélectionnez le menu sticky
+var menu = document.querySelector('header');
+
+// Ajoutez une classe lorsque l'utilisateur fait défiler la page
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 0) {
+    menu.classList.add('scrolled');
+  } else {
+    menu.classList.remove('scrolled');
+  }
+});
+
+
 
 
 
