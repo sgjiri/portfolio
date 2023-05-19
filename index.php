@@ -25,11 +25,11 @@
                 <li><a href="#contentContact">Contact</a></li>
             </ul>
         </nav>
-
-        <figure id="burger">
-            <img src="./Img/burger-bar.png" alt="menu burger">
-
-        </figure>
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
 
     </header>
     <main>
@@ -115,9 +115,9 @@
             </div>
         </section>
         <section class="section" id="projects">
-        
+
             <div class="content" id="contentProjects">
-                
+
 
 
                 <h2 class="h2" id="h2Projects">Mes réalisations</h2>
@@ -172,7 +172,7 @@
 
 
 
-                
+
             </div>
         </section>
         <section class="section" id="presentation">
@@ -245,9 +245,9 @@
             </div>
         </section>
         <section class="section" id="contact">
-            
+
             <div class="content" id="contentContact">
-            <div id="lien contact"></div>
+                <div id="lien contact"></div>
                 <div class="padding">
                     <h2 class="h2 h2Presentation">Contact</h2>
                     <form action="">
@@ -286,7 +286,7 @@
                                 <input type="checkbox" class="info" name="confidencionality" require>
                                 <label for="confidencionality" class="label"> En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
                             </div>
-                            <input class="champ submit" type="submit" value="envoyer"/>
+                            <input class="champ submit" type="submit" value="envoyer" />
                         </div>
                         <div class="zonneForm zonneForm2">
                             <div class="contactRight">
@@ -297,7 +297,7 @@
                                     <p>sg.jiri@yahoo.fr</p>
                                 </div>
                                 <div class="contentContactRight monAdresse">
-                                <figure>
+                                    <figure>
                                         <img src="./Img/icons8-country-house-100 1.png" alt="iconhause">
                                     </figure>
                                     <p>01000, Bourg en Bresse</p>
@@ -305,15 +305,15 @@
                                 <div class="contentContactRight mesReseaux">
                                     <a>
                                         <img src="./Img/icons8-github-100.png" alt="icongit">
-</a>
+                                    </a>
                                     <a>
                                         <img src="./Img/icons8-linkedin-entouré-100.png" alt="ikonlinkedin">
-</a>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        
+
                     </form>
                 </div>
             </div>
