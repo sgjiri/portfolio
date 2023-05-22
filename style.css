@@ -61,7 +61,7 @@ header figure img {
 header nav {
   height: 100%;
   margin-right: 50px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 700px) {
   header nav {
@@ -78,11 +78,6 @@ header nav ul {
 header nav ul li {
   padding: 0 10px;
   height: 100%;
-}
-@media screen and (max-width: 700px) {
-  header nav ul li {
-    display: none;
-  }
 }
 header nav ul li a {
   text-align: center;
@@ -104,17 +99,34 @@ header nav ul li a:hover {
     font-size: 1em;
   }
 }
+@media screen and (max-width: 700px) {
+  header nav {
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+  }
+  header nav.active {
+    top: 70px;
+    transform: translateX(0%);
+    background-color: #e4f3ff;
+    z-index: 100;
+  }
+  header nav.active ul {
+    flex-direction: column;
+  }
+}
 header .hamburger-lines {
   display: none;
-  height: 30%;
-  width: 32px;
+  height: 40%;
+  width: 34px;
   z-index: 2;
-  margin-right: 30px;
+  position: absolute;
+  right: 30px;
   cursor: pointer;
 }
 header .hamburger-lines .line {
   display: block;
-  height: 4px;
+  height: 6px;
   width: 100%;
   border-radius: 10px;
   background: #f08136;
@@ -124,11 +136,6 @@ header .hamburger-lines .line {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
-}
-@media screen and (max-width: 400px) {
-  header .hamburger-lines {
-    margin-right: 20px;
   }
 }
 header .hamburger-lines .line1 {
@@ -150,26 +157,6 @@ header .hamburger-lines .line3 {
 }
 header .hamburger-lines .line3.active {
   transform: rotate(-45deg);
-}
-header #burger {
-  overflow: hidden;
-  display: none;
-  margin-right: 30px;
-  height: 45%;
-}
-header #burger img {
-  height: 100%;
-  text-align: center;
-}
-@media screen and (max-width: 700px) {
-  header #burger {
-    display: block;
-  }
-}
-@media screen and (max-width: 400px) {
-  header #burger {
-    margin-right: 20px;
-  }
 }
 header.scrolled {
   opacity: 0.1;

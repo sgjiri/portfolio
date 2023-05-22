@@ -74,7 +74,7 @@ header {
     nav {
         height: 100%;
         margin-right: 50px;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s ease-in-out;
 
         @media screen and (max-width: 700px) {
 
@@ -93,10 +93,7 @@ header {
                 padding: 0 10px;
                 height: 100%;
 
-                @media screen and (max-width: 700px) {
-                    display: none;
 
-                }
 
                 a {
                     text-align: center;
@@ -123,31 +120,52 @@ header {
             }
 
         }
+
+        @media screen and (max-width: 700px) {
+            transform: translateX(-100%);
+            position: absolute;
+            top: 0;
+
+
+
+            &.active {
+                top: 70px;
+                transform: translateX(0%);
+                background-color: $blueSky;
+                z-index: 100;
+                ul {
+                    flex-direction: column;
+                }
+
+
+            }
+
+        }
+
+
     }
 
     .hamburger-lines {
         display: none;
-        height: 30%;
-        width: 32px;
+        height: 40%;
+        width: 34px;
         z-index: 2;
-        margin-right: 30px;
-        cursor: pointer;      
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+
         .line {
             display: block;
-            height: 4px;
+            height: 6px;
             width: 100%;
             border-radius: 10px;
             background: $orange;
-          }
+        }
 
-          @media screen and (max-width: 700px) {
+        @media screen and (max-width: 700px) {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-        }
-
-        @media screen and (max-width: 400px) {
-            margin-right: 20px;
         }
 
 
@@ -155,49 +173,28 @@ header {
             transform-origin: 0% 0%;
             transition: transform 0.4s ease-in-out;
 
-            &.active{
+            &.active {
                 transform: rotate(45deg);
             }
         }
 
         .line2 {
             transition: transform 0.2s ease-in-out;
-            &.active{
+
+            &.active {
                 transform: scaleY(0);
             }
-          }
+        }
 
-          .line3 {
+        .line3 {
             transform-origin: 0% 100%;
             transition: transform 0.4s ease-in-out;
-            &.active{
+
+            &.active {
                 transform: rotate(-45deg);
             }
-          }
-
-      }
-
-    
-
-    #burger {
-        overflow: hidden;
-        display: none;
-        margin-right: 30px;
-        height: 45%;
-
-
-        img {
-            height: 100%;
-            text-align: center;
         }
 
-        @media screen and (max-width: 700px) {
-            display: block;
-        }
-
-        @media screen and (max-width: 400px) {
-            margin-right: 20px;
-        }
     }
 
     &.scrolled {
