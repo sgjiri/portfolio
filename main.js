@@ -116,11 +116,11 @@ navLinks.forEach(link => {
 
 const burger = document.querySelector('.hamburger-lines');
 let line = document.getElementsByClassName('line');
-let nav = document.querySelector('nav')
+let navMobil = document.getElementById('navMobil')
 burger.addEventListener('click', function () {
   for (let i = 0; i < line.length; i++) {
   line[i].classList.toggle('active');
-  nav.classList.toggle('active');
+  navMobil.classList.toggle('active');
 
 }
 })

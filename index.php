@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="#fullscreen">Accueil</a></li>
-                <li><a href="#lienProjects" data-scroll="smooth">Mes réalisations</a></li>
+                <li><a href="#lienProjects">Mes réalisations</a></li>
                 <li><a href="#contentPresentation">Qui suis-je</a></li>
                 <li><a href="#contentContact">Contact</a></li>
             </ul>
@@ -30,6 +30,14 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
         </div>
+        <nav id="navMobil">
+            <ul>
+                <li><a href="#fullscreen">Accueil</a></li>
+                <li><a href="#lienProjects">Mes réalisations</a></li>
+                <li><a href="#contentPresentation">Qui suis-je</a></li>
+                <li><a href="#contentContact">Contact</a></li>
+            </ul>
+        </nav>
 
     </header>
     <main>

@@ -105,15 +105,20 @@ header nav ul li a:hover {
     position: absolute;
     top: 0;
   }
-  header nav.active {
-    top: 70px;
-    transform: translateX(0%);
-    background-color: #e4f3ff;
-    z-index: 100;
-  }
-  header nav.active ul {
-    flex-direction: column;
-  }
+}
+header #navMobil {
+  transform: translateX(-100%);
+  position: absolute;
+  top: 80px;
+  height: 320px;
+}
+header #navMobil ul {
+  flex-direction: column;
+}
+header #navMobil.active {
+  transform: translateX(0%);
+  background-color: #e4f3ff;
+  z-index: 100;
 }
 header .hamburger-lines {
   display: none;
