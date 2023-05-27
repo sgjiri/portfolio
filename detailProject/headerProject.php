@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DetailProject</title>
+    <link rel="stylesheet" href="./header.css">
 </head>
 <body>
 <header>
@@ -13,14 +14,11 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="">Accueil</a></li>
+                <li><a href="../index.php">Accueil</a></li>
+                <li><a href="">Autre projects</a></li>
             </ul>
         </nav>
 
-        <figure id="burger">
-            <img src="../Img/burger-bar.png" alt="menu burger">
-
-        </figure>
 
     </header>
     

@@ -311,10 +311,10 @@
                                     <p>01000, Bourg en Bresse</p>
                                 </div>
                                 <div class="contentContactRight mesReseaux">
-                                    <a>
+                                    <a href="https://github.com/sgjiri" target="_blank">
                                         <img src="./Img/icons8-github-100.png" alt="icongit">
                                     </a>
-                                    <a>
+                                    <a href="https://www.linkedin.com/in/jiri-fischer-453529101/" target="_blank">
                                         <img src="./Img/icons8-linkedin-entouré-100.png" alt="ikonlinkedin">
                                     </a>
                                 </div>

@@ -2165,9 +2165,9 @@ main {
                 align-items: center;
                 height: 100%;
 
-                @media screen and (max-height: 700px) {
-                    flex-direction: row;
-                }
+                // @media screen and (max-height: 700px) {
+                //     flex-direction: row;
+                // }
 
 
                 h2 {

@@ -2017,11 +2017,6 @@ main #contact .content .padding {
   align-items: center;
   height: 100%;
 }
-@media screen and (max-height: 700px) {
-  main #contact .content .padding {
-    flex-direction: row;
-  }
-}
 main #contact .content .padding h2 {
   height: 5%;
   margin: 0 50px;
