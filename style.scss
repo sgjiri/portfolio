@@ -128,18 +128,26 @@ header {
 
 
 
-            &.active {
-                top: 70px;
-                transform: translateX(0%);
-                background-color: $blueSky;
-                z-index: 100;
-                ul {
-                    flex-direction: column;
-                }
+
+        }
 
 
-            }
+    }
 
+    #navMobil {
+        transform: translateX(-100%);
+        position: absolute;
+        top: 80px;
+        height: 320px;
+
+        ul {
+            flex-direction: column;
+        }
+
+        &.active {
+            transform: translateX(0%);
+            background-color: $blueSky;
+            z-index: 100;
         }
 
 
@@ -2157,9 +2165,9 @@ main {
                 align-items: center;
                 height: 100%;
 
-                @media screen and (max-height: 700px) {
-                    flex-direction: row;
-                }
+                // @media screen and (max-height: 700px) {
+                //     flex-direction: row;
+                // }
 
 
                 h2 {

@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="#fullscreen">Accueil</a></li>
-                <li><a href="#lienProjects" data-scroll="smooth">Mes réalisations</a></li>
+                <li><a href="#lienProjects">Mes réalisations</a></li>
                 <li><a href="#contentPresentation">Qui suis-je</a></li>
                 <li><a href="#contentContact">Contact</a></li>
             </ul>
@@ -30,6 +30,14 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
         </div>
+        <nav id="navMobil">
+            <ul>
+                <li><a href="#fullscreen">Accueil</a></li>
+                <li><a href="#lienProjects">Mes réalisations</a></li>
+                <li><a href="#contentPresentation">Qui suis-je</a></li>
+                <li><a href="#contentContact">Contact</a></li>
+            </ul>
+        </nav>
 
     </header>
     <main>
@@ -303,10 +311,10 @@
                                     <p>01000, Bourg en Bresse</p>
                                 </div>
                                 <div class="contentContactRight mesReseaux">
-                                    <a>
+                                    <a href="https://github.com/sgjiri" target="_blank">
                                         <img src="./Img/icons8-github-100.png" alt="icongit">
                                     </a>
-                                    <a>
+                                    <a href="https://www.linkedin.com/in/jiri-fischer-453529101/" target="_blank">
                                         <img src="./Img/icons8-linkedin-entouré-100.png" alt="ikonlinkedin">
                                     </a>
                                 </div>
