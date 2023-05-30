@@ -1,3 +1,7 @@
+<?php
+include_once './detailProject/connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,7 +139,13 @@
                 </button>
 
                 <div id="lienProjects"></div>
-                <a href="./detailProject/biblook.php" class="action cardBiblook" id="biblookHover"></a>
+                <?php
+
+                $req = $db->prepare('SELECT `id`,`title`,`content_description`,`content_techno` FROM `project`WHERE `title` = "biblook"');
+                $req->execute();
+                $reqProject = $req->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <a href="./detailProject/project.php?id=<?= $reqProject['id']?>" class="action cardBiblook" id="biblookHover"></a>
                 <div class="card cardBiblook">
                     <div class="textCard" id="textBiblook">
                         <h3>Biblook</h3>
