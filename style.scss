@@ -2555,7 +2555,37 @@ main {
         }
         video{
             margin: 50px 0;
-            border-radius: 20px;
+            border-radius: 50px;
+        }
+        #langages{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            img{
+                margin: 0 20px;
+                height: 100px;
+                width: 100px;
+            }
+
+
+        }
+        #liens {
+            margin: 20px 0 100px;
+        
+            a {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: $orange;
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5em;
+                transition:all 0.2s ease-in;
+        
+                &:hover {
+                    opacity: 0.9;
+                    padding: 15px;
+                }
+            }
         }
 
     }

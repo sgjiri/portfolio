@@ -2387,5 +2387,31 @@ main #contact .content .padding form .zonneForm2 .contactRight .mesReseaux a img
 }
 .mainProject section video {
   margin: 50px 0;
-  border-radius: 20px;
+  border-radius: 50px;
+}
+.mainProject section #langages {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.mainProject section #langages img {
+  margin: 0 20px;
+  height: 100px;
+  width: 100px;
+}
+.mainProject section #liens {
+  margin: 20px 0 100px;
+}
+.mainProject section #liens a {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f08136;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in;
+}
+.mainProject section #liens a:hover {
+  opacity: 0.9;
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */

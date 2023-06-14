@@ -140,12 +140,11 @@ include_once './detailProject/connection.php';
 
                 <div id="lienProjects"></div>
                 <?php
-
-                $req = $db->prepare('SELECT `id`,`title`,`content_description`,`content_techno` FROM `project`WHERE `title` = "biblook"');
+                $req = $db->prepare('SELECT `id`,`title`,`content_description`,`Video` FROM `project`WHERE `title` = "biblook"');
                 $req->execute();
-                $reqProject = $req->fetch(PDO::FETCH_ASSOC);
+                $reqBiblook = $req->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <a href="./detailProject/project.php?id=<?= $reqProject['id']?>" class="action cardBiblook" id="biblookHover"></a>
+                <a href="./detailProject/project.php?id=<?= $reqBiblook['id']?>" class="action cardBiblook" id="biblookHover"></a>
                 <div class="card cardBiblook">
                     <div class="textCard" id="textBiblook">
                         <h3>Biblook</h3>
@@ -154,7 +153,12 @@ include_once './detailProject/connection.php';
                     <div class="divGrid biblook"></div>
                 </div>
 
-                <a href="#" class="action cardVache" id="vacheHover"></a>
+                <?php
+                $reqVache = $db->prepare('SELECT `id`,`title`,`content_description` FROM `project` WHERE `title` = "La Vache qui cuit"');
+                $reqVache->execute();
+                $Vache = $reqVache->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <a href="./detailProject/project.php?id=<?= $Vache['id']?>" class="action cardVache" id="vacheHover"></a>
                 <div class="card cardVache">
                     <div class="textCard" id="textVache">
                         <h3>La vache qui cuit</h3>
@@ -164,8 +168,12 @@ include_once './detailProject/connection.php';
                 </div>
 
 
-
-                <a href="#" class="action cardLotus" id="lotusHover"></a>
+                <?php
+                $reqSalon = $db->prepare('SELECT `id`,`title`,`content_description` FROM `project` WHERE `title` = "Salon Lotus"');
+                $reqSalon->execute();
+                $reqLotus = $reqSalon->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <a href="./detailProject/project.php?id=<?= $reqLotus['id']?>" class="action cardLotus" id="lotusHover"></a>
                 <div class="card cardLotus">
                     <div class="textCard" id="textLotus">
                         <h3>Lotus</h3>
@@ -176,9 +184,12 @@ include_once './detailProject/connection.php';
                 </div>
 
 
-
-
-                <a href="#" class="action cardJadoo" id="jadooHover"></a>
+                <?php
+                $reqJadoo = $db->prepare('SELECT `id`,`title`,`content_description` FROM `project` WHERE `title` = "Jadoo"');
+                $reqJadoo->execute();
+                $Jadoo = $reqJadoo->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <a href="./detailProject/project.php?id=<?= $Jadoo['id']?>" class="action cardJadoo" id="jadooHover"></a>
                 <div class="card cardJadoo">
                     <div class="textCard" id="textJadoo">
                         <h3>Jadoo</h3>
@@ -187,6 +198,8 @@ include_once './detailProject/connection.php';
                     </div>
                     <div class="divGrid jadoo"></div>
                 </div>
+
+                
 
 
 
