@@ -1,6 +1,5 @@
 <?php
 include_once './connection.php';
-include_once './headerProject.php'
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +12,50 @@ include_once './headerProject.php'
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+<header class="headerProject">
+
+        <figure>
+            <img src="../Img/logo2.png" alt="logo">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="../index.php">Accueil</a></li>
+                <li id="showSoumenu">
+                    <div>
+                    <p>Autre projects</p>
+                    </div>
+                <ul id="sousmenu">
+                <?php
+                    $id = $_GET['id'];
+                    $reqNav = $db->prepare(
+                        'SELECT `id`, `title` FROM `project` WHERE `id` <> :id');
+
+                    $reqNav->bindParam('id', $id, PDO::PARAM_INT);
+                    $reqNav->execute();
+
+                    while ($Nav = $reqNav->fetch(PDO::FETCH_ASSOC)) {
+
+                    ?>
+                            <li><a href="../detailProject/project.php?id=<?= $Nav['id']?>"><?= $Nav['title'] ?>
+                            </a></li>
+                    <?php
+                    }
+                    ?>
+
+
+
+
+                   
+
+                                                    
+                </ul>
+            </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
 
 <body>
     <main class="mainProject">
@@ -77,6 +120,7 @@ WHERE `project_id` = :id'
 
 
         </section>
+        
 
 
 

@@ -6,7 +6,15 @@
         <nav>
             <ul>
                 <li><a href="../index.php">Accueil</a></li>
-                <li><a href="">Autre projects</a></li>
+                <li><p>Autre projects</p>
+                <ul>
+                <li><a href="#">Lévres</a></li>
+                            <li><a href="#">Yeux</a></li>
+                            <li><a href="#">Sourcils</a></li>
+                            <li><a href="#">Soin du visage</a></li>
+                            <li><a href="#">Soin du visage</a><li>                         
+                </ul>
+            </li>
             </ul>
         </nav>
 
