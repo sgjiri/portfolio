@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DetailProject</title>
-    <link rel="stylesheet" href="./header.css">
-</head>
-<body>
-<header>
+
+<header class="headerProject">
         <figure>
             <img src="../Img/logo2.png" alt="logo">
         </figure>
         <nav>
             <ul>
                 <li><a href="../index.php">Accueil</a></li>
-                <li><a href="">Autre projects</a></li>
+                <li><p>Autre projects</p>
+                <ul>
+                <li><a href="#">Lévres</a></li>
+                            <li><a href="#">Yeux</a></li>
+                            <li><a href="#">Sourcils</a></li>
+                            <li><a href="#">Soin du visage</a></li>
+                            <li><a href="#">Soin du visage</a><li>                         
+                </ul>
+            </li>
             </ul>
         </nav>
 
 
     </header>
     
-</body>
-</html>

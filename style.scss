@@ -40,6 +40,7 @@ header {
     align-items: center;
     z-index: 1000;
     transition: 0.5s;
+    background-color: $blueSky;
 
     figure {
         height: 60%;
@@ -76,6 +77,7 @@ header {
         margin-right: 50px;
         transition: all 0.2s ease-in-out;
 
+
         @media screen and (max-width: 700px) {
 
             margin-right: 30px;
@@ -92,10 +94,41 @@ header {
             li {
                 padding: 0 10px;
                 height: 100%;
+                z-index: 100;
+                background-color: $blueSky;
+
+                #sousmenu {
+                    display: flex;
+                    flex-direction: column;
+                    transition: all 1s ease-in-out;
+                    transform: translateY(-1000%);
+                    z-index: 50;
+                    position: relative;
+
+
+                    li {
+                        width: 100%;
+                        background-color: $blueSky;
+                        z-index: 50;
+                        position: relative;
+
+                        a {
+                            position: relative;
+                            z-index: 50;
+                        }
+                    }
+                }
+
+                div {
+                    position: relative;
+                    z-index: 100;
+                    background-color: $blueSky;
+                }
 
 
 
-                a {
+                a,
+                p {
                     text-align: center;
                     padding: 0 10px;
                     height: 100%;
@@ -105,6 +138,11 @@ header {
                     text-decoration: none;
                     color: $font-color-grey;
                     width: 100%;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 100;
+                    background-color: $blueSky;
+
 
                     &:hover {
                         background-color: #ffffff;
@@ -114,9 +152,12 @@ header {
                     @media screen and (max-width: 900px) {
                         font-size: 1em;
                     }
-
-
                 }
+
+            }
+
+            #showSoumenu:hover #sousmenu {
+                transform: translateY(0);
             }
 
         }
@@ -207,6 +248,7 @@ header {
 
     &.scrolled {
         opacity: 0.1;
+        background-color: none;
 
         &:hover {
             opacity: 1;
@@ -2527,5 +2569,95 @@ main {
     }
 
 
+
+}
+
+.mainProject {
+    section {
+        max-width: 1500px;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            margin-top: 50px;
+            color: $orange;
+            font-size: 4em;
+            text-transform: uppercase;
+
+        }
+
+        p {
+            margin-top: 20px;
+            color: $font-color-grey;
+            font-size: 1.5em;
+            padding: 0 70px;
+
+            @media screen and (max-width: 1050px){
+                font-size: 1.4em;
+            }
+            @media screen and (max-width: 950px){
+                font-size: 1.3em;
+            }
+            @media screen and (max-width: 700px){
+                padding: 0 40px;
+            }
+
+            
+        }
+
+        h2 {
+            color: $orange;
+            font-size: 3em;
+            text-transform: uppercase;
+            margin-top: 100px;
+        }
+
+        video {
+            margin: 50px 0;
+            border-radius: 50px;
+            width: 90%;
+        }
+
+        #langages {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 80px;
+
+            img {
+                margin: 20px;
+                height: 100px;
+                width: 100px;
+
+                @media screen and (max-width: 700px){
+                    height: 70px;
+                width: 70px;
+                }
+    
+            }
+
+
+        }
+
+        #liens {
+            margin: 20px 0 100px;
+
+            a {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: $orange;
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5em;
+                transition: all 0.2s ease-in;
+
+                &:hover {
+                    opacity: 0.9;
+                    padding: 15px;
+                }
+            }
+        }
+
+    }
 
 }

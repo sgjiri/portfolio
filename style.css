@@ -26,6 +26,7 @@ header {
   align-items: center;
   z-index: 1000;
   transition: 0.5s;
+  background-color: #e4f3ff;
 }
 header figure {
   height: 60%;
@@ -78,8 +79,34 @@ header nav ul {
 header nav ul li {
   padding: 0 10px;
   height: 100%;
+  z-index: 100;
+  background-color: #e4f3ff;
 }
-header nav ul li a {
+header nav ul li #sousmenu {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+  transform: translateY(-1000%);
+  z-index: 50;
+  position: relative;
+}
+header nav ul li #sousmenu li {
+  width: 100%;
+  background-color: #e4f3ff;
+  z-index: 50;
+  position: relative;
+}
+header nav ul li #sousmenu li a {
+  position: relative;
+  z-index: 50;
+}
+header nav ul li div {
+  position: relative;
+  z-index: 100;
+  background-color: #e4f3ff;
+}
+header nav ul li a,
+header nav ul li p {
   text-align: center;
   padding: 0 10px;
   height: 100%;
@@ -89,15 +116,24 @@ header nav ul li a {
   text-decoration: none;
   color: #4b4b4b;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+  background-color: #e4f3ff;
 }
-header nav ul li a:hover {
+header nav ul li a:hover,
+header nav ul li p:hover {
   background-color: #ffffff;
   opacity: 70%;
 }
 @media screen and (max-width: 900px) {
-  header nav ul li a {
+  header nav ul li a,
+  header nav ul li p {
     font-size: 1em;
   }
+}
+header nav ul #showSoumenu:hover #sousmenu {
+  transform: translateY(0);
 }
 @media screen and (max-width: 700px) {
   header nav {
@@ -165,6 +201,7 @@ header .hamburger-lines .line3.active {
 }
 header.scrolled {
   opacity: 0.1;
+  background-color: none;
 }
 header.scrolled:hover {
   opacity: 1;
@@ -2362,4 +2399,80 @@ main #contact .content .padding form .zonneForm2 .contactRight .mesReseaux a img
     left: 60%;
     transform: rotateY(360deg);
   }
+}
+.mainProject section {
+  max-width: 1500px;
+  margin: auto;
+  text-align: center;
+}
+.mainProject section h1 {
+  margin-top: 50px;
+  color: #f08136;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.mainProject section p {
+  margin-top: 20px;
+  color: #4b4b4b;
+  font-size: 1.5em;
+  padding: 0 70px;
+}
+@media screen and (max-width: 1050px) {
+  .mainProject section p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 950px) {
+  .mainProject section p {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainProject section p {
+    padding: 0 40px;
+  }
+}
+.mainProject section h2 {
+  color: #f08136;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.mainProject section video {
+  margin: 50px 0;
+  border-radius: 50px;
+  width: 90%;
+}
+.mainProject section #langages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.mainProject section #langages img {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+}
+@media screen and (max-width: 700px) {
+  .mainProject section #langages img {
+    height: 70px;
+    width: 70px;
+  }
+}
+.mainProject section #liens {
+  margin: 20px 0 100px;
+}
+.mainProject section #liens a {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f08136;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in;
+}
+.mainProject section #liens a:hover {
+  opacity: 0.9;
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */
