@@ -1,4 +1,323 @@
-.mainProject h1 {
+@font-face {
+  font-family: "Rubis-black";
+  src: url(../Police/Rubik/static/Rubik-Black.ttf);
+}
+@font-face {
+  font-family: "Rubis-regular";
+  src: url(../Police/Rubik/static/Rubik-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubis-regular", serif;
+  transition: all 0.2s ease-in;
+}
+
+body {
+  background-color: #e4f3ff;
+}
+
+#headerProject {
+  position: sticky;
+  top: 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+  background-color: #e4f3ff;
+}
+#headerProject.scrolledDetailProject {
+  opacity: 0.1;
+  background-color: none;
+}
+#headerProject.scrolledDetailProject:hover {
+  opacity: 1;
+  background-color: #e4f3ff;
+}
+#headerProject figure {
+  height: 60%;
+  margin-left: 50px;
+}
+#headerProject figure img {
+  height: 100%;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  #headerProject figure {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #headerProject figure {
+    height: 45%;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #headerProject figure {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #headerProject figure {
+    margin-right: 20px;
+  }
+}
+#headerProject nav {
+  height: 100%;
+  margin-right: 50px;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 700px) {
+  #headerProject nav {
+    margin-right: 30px;
+  }
+}
+#headerProject nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+#headerProject nav ul li {
+  padding: 0 10px;
+  height: 100%;
+  z-index: 100;
+  background-color: #e4f3ff;
+}
+#headerProject nav ul li #sousmenu {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+  transform: translateY(-1000%);
+  z-index: 50;
+  position: relative;
+}
+#headerProject nav ul li #sousmenu li {
+  width: 100%;
+  background-color: #e4f3ff;
+  z-index: 50;
+  position: relative;
+}
+#headerProject nav ul li #sousmenu li a {
+  position: relative;
+  z-index: 50;
+}
+#headerProject nav ul li div {
+  position: relative;
+  z-index: 100;
+  background-color: #e4f3ff;
+}
+#headerProject nav ul li a,
+#headerProject nav ul li p {
+  text-align: center;
+  padding: 0 10px;
+  height: 100%;
+  display: block;
+  font-size: 1.5em;
+  line-height: 80px;
+  text-decoration: none;
+  color: #4b4b4b;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+  background-color: #e4f3ff;
+}
+#headerProject nav ul li a:hover,
+#headerProject nav ul li p:hover {
+  background-color: #ffffff;
+  opacity: 70%;
+}
+@media screen and (max-width: 900px) {
+  #headerProject nav ul li a,
+  #headerProject nav ul li p {
+    font-size: 1em;
+  }
+}
+#headerProject nav ul #showSoumenu:hover #sousmenu {
+  transform: translateY(0);
+}
+@media screen and (max-width: 700px) {
+  #headerProject nav {
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+  }
+}
+#headerProject #navMobil {
+  transform: translateX(-100%);
+  position: absolute;
+  top: 80px;
+  height: 320px;
+}
+#headerProject #navMobil ul {
+  flex-direction: column;
+}
+#headerProject #navMobil.active {
+  transform: translateX(0%);
+  background-color: #e4f3ff;
+  z-index: 100;
+}
+#headerProject .hamburger-lines {
+  display: none;
+  height: 40%;
+  width: 34px;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+#headerProject .hamburger-lines .line {
+  display: block;
+  height: 6px;
+  width: 100%;
+  border-radius: 10px;
+  background: #f08136;
+}
+@media screen and (max-width: 700px) {
+  #headerProject .hamburger-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+#headerProject .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+#headerProject .hamburger-lines .line1.active {
+  transform: rotate(45deg);
+}
+#headerProject .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+#headerProject .hamburger-lines .line2.active {
+  transform: scaleY(0);
+}
+#headerProject .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+#headerProject .hamburger-lines .line3.active {
+  transform: rotate(-45deg);
+}
+
+.mainProject section {
+  max-width: 1500px;
+  margin: auto;
+  text-align: center;
+}
+.mainProject section h1 {
+  margin-top: 50px;
   color: #f08136;
-  font-size: 4em;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1050px) {
+  .mainProject section h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainProject section h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainProject section h1 {
+    font-size: 2em;
+  }
+}
+.mainProject section p {
+  margin-top: 20px;
+  color: #4b4b4b;
+  font-size: 1.5em;
+  padding: 0 70px;
+}
+@media screen and (max-width: 1050px) {
+  .mainProject section p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 950px) {
+  .mainProject section p {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainProject section p {
+    padding: 0 40px;
+    font-size: 1em;
+  }
+}
+.mainProject section h2 {
+  color: #f08136;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1050px) {
+  .mainProject section h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainProject section h2 {
+    font-size: 2em;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainProject section h2 {
+    font-size: 1.5em;
+  }
+}
+.mainProject section video {
+  margin: 50px 0;
+  border-radius: 50px;
+  width: 90%;
+}
+.mainProject section #langages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+@media screen and (max-width: 700px) {
+  .mainProject section #langages {
+    margin-top: 60px;
+  }
+}
+.mainProject section #langages img {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+}
+@media screen and (max-width: 700px) {
+  .mainProject section #langages img {
+    height: 70px;
+    width: 70px;
+  }
+}
+.mainProject section #liens {
+  margin: 100px 0;
+}
+.mainProject section #liens a {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f08136;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in;
+}
+.mainProject section #liens a:hover {
+  opacity: 0.9;
+  padding: 15px;
 }/*# sourceMappingURL=project.css.map */

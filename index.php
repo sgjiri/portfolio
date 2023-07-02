@@ -17,7 +17,7 @@ include_once './detailProject/connection.php';
 </head>
 
 <body>
-    <header>
+    <header id="mainHeader">
         <figure>
             <img src="./Img/logo2.png" alt="logo">
         </figure>
