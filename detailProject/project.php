@@ -10,9 +10,9 @@ include_once './connection.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./project.css">
 </head>
-<header class="headerProject">
+<header id="headerProject">
 
         <figure>
             <img src="../Img/logo2.png" alt="logo">
@@ -48,6 +48,39 @@ include_once './connection.php';
                    
 
                                                     
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <nav id="navMobil">
+        <ul>
+                <li><a href="../index.php">Accueil</a></li>
+                <li id="showSoumenu">
+                    <div>
+                    <p>Autre projects</p>
+                    </div>
+                <ul id="sousmenu">
+                <?php
+                    $id = $_GET['id'];
+                    $reqNav = $db->prepare(
+                        'SELECT `id`, `title` FROM `project` WHERE `id` <> :id');
+
+                    $reqNav->bindParam('id', $id, PDO::PARAM_INT);
+                    $reqNav->execute();
+
+                    while ($Nav = $reqNav->fetch(PDO::FETCH_ASSOC)) {
+
+                    ?>
+                            <li><a href="../detailProject/project.php?id=<?= $Nav['id']?>"><?= $Nav['title'] ?>
+                            </a></li>
+                    <?php
+                    }
+                    ?>                                            
                 </ul>
             </li>
             </ul>
@@ -101,35 +134,26 @@ WHERE `project_id` = :id'
 
                 </div>
 
-
+                <?php 
+                    if((isset($reqProject['Video']) && !empty($reqProject['Video']))){
+                ?>
                 <h2> Aperçu du project </h2>
                 <video autoplay muted loop>
                     <source src="<?= $reqProject['Video'] ?>">
                 </video>
+                <?php 
+                    }
+                ?>
 
                 <div id="liens">
                 <a href="<?= $reqProject['git'] ?>">Git du project</a>
                 </div>
-                
-
-
-
             <?php
             };
             ?>
-
-
         </section>
-        
-
-
-
-
-
     </main>
-
-
-
+    <script src="./detailProject.js"></script>
 </body>
 
 </html>
