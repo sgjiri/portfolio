@@ -17,7 +17,8 @@ window.addEventListener('scroll', function() {
 
 const burger = document.querySelector('.hamburger-lines');
 let line = document.getElementsByClassName('line');
-let navMobil = document.getElementById('navMobil')
+let navMobil = document.getElementById('navMobil');
+let sousmenuMobil = document.querySelector('#sousmenuMobil');
 burger.addEventListener('click', function () {
   for (let i = 0; i < line.length; i++) {
   line[i].classList.toggle('active');
@@ -25,4 +26,13 @@ burger.addEventListener('click', function () {
 
 }
 navMobil.classList.toggle('active');
+sousmenuMobil.classList.remove('active');
+});
+
+
+
+let showSoumenuMobil = document.querySelector('#showSoumenuMobil');
+
+showSoumenuMobil.addEventListener('click', function(){
+  sousmenuMobil.classList.add('active');
 })

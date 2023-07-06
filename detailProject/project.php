@@ -60,11 +60,16 @@ include_once './connection.php';
         <nav id="navMobil">
         <ul>
                 <li><a href="../index.php">Accueil</a></li>
-                <li id="showSoumenu">
+                <li id="showSoumenuMobil">
                     <div>
                     <p>Autre projects</p>
                     </div>
-                <ul id="sousmenu">
+                
+            </li>
+            </ul>
+        </nav>
+        <nav id="sousmenuMobil">
+        <ul >
                 <?php
                     $id = $_GET['id'];
                     $reqNav = $db->prepare(
@@ -82,8 +87,6 @@ include_once './connection.php';
                     }
                     ?>                                            
                 </ul>
-            </li>
-            </ul>
         </nav>
 
 

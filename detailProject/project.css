@@ -89,6 +89,7 @@ body {
   height: 100%;
   z-index: 100;
   background-color: #e4f3ff;
+  width: 100%;
 }
 #headerProject nav ul li #sousmenu {
   display: flex;
@@ -154,12 +155,24 @@ body {
   transform: translateX(-100%);
   position: absolute;
   top: 80px;
-  height: 320px;
 }
 #headerProject #navMobil ul {
   flex-direction: column;
 }
 #headerProject #navMobil.active {
+  transform: translateX(0%);
+  background-color: #e4f3ff;
+  z-index: 100;
+}
+#headerProject #sousmenuMobil {
+  transform: translateX(-100%);
+  position: absolute;
+  top: 80px;
+}
+#headerProject #sousmenuMobil ul {
+  flex-direction: column;
+}
+#headerProject #sousmenuMobil.active {
   transform: translateX(0%);
   background-color: #e4f3ff;
   z-index: 100;
