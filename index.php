@@ -281,33 +281,72 @@ include_once './detailProject/connection.php';
                 <div id="lien contact"></div>
                 <div class="padding">
                     <h2 class="h2 h2Presentation">Contact</h2>
-                    <form action="">
+
+
+                    <?php
+
+                    if (isset($_POST['message'])) {
+                    // on récupère les données du formulaire
+
+                    $firstname = $_POST['firstname'];
+                    $lastname = $_POST['lastname'];
+                    $email = $_POST['email'];
+                    $phone = $_POST['phone'];
+                    $object = $_POST['object'];
+                    $message = $_POST['message'];
+                    
+
+                    // notre email 
+
+                    $to = "fischerdev01@gmail.com";
+
+                    // sujet du message
+
+                    $subject = "Message de contact depuis votre portfolio";
+
+                    // message 
+
+                    $body = "Firstname: $firstname\Lastname: $lastname\Email: $email\Phone: $phone\Object: $object\Message: $message";
+                    $retour = (mail($to, $subject, $body,''));
+
+                    if ($retour){
+                        echo "Votre message a bien été envoyé";
+                    } else {
+                        echo "Une erreur est survenue lors de l'envoi de votre message.";
+                    }
+
+
+
+                    }
+                    ?>    
+
+                    <form action="#" method="post">
                         <div class="zonneForm zonneForm1">
                             <div class="name deuxinfo">
                                 <div class="champ lastname">
                                     <label class="label" for="lastname">Nom*</label>
-                                    <input type="text" class="info" name="lastname" required>
+                                    <input id="lastname" type="text" class="info" name="lastname" required>
                                 </div>
                                 <div class="firstname champ">
                                     <label for="firstname" class="label">Prénom*</label>
-                                    <input type="text" class="info" name="firstname" required>
+                                    <input id="firstname" type="text" class="info" name="firstname" required>
                                 </div>
                             </div>
                             <div class="contacts deuxinfo">
                                 <div class="champ email">
                                     <label for="email" class="label">E-mail*</label>
-                                    <input type="email" class="info" name="email" required>
+                                    <input id="email" type="email" class="info" name="email" required>
                                 </div>
                                 <div class="champ tel">
                                     <label for="phone" class="label">Telephone*</label>
-                                    <input class="info" type="text" name="phone" required>
+                                    <input id="phone" class="info" type="text" name="phone" required>
                                 </div>
 
                             </div>
 
                             <div class="champ object">
                                 <label for="object" class="label">Object*</label>
-                                <input type="text" class="info" name="object" required>
+                                <input id="object" type="text" class="info" name="object" required>
                             </div>
                             <div class="champ message">
                                 <label for="message" class="label">Message*</label>
@@ -317,7 +356,7 @@ include_once './detailProject/connection.php';
                                 <input type="checkbox" class="info" name="confidencionality" require>
                                 <label for="confidencionality" class="label"> En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
                             </div>
-                            <input class="champ submit" type="submit" value="envoyer" />
+                            <input class="champ submit" type="submit" name="submit" value="envoyer" />
                         </div>
                         <div class="zonneForm zonneForm2">
                             <div class="contactRight">
