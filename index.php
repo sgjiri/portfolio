@@ -283,44 +283,44 @@ include_once './detailProject/connection.php';
                     <h2 class="h2 h2Presentation">Contact</h2>
 
 
-                    <?php
+                    <!-- <?php
 
-                    if (isset($_POST['message'])) {
-                    // on récupère les données du formulaire
+                    // if (isset($_POST['message'])) {
+                    // // on récupère les données du formulaire
 
-                    $firstname = $_POST['firstname'];
-                    $lastname = $_POST['lastname'];
-                    $email = $_POST['email'];
-                    $phone = $_POST['phone'];
-                    $object = $_POST['object'];
-                    $message = $_POST['message'];
+                    // $firstname = $_POST['firstname'];
+                    // $lastname = $_POST['lastname'];
+                    // $email = $_POST['email'];
+                    // $phone = $_POST['phone'];
+                    // $object = $_POST['object'];
+                    // $message = $_POST['message'];
                     
 
-                    // notre email 
+                    // // notre email 
 
-                    $to = "fischerdev01@gmail.com";
+                    // $to = "fischerdev01@gmail.com";
 
-                    // sujet du message
+                    // // sujet du message
 
-                    $subject = "Message de contact depuis votre portfolio";
+                    // $subject = "Message de contact depuis votre portfolio";
 
-                    // message 
+                    // // message 
 
-                    $body = "Firstname: $firstname\Lastname: $lastname\Email: $email\Phone: $phone\Object: $object\Message: $message";
-                    $retour = (mail($to, $subject, $body,''));
+                    // $body = "Firstname: $firstname\Lastname: $lastname\Email: $email\Phone: $phone\Object: $object\Message: $message";
+                    // $retour = (mail($to, $subject, $body,''));
 
-                    if ($retour){
-                        echo "Votre message a bien été envoyé";
-                    } else {
-                        echo "Une erreur est survenue lors de l'envoi de votre message.";
-                    }
+                    // if ($retour){
+                    //     echo "Votre message a bien été envoyé";
+                    // } else {
+                    //     echo "Une erreur est survenue lors de l'envoi de votre message.";
+                    // }
 
 
 
-                    }
-                    ?>    
+                    // }
+                    ?>     -->
 
-                    <form action="#" method="post">
+                    <form action="mail" method="post">
                         <div class="zonneForm zonneForm1">
                             <div class="name deuxinfo">
                                 <div class="champ lastname">
