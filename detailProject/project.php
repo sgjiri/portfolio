@@ -100,7 +100,7 @@ include_once './connection.php';
             $id = $_GET['id'];
 
             $req = $db->prepare(
-                'SELECT `id`, `title`,`content_description`,`Video`, `git`,
+                'SELECT `id`, `title`,`content_description`,`Video`, `git`, `lien`,
 GROUP_CONCAT(DISTINCT `langage`) AS `langagess`,
  `id_langage` FROM `langages`
 
@@ -150,6 +150,7 @@ WHERE `project_id` = :id'
 
                 <div id="liens">
                 <a href="<?= $reqProject['git'] ?>">Git du project</a>
+                <a href="<?= $reqProject['lien'] ?>">Voir le project</a>
                 </div>
             <?php
             };

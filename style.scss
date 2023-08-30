@@ -1697,12 +1697,12 @@ main {
                 }
 
                 .vache {
-                    background-image: url(./Img/vache.png);
+                    background-image: url(./Img/Homeaway.png);
                     position: absolute;
 
-                    @media screen and (max-width: 1000px) {
-                        background-image: url(./Img/vache2.png);
-                    }
+                    // @media screen and (max-width: 1000px) {
+                    //     background-image: url(./Img/vache2.png);
+                    // }
 
                     &.active {
                         border-radius: 0 0 0 20px;

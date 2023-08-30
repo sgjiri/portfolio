@@ -154,15 +154,15 @@ include_once './detailProject/connection.php';
                 </div>
 
                 <?php
-                $reqVache = $db->prepare('SELECT `id`,`title`,`content_description` FROM `project` WHERE `title` = "La Vache qui cuit"');
+                $reqVache = $db->prepare('SELECT `id`,`title`,`content_description` FROM `project` WHERE `title` = "Homeaway"');
                 $reqVache->execute();
                 $Vache = $reqVache->fetch(PDO::FETCH_ASSOC);
                 ?>
                 <a href="./detailProject/project.php?id=<?= $Vache['id']?>" class="action cardVache" id="vacheHover"></a>
                 <div class="card cardVache">
                     <div class="textCard" id="textVache">
-                        <h3>La vache qui cuit</h3>
-                        <p>Réalisation d'un site de recettes culinaires</p>
+                        <h3>Homeaway</h3>
+                        <p>Réalisation d'un site de location chez habitants</p>
                     </div>
                     <div class="divGrid vache"></div>
                 </div>
@@ -320,7 +320,7 @@ include_once './detailProject/connection.php';
                     // }
                     ?>     -->
 
-                    <form action="mail" method="post">
+                    <form action="mail.php" method="post">
                         <div class="zonneForm zonneForm1">
                             <div class="name deuxinfo">
                                 <div class="champ lastname">
