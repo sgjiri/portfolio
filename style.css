@@ -1599,13 +1599,8 @@ main .section #contentProjects .cardVache {
   }
 }
 main .section #contentProjects .cardVache .vache {
-  background-image: url(./Img/vache.png);
+  background-image: url(./Img/Homeaway.png);
   position: absolute;
-}
-@media screen and (max-width: 1000px) {
-  main .section #contentProjects .cardVache .vache {
-    background-image: url(./Img/vache2.png);
-  }
 }
 main .section #contentProjects .cardVache .vache.active {
   border-radius: 0 0 0 20px;
