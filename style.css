@@ -1914,6 +1914,9 @@ main #presentation #contentPresentation .left .CV .btn {
   color: #ffffff;
   font-size: 1.2em;
   transition: all 0.5s;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
 }
 main #presentation #contentPresentation .left .CV .btn:hover {
   opacity: 0.9;
