@@ -119,11 +119,11 @@ let line = document.getElementsByClassName('line');
 let navMobil = document.getElementById('navMobil')
 burger.addEventListener('click', function () {
   for (let i = 0; i < line.length; i++) {
-  line[i].classList.toggle('active');
-  
+    line[i].classList.toggle('active');
 
-}
-navMobil.classList.toggle('active');
+
+  }
+  navMobil.classList.toggle('active');
 })
 
 
@@ -137,13 +137,31 @@ navMobil.classList.toggle('active');
 var menu = document.querySelector('header');
 
 // Ajoutez une classe lorsque l'utilisateur fait défiler la page
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   if (window.scrollY > 0) {
     menu.classList.add('scrolled');
   } else {
     menu.classList.remove('scrolled');
   }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.getElementById('Check');
+  const form = document.getElementById('formContact');
+
+  form.addEventListener('submit', function(event) {
+    if (!checkbox.checked) {
+      event.preventDefault(); // Prevent form submission
+      alert('Veuillez cocher la case de Politique de confidentialité.');
+    }
+  });
+});
+
+
+
+
 
 
 
