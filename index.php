@@ -146,7 +146,7 @@ include_once './detailProject/connection.php';
                 $req->execute();
                 $reqBiblook = $req->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <a href="./detailProject/project.php?id=<?= $reqBiblook['id']?>" class="action cardBiblook" id="biblookHover"></a>
+                <a href="./detailProject/project.php?id=<?= $reqBiblook['id'] ?>" class="action cardBiblook" id="biblookHover"></a>
                 <div class="card cardBiblook">
                     <div class="textCard" id="textBiblook">
                         <h3>Biblook</h3>
@@ -160,7 +160,7 @@ include_once './detailProject/connection.php';
                 $reqVache->execute();
                 $Vache = $reqVache->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <a href="./detailProject/project.php?id=<?= $Vache['id']?>" class="action cardVache" id="vacheHover"></a>
+                <a href="./detailProject/project.php?id=<?= $Vache['id'] ?>" class="action cardVache" id="vacheHover"></a>
                 <div class="card cardVache">
                     <div class="textCard" id="textVache">
                         <h3>Homeaway</h3>
@@ -175,7 +175,7 @@ include_once './detailProject/connection.php';
                 $reqSalon->execute();
                 $reqLotus = $reqSalon->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <a href="./detailProject/project.php?id=<?= $reqLotus['id']?>" class="action cardLotus" id="lotusHover"></a>
+                <a href="./detailProject/project.php?id=<?= $reqLotus['id'] ?>" class="action cardLotus" id="lotusHover"></a>
                 <div class="card cardLotus">
                     <div class="textCard" id="textLotus">
                         <h3>Lotus</h3>
@@ -191,7 +191,7 @@ include_once './detailProject/connection.php';
                 $reqJadoo->execute();
                 $Jadoo = $reqJadoo->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <a href="./detailProject/project.php?id=<?= $Jadoo['id']?>" class="action cardJadoo" id="jadooHover"></a>
+                <a href="./detailProject/project.php?id=<?= $Jadoo['id'] ?>" class="action cardJadoo" id="jadooHover"></a>
                 <div class="card cardJadoo">
                     <div class="textCard" id="textJadoo">
                         <h3>Jadoo</h3>
@@ -201,7 +201,7 @@ include_once './detailProject/connection.php';
                     <div class="divGrid jadoo"></div>
                 </div>
 
-                
+
 
 
 
@@ -287,42 +287,42 @@ include_once './detailProject/connection.php';
 
                     <!-- <?php
 
-                    // if (isset($_POST['message'])) {
-                    // // on récupère les données du formulaire
+                            // if (isset($_POST['message'])) {
+                            // // on récupère les données du formulaire
 
-                    // $firstname = $_POST['firstname'];
-                    // $lastname = $_POST['lastname'];
-                    // $email = $_POST['email'];
-                    // $phone = $_POST['phone'];
-                    // $object = $_POST['object'];
-                    // $message = $_POST['message'];
-                    
-
-                    // // notre email 
-
-                    // $to = "fischerdev01@gmail.com";
-
-                    // // sujet du message
-
-                    // $subject = "Message de contact depuis votre portfolio";
-
-                    // // message 
-
-                    // $body = "Firstname: $firstname\Lastname: $lastname\Email: $email\Phone: $phone\Object: $object\Message: $message";
-                    // $retour = (mail($to, $subject, $body,''));
-
-                    // if ($retour){
-                    //     echo "Votre message a bien été envoyé";
-                    // } else {
-                    //     echo "Une erreur est survenue lors de l'envoi de votre message.";
-                    // }
+                            // $firstname = $_POST['firstname'];
+                            // $lastname = $_POST['lastname'];
+                            // $email = $_POST['email'];
+                            // $phone = $_POST['phone'];
+                            // $object = $_POST['object'];
+                            // $message = $_POST['message'];
 
 
+                            // // notre email 
 
-                    // }
-                    ?>     -->
+                            // $to = "fischerdev01@gmail.com";
 
-                    <form action="mail.php" method="post">
+                            // // sujet du message
+
+                            // $subject = "Message de contact depuis votre portfolio";
+
+                            // // message 
+
+                            // $body = "Firstname: $firstname\Lastname: $lastname\Email: $email\Phone: $phone\Object: $object\Message: $message";
+                            // $retour = (mail($to, $subject, $body,''));
+
+                            // if ($retour){
+                            //     echo "Votre message a bien été envoyé";
+                            // } else {
+                            //     echo "Une erreur est survenue lors de l'envoi de votre message.";
+                            // }
+
+
+
+                            // }
+                            ?>     -->
+
+                    <form action="mail.php" method="post" id='formContact'>
                         <div class="zonneForm zonneForm1">
                             <div class="name deuxinfo">
                                 <div class="champ lastname">
@@ -355,8 +355,8 @@ include_once './detailProject/connection.php';
                                 <textarea name="message" id="message" cols="30" rows="10" class="info"></textarea>
                             </div>
                             <div class="champ confidencionality">
-                                <input type="checkbox" class="info" name="confidencionality" require>
-                                <label for="confidencionality" class="label"> En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
+                                <input type="checkbox" class="info" name="confidentiality" id="Check">
+                                <label for="confidencionality" class="label"> En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la <a target="_blank" href="./asset/Confidencialité.pdf">Politique de confidentialité</a>.</label>
                             </div>
                             <input class="champ submit" type="submit" name="submit" value="envoyer" />
                         </div>
