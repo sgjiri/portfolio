@@ -9,10 +9,12 @@ include_once './detailProject/connection.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploration de mon parcours en tant que développeur web. Plongez dans mes compétences en conception, en codage et en création de sites web qui allient esthétique et performance.">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Img/Fish3.png">
     <title>PortfolioJF</title>
 </head>
 
@@ -236,7 +238,7 @@ include_once './detailProject/connection.php';
                         </div>
                     </div>
                     <div class="CV">
-                        <button class="btn"> Télécharger mon CV</button>
+                        <a target="_blank" class="btn" href="./asset/JiriFischerCV.pdf"> Télécharger mon CV</a>
                     </div>
                     <div class="text">
                         <h2 class="h2 h2Presentation">Qui est Jirka</h2>
