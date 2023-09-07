@@ -33,6 +33,68 @@ function createKeyframes() {
   return keyframes;
 }
 
+// function createKeyframesfish() {
+//   const previousLeftValues = []; // Créer un tableau pour stocker les valeurs de left
+//   let leftPast = null;
+//   let leftActuel = null;
+//   let leftFuture = null;
+//   let keyframes = '';
+//   let turne = false
+
+//   for (let i = 0; i <= 98; i += 2) {
+//     const top = Math.floor(Math.random() * (110 - 70) + 70);
+//     const left = Math.floor(Math.random() * 80);
+    
+//     if (i > 0) {
+//       leftPast = previousLeftValues[(i / 2) - 1]; // Accéder à la valeur précédente de left
+//       leftActuel = previousLeftValues[i / 2]; // Accéder à la valeur actuelle
+      
+//       if (i < 96) {
+//         const futureLeft = Math.floor(Math.random() * 80);
+//         leftFuture = futureLeft;
+//         previousLeftValues.push(futureLeft); // Ajouter la valeur future au tableau
+//       }
+//     }
+
+  
+    
+//     previousLeftValues.push(left); // Ajouter la valeur actuelle de left au tableau
+    
+//     // const transform = i === 20 ? 'transform: scaleY(0.95) scaleX(1.05);' : '';
+//     console.log(turne)
+
+//     if(((leftPast>leftActuel)&&(leftActuel<leftFuture))||((leftPast<leftActuel)&&(leftActuel>leftFuture))){
+
+//       let turne = true
+//       if(turne){
+//         keyframes += `
+//         ${i}% {
+//           top: ${top}%;
+//           left: ${left}%;
+//           transform:rotateY(360deg) 
+//         }
+//       `;
+//       }else{
+//         keyframes += `
+//         ${i}% {
+//           top: ${top}%;
+//           left: ${left}%;
+//         }
+//       `;
+//       }
+      
+//     }
+//     }
+
+    
+  
+//   return keyframes;
+// }
+
+
+
+
+
 function createKeyframesCompetences() {
   let keyframes = '';
   for (let i = 0; i <= 98; i += 2) {

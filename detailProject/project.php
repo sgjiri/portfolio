@@ -9,8 +9,9 @@ include_once './connection.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PortfolioJF</title>
     <link rel="stylesheet" href="./project.css">
+    <link rel="icon" href="./Img/Fish3.png">
 </head>
 <header id="headerProject">
 
@@ -22,7 +23,7 @@ include_once './connection.php';
                 <li><a href="../index.php">Accueil</a></li>
                 <li id="showSoumenu">
                     <div>
-                    <p>Autre projects</p>
+                    <p>Autre projets</p>
                     </div>
                 <ul id="sousmenu">
                 <?php
@@ -62,7 +63,7 @@ include_once './connection.php';
                 <li><a href="../index.php">Accueil</a></li>
                 <li id="showSoumenuMobil">
                     <div>
-                    <p>Autre projects</p>
+                    <p>Autre projets</p>
                     </div>
                 
             </li>
@@ -123,7 +124,7 @@ WHERE `project_id` = :id'
                 <H1><?= $reqProject['title'] ?></H1>
 
                 <p><?= $reqProject['content_description'] ?></p>
-                <h2> Technologie utilisées</h2>
+                <h2> Technologies utilisées</h2>
                 <div id="langages">
 
                     <?php
@@ -140,7 +141,7 @@ WHERE `project_id` = :id'
                 <?php 
                     if((isset($reqProject['Video']) && !empty($reqProject['Video']))){
                 ?>
-                <h2> Aperçu du project </h2>
+                <h2> Aperçu du projet </h2>
                 <video autoplay muted loop>
                     <source src="<?= $reqProject['Video'] ?>">
                 </video>
@@ -149,8 +150,8 @@ WHERE `project_id` = :id'
                 ?>
 
                 <div id="liens">
-                <a href="<?= $reqProject['git'] ?>">Git du project</a>
-                <a href="<?= $reqProject['lien'] ?>">Voir le project</a>
+                <a href="<?= $reqProject['git'] ?>">Git du projet</a>
+                <a href="<?= $reqProject['lien'] ?>">Voir le projet</a>
                 </div>
             <?php
             };

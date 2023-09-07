@@ -277,12 +277,28 @@ main {
             background-color: #e4f3ff;
             overflow: hidden;
 
+
+
             #clouds {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
                 height: 100%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(70% - 24px);
+                    left: 0;
+                    width: 100%;
+                    height: 14%;
+                    background: url(./Img/clouds.png);
+                    animation: waves 120s linear infinite;
+                    overflow: hidden;
+        
+        
+                }
 
 
                 #cloud1 {
@@ -326,6 +342,26 @@ main {
                 bottom: -159px;
                 height: 500px;
                 width: 750px;
+                transform-origin: center;
+                animation: pecheur 4s linear infinite;
+
+                @keyframes pecheur {
+                    0% {
+                        rotate: 0;
+                    }
+        
+                    25% {
+                        rotate: 1deg;
+                    }
+                    75%{
+                        rotate: -1deg;
+                    }
+                    100%{
+                        rotate: 0;
+                    }
+                        
+                    
+                }
 
                 #pecheur {
 
@@ -1039,6 +1075,7 @@ main {
             height: 14%;
             background: url(./Img/sea.svg);
             animation: waves 120s linear infinite;
+            overflow: hidden;
 
 
         }
@@ -1376,7 +1413,7 @@ main {
         #fish1 {
             top: 95%;
             left: 60%;
-            animation: bus1 18s ease-in-out infinite;
+            animation: fish1 60s ease-in-out infinite;
 
             img {
                 width: 100%;
@@ -1385,8 +1422,10 @@ main {
         }
 
         #fish2 {
-            top: 80%;
-            left: 83%;
+            position: absolute;
+            right: -20%;
+            top: 85%;
+
 
             img {
                 width: 100%;
@@ -2545,23 +2584,95 @@ main {
 
 
 
-@keyframes bus1 {
+@keyframes fish1 {
     5% {
         transform: rotateY(180deg);
         top: 95%;
         left: 62%;
     }
 
-    50% {
+    18%{
+        transform: rotateY(180deg);
+        top: 115%;
+        left: 40%;
+    }
+
+    35% {
         top: 80%;
         left: 20%;
         transform: rotateY(180deg);
     }
 
-    51% {
+    36% {
         top: 80%;
         left: 20%;
         transform: rotateY(360deg);
+    }
+
+    60%{
+        top: 77%;
+        left:85%;
+        transform: rotateY(360deg);
+    }
+    61%{
+        top: 77%;
+        left:85%;
+        transform: rotateY(180deg);
+    }
+
+    70%{
+        top: 88%;
+        left: 40%;
+        transform: rotateY(180deg);
+
+    }
+    71%{
+        top: 88%;
+        left: 40%;
+        transform: rotateY(360deg);
+
+    }
+
+
+    100% {
+        top: 95%;
+        left: 60%;
+        transform: rotateY(360deg);
+    }
+
+
+
+}
+@keyframes fish2 {
+    50% {
+       top: 90%;
+       left: -25%;
+    }
+
+   
+
+    60%{
+        transform: translateX(50px);
+        transform: translateY(250px);
+        transform: rotateY(360deg);
+    }
+    61%{
+        top: 77%;
+        left:85%;
+        transform: rotateY(180deg);
+    }
+
+    70%{
+        top: 88%;
+        left: 40%;
+        transform: rotateY(180deg);
+
+    }
+    71%{
+        top: 88%;
+        left: 40%;
+        transform: rotateY(360deg);
+
     }
 
 

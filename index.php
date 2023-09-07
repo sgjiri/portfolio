@@ -78,7 +78,7 @@ include_once './detailProject/connection.php';
                     </figure>
                     <div id="text">
                         <h1>Jirka Fischer</h1>
-                        <h2 class="h2">Developpeur web</h2>
+                        <h2 class="h2">Développeur web</h2>
 
 
 
@@ -86,13 +86,13 @@ include_once './detailProject/connection.php';
 
 
                 </div>
-                <figure id="sea">
+                <div id="sea">
                     <img src="./Img/sea.svg" alt="sea">
 
 
 
                     <p>
-                        Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, prêt à apporter une contribution significative à tout projet.
+                        Issue de l’agroalimentaire et de la théologie, je suis un professionnel polyvalent, engagé et créatif, prêt à apporter une contribution significative à tout projet.
                     </p>
                     <figure id="js" class="boule">
                         <img src="./Img/JS.png" alt="JS">
@@ -122,7 +122,7 @@ include_once './detailProject/connection.php';
                         <img src="./Img/Fish3.png" alt="fish">
                     </figure>
 
-                </figure>
+                </div>
 
 
 
@@ -164,7 +164,7 @@ include_once './detailProject/connection.php';
                 <div class="card cardVache">
                     <div class="textCard" id="textVache">
                         <h3>Homeaway</h3>
-                        <p>Réalisation d'un site de location chez habitants</p>
+                        <p>Réalisation d'un site de location de logements</p>
                     </div>
                     <div class="divGrid vache"></div>
                 </div>
@@ -241,7 +241,7 @@ include_once './detailProject/connection.php';
                         <a target="_blank" class="btn" href="./asset/JiriFischerCV.pdf"> Télécharger mon CV</a>
                     </div>
                     <div class="text">
-                        <h2 class="h2 h2Presentation">Qui est Jirka</h2>
+                        <h2 class="h2 h2Presentation">Qui est Jirka?</h2>
                         <div class="contentPresentation">
                             <p>
                                 Je suis Jirka Fischer, un développeur web passionné par la technologie et la création de sites web.
@@ -252,7 +252,7 @@ include_once './detailProject/connection.php';
                             </p>
                             <br>
                             <p>
-                                Ma formation en développement web m'a permise d'acquérir de solides compétences en HTML, CSS, JavaScript, ainsi que des connaissances en PHP et en bases de données. Je suis également familié avec les outils tels que Git et les frameworks tels que React.
+                                Ma formation en développement web m'a permise d'acquérir de solides compétences en HTML, CSS, JavaScript, ainsi que des connaissances en PHP et en bases de données. Je suis également familier avec les outils tels que Git et les frameworks.
                             </p>
                             <br>
                             <p>
