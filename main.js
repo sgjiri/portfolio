@@ -1,21 +1,38 @@
-// 1)je veux cree une animation, qui envoi ma boule vers une destination choisi au hasar entre les valeur pareciser
-// une fois la boule ariver en destination, je refait l'operation
+// 1) Je veux créer une animation qui envoie ma boule vers une destination choisie au hasard entre les valeurs spécifiées.
+// Une fois que la boule est arrivée à destination, je refais l'opération.
 
+/**
+ * Anime un élément en appliquant une animation CSS personnalisée.
+ *
+ * @param {string} id - L'ID de l'élément à animer.
+ * @param {string} animationName - Le nom de l'animation CSS.
+ * @param {string} keyframes - Les étapes de l'animation CSS.
+ * @param {string} speed - La durée de l'animation CSS.
+ */
 function animateElement(id, animationName, keyframes, speed) {
   const element = document.getElementById(id);
   element.style.animation = `${animationName} ${speed} infinite linear`;
 
+  // Crée une animation CSS personnalisée avec les étapes spécifiées
   const moveAnimation = `
     @keyframes ${animationName} {
       ${keyframes}
     }
   `;
 
+  // Ajoute la règle d'animation à la balise <style> dans la tête du document
   const style = document.createElement('style');
   style.innerHTML = moveAnimation;
   document.head.appendChild(style);
 }
 
+/**
+ * Crée une chaîne de caractères représentant les étapes d'une animation CSS pour l'élément principal.
+ * Les valeurs de `top` et `left` sont générées aléatoirement pour chaque étape.
+ * L'animation applique une transformation spéciale à 20%.
+ *
+ * @returns {string} - Les étapes de l'animation CSS pour l'élément principal.
+ */
 function createKeyframes() {
   let keyframes = '';
   for (let i = 0; i <= 98; i += 2) {
@@ -33,6 +50,13 @@ function createKeyframes() {
   return keyframes;
 }
 
+/**
+ * Crée une chaîne de caractères représentant les étapes d'une animation CSS pour les compétences.
+ * Les valeurs de `top` et `left` sont générées aléatoirement pour chaque étape.
+ * L'animation applique une transformation spéciale à 20%.
+ *
+ * @returns {string} - Les étapes de l'animation CSS pour les compétences.
+ */
 function createKeyframesCompetences() {
   let keyframes = '';
   for (let i = 0; i <= 98; i += 2) {
@@ -50,6 +74,7 @@ function createKeyframesCompetences() {
   return keyframes;
 }
 
+// Animation des éléments
 animateElement('js', 'moveJS', createKeyframes(), '2000s');
 animateElement('html', 'moveHTML', createKeyframes(), '2000s');
 animateElement('css', 'moveCSS', createKeyframes(), '2000s');
@@ -64,14 +89,7 @@ animateElement('sqlCompetences', 'movesqlCompetences', createKeyframesCompetence
 animateElement('pythonCompetences', 'movepythonCompetences', createKeyframesCompetences(), '1000s');
 animateElement('gitCompetences', 'movegitCompetences', createKeyframesCompetences(), '1000s');
 
-
-
-
-
-
-
-
-
+// Sélection des éléments
 let zoom = document.getElementById('btnRealisation');
 let projects = document.getElementsByClassName('divGrid');
 let action = document.getElementsByClassName('action');
@@ -80,8 +98,9 @@ let h2Projects = document.getElementById('h2Projects');
 let realisations = document.getElementById('realisations');
 let X = document.getElementById('X');
 
-
+// Ajout d'un gestionnaire d'événement au clic sur le bouton de zoom
 zoom.addEventListener('click', function () {
+  // Modification des classes pour activer/désactiver les éléments
   for (let i = 0; i < projects.length; i++) {
     projects[i].classList.toggle('active');
     action[i].classList.toggle('active');
@@ -91,22 +110,21 @@ zoom.addEventListener('click', function () {
   X.classList.toggle('active');
   realisations.classList.toggle('active');
   zoom.classList.toggle('active');
-})
+});
 
-
-// sélectionnez tous les liens de navigation
+// Sélection de tous les liens de navigation
 const navLinks = document.querySelectorAll('nav a');
 
-// ajoutez un gestionnaire d'événements de clic à chaque lien
+// Ajout d'un gestionnaire d'événement de clic à chaque lien
 navLinks.forEach(link => {
   link.addEventListener('click', (event) => {
-    // empêche le comportement de lien par défaut
+    // Empêche le comportement de lien par défaut
     event.preventDefault();
 
-    // récupère la cible du lien (l'ID de la section de destination)
+    // Récupère la cible du lien (l'ID de la section de destination)
     const targetId = link.getAttribute('href');
 
-    // fait défiler la page vers la section de destination de manière progressive
+    // Fait défiler la page vers la section de destination de manière progressive
     document.querySelector(targetId).scrollIntoView({
       behavior: 'smooth'
     });
@@ -144,21 +162,6 @@ window.addEventListener('scroll', function () {
     menu.classList.remove('scrolled');
   }
 });
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const checkbox = document.getElementById('Check');
-  const form = document.getElementById('formContact');
-
-  form.addEventListener('submit', function(event) {
-    if (!checkbox.checked) {
-      event.preventDefault(); // Prevent form submission
-      alert('Veuillez cocher la case de Politique de confidentialité.');
-    }
-  });
-});
-
 
 
 

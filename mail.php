@@ -43,6 +43,7 @@ if (!empty($_POST)) {
 
         // Vérification de la case de confidentialité
         if (!isset($_POST["confidentiality"])) {
+            user();
             // Ajout d'une erreur si la case n'est pas cochée
             $_SESSION["error"]["confidentiality"] = "Vous devez accepter la politique de confidentialité pour envoyer le formulaire.";
             header("Location: /PHP/portfolio/index.php#contact");

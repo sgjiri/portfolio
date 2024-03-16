@@ -356,6 +356,14 @@ include_once './detailProject/connection.php';
                             <?php
                                 unset($_SESSION["error"]["empty"]);
                             endif;
+                            if (isset($_SESSION["error"]["confidentiality"])) :
+                                ?>
+                                    <div class="message champ">
+                                        <p class="error"><?= $_SESSION["error"]["confidentiality"] ?></p>
+                                    </div>
+                                <?php
+                                    unset($_SESSION["error"]["confidentiality"]);
+                                endif;
                             if (isset($_SESSION["sendMail"]["error"])) :
                             ?>
                                 <div class="message champ">
@@ -409,7 +417,6 @@ include_once './detailProject/connection.php';
 
     </main>
     <script src="./main.js"></script>
-    <!-- <script src="./sc.js"></script> -->
 </body>
 
 </html>
