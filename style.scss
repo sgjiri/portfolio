@@ -176,13 +176,17 @@ header {
     }
 
     #navMobil {
-        transform: translateX(-100%);
+        transform: translateX(-150%);
         position: absolute;
         top: 80px;
         height: 320px;
 
         ul {
             flex-direction: column;
+
+            li{
+                width: 100%;
+            }
         }
 
         &.active {
@@ -277,6 +281,8 @@ main {
             background-color: #e4f3ff;
             overflow: hidden;
 
+
+
             #clouds {
                 display: flex;
                 justify-content: center;
@@ -286,9 +292,12 @@ main {
 
 
                 #cloud1 {
-                    margin: 10px 2% 0 3%;
+                    position: absolute;
+                    left: 5%;
+                    top: 5%;
                     width: 400px;
                     height: 100%;
+                    animation: cloud1 500s linear infinite;
 
                     img {
                         width: 100%;
@@ -296,10 +305,54 @@ main {
                     }
                 }
 
+                @keyframes cloud1 {
+                    0% {
+                        left: 5%;
+                        top: 5%;
+
+
+                    }
+
+                    70% {
+                        left: 140%;
+                        top: 5%;
+                    }
+
+                    71% {
+                        top: -100%;
+                        left: 140%;
+                    }
+
+                    72% {
+                        left: -40%;
+                        top: -100%;
+                    }
+
+                    73% {
+                        left: -40%;
+                        top: 5%;
+                    }
+
+                    100% {
+                        left: 5%;
+                        top: 5%;
+                    }
+
+                }
+
+
+
                 #cloud2 {
-                    margin: 8% 15% 8% 0;
+                    position: absolute;
+                    left: 35%;
+                    top: -5%;
                     width: 600px;
                     height: 100%;
+                    animation: cloud2 400s linear infinite;
+
+                    @media screen and (max-width: 600px) {
+                        width: 350px;
+                    }
 
                     img {
                         width: 100%;
@@ -308,15 +361,86 @@ main {
 
                 }
 
+                @keyframes cloud2 {
+                    0% {
+                        left: 35%;
+                        top: -5%;
+
+
+                    }
+
+                    50% {
+                        left: 140%;
+                        top: -5%;
+                    }
+
+                    51% {
+                        top: -100%;
+                        left: 140%;
+                    }
+
+                    52% {
+                        left: -40%;
+                        top: -100%;
+                    }
+
+                    53% {
+                        left: -40%;
+                        top: -5%;
+                    }
+
+                    100% {
+                        left: 35%;
+                        top: -5%;
+                    }
+
+                }
+
                 #cloud3 {
-                    margin: 9% 15% 7% 0;
+                    position: absolute;
+                    left: 75%;
+                    top: 0%;
                     width: 500px;
                     height: 100%;
+                    animation: cloud3 500s linear infinite;
 
                     img {
                         width: 100%;
                         height: 30%;
                     }
+                }
+
+                @keyframes cloud3 {
+                    0% {
+                        left: 75%;
+                        top: 0%;
+                    }
+
+                    30% {
+                        left: 140%;
+                        top: 0%;
+                    }
+
+                    31% {
+                        top: -100%;
+                        left: 140%;
+                    }
+
+                    32% {
+                        left: -40%;
+                        top: -100%;
+                    }
+
+                    33% {
+                        left: -40%;
+                        top: 0%;
+                    }
+
+                    100% {
+                        left: 75%;
+                        top: 0%;
+                    }
+
                 }
             }
 
@@ -326,6 +450,28 @@ main {
                 bottom: -159px;
                 height: 500px;
                 width: 750px;
+                transform-origin: center;
+                animation: pecheur 4s linear infinite;
+
+                @keyframes pecheur {
+                    0% {
+                        rotate: 0;
+                    }
+
+                    25% {
+                        rotate: 1deg;
+                    }
+
+                    75% {
+                        rotate: -1deg;
+                    }
+
+                    100% {
+                        rotate: 0;
+                    }
+
+
+                }
 
                 #pecheur {
 
@@ -1023,392 +1169,562 @@ main {
         }
     }
 
-    #sea {
-        height: 30%;
-        width: 100%;
+    #sea-relative {
+        position: relative;
+        height: 100%;
         overflow: hidden;
-        background-color: #c4e6ff;
-        opacity: 0.8;
+        top: -48px;
 
-        &::before {
-            content: "";
+        @media screen and (max-height:500px) {
+            height: 115%;
+        }
+
+        @media screen and (max-height:400px) {
+            height: 130%;
+        }
+        @media screen and (max-height:300px) {
+            height: 180%;
+        }
+
+        #waves{
+            height: 50px;
             position: absolute;
-            top: calc(70% - 24px);
-            left: 0;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: url(./Img/sea.svg);
+                    animation: waves 120s linear infinite;
+                    overflow: hidden;
+                    opacity: 0.8;
+        }
+        
+        
+
+        #sea-color {
+
+            background-color: #e4f3ff;
+            top: 47px;
             width: 100%;
-            height: 14%;
-            background: url(./Img/sea.svg);
-            animation: waves 120s linear infinite;
-
-
-        }
-
-
-
-
-        @keyframes waves {
-            0% {
-                background-position-x: 0;
-            }
-
-            100% {
-                background-position-x: 3000px;
-            }
-        }
-
-        p {
             position: absolute;
-            top: 70%;
-            left: 46%;
-            width: 40%;
-            color: #4B4B4B;
-            text-align: center;
-            font-size: 1.7em;
-            z-index: 99;
+            height: 100%;
 
-            @media screen and (max-width: 1600px) {
-                left: 47%;
-            }
 
-            @media screen and (max-width: 1500px) {
-                left: 52%;
-            }
-
-            @media screen and (max-width: 1400px) {
-                left: 53%;
-            }
-
-            @media screen and (max-width: 1350px) {
-                left: 58%;
-                font-size: 1.2em;
-                width: 33%;
-            }
-
-            @media screen and (max-width: 1300px) {
-                left: 59%;
-            }
-
-            @media screen and (max-width: 1200px) {
-                left: 60%;
-            }
-
-            @media screen and (max-width: 1100px) {
-                left: 61%;
-            }
-
-            @media screen and (max-width: 1000px) {
-                left: 62%;
-            }
-
-            @media screen and (max-width: 950px) {
-                left: 53%;
-
-            }
-
-            @media screen and (max-width: 850px) {
-                left: 54%;
-
-            }
-
-
-            @media screen and (max-width: 800px) {
-                left: 55%;
-
-            }
-
-            @media screen and (max-width: 700px) {
-                display: none;
-
-            }
-
-            @media screen and (max-height: 550px) {
-                font-size: 1.5em;
-                left: 47%;
-                width: 35%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1700px) {
-                left: 47%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1600px) {
-                left: 48%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1500px) {
-                left: 54%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1400px) {
-                left: 55%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1350px) {
-                left: 58%;
-                font-size: 1.2em;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1300px) {
-                left: 58%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1150px) {
-                left: 60%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 1000px) {
-                left: 61%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 950px) {
-                left: 57%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 900px) {
-                left: 58%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 850px) {
-                left: 54%;
-            }
-
-            @media screen and (max-height: 550px) and (max-width: 850px) {
-                left: 55%;
-            }
-
-
-            @media screen and (max-height: 475px) {
-                font-size: 1.2em;
-                width: 35%;
-                left: 47%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 1700px) {
-                left: 48%;
-            }
-
-
-            @media screen and (max-height: 475px) and (max-width: 1500px) {
-                left: 54%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 1400px) {
-                left: 55%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 1350px) {
-                left: 58%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 1150px) {
-                left: 60%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 1000px) {
-                left: 61%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 950px) {
-                left: 57%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 900px) {
-                left: 58%;
-            }
-
-            @media screen and (max-height: 475px) and (max-width: 850px) {
-                left: 54%;
-            }
-
-            @media screen and (max-height: 390px) {
-                left: 49%;
-                width: 22%;
-                font-size: 1em;
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 1500px) {
-                left: 55%;
-                ;
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 1350px) {
-                left: 61%;
-                ;
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 1250px) {
-                left: 62%;
-                ;
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 1150px) {
-                left: 58%;
-                width: 30%;
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 1050px) {
-                left: 59%
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 950px) {
-                left: 55%
-            }
-
-            @media screen and (max-height: 390px) and (max-width: 850px) {
-                width: 40%;
-                left: 51%;
-            }
-
-
-        }
-
-        .boule {
-            width: 100px;
-            position: absolute;
-
-            @media screen and (max-width: 1000px) {
-                width: 80px;
-
-            }
-
-            @media screen and (max-width: 450px) {
-                width: 70px;
-
-            }
-
-            @media screen and (max-height: 475px) {
-                width: 40px;
-
-            }
-
-        }
-
-        #js {
-
-            top: 71%;
-            left: 22%;
-
-            img {
-                width: 100%;
-            }
-
-        }
-
-
-
-
-        #html {
-
-            top: 73%;
-            left: 37%;
-
-            img {
-                width: 100%;
-            }
-
-        }
-
-
-        #css {
-
-            top: 84%;
-            left: 55%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-
-        #php {
-
-            top: 79%;
-            left: 37%;
-
-            img {
-                width: 100%;
-            }
-
-
-
-        }
-
-        #sql {
-
-            top: 67%;
-            left: 84%;
-
-            img {
-                width: 100%;
-            }
-
-        }
-
-
-        #python {
-
-            top: 71%;
-            left: 75%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .fish {
-            position: absolute;
-            width: 10%;
-
-
-            @media screen and (max-width: 1000px) {
-                width: 20%;
-            }
-
-            @media screen and (max-width: 650px) {
-                width: 25%;
-            }
-
-            @media screen and (max-width: 500px) {
-                display: none;
-            }
-        }
-
-        #fish1 {
-            top: 95%;
-            left: 60%;
-            animation: bus1 18s ease-in-out infinite;
-
-            img {
-                width: 100%;
+            #sea {
                 height: 100%;
-            }
-        }
-
-        #fish2 {
-            top: 80%;
-            left: 83%;
-
-            img {
                 width: 100%;
-                height: 100%;
-            }
+                overflow: hidden;
+                background-color: #c4e6ff;
+                opacity: 0.8;
 
-            @media screen and (max-width: 1000px) {
-                left: 77%;
-            }
+                
 
-            @media screen and (max-width: 650px) {
-                left: 74%;
-            }
-        }
 
-        #fish3 {
-            top: 70%;
-            left: 8%;
 
-            img {
-                width: 100%;
-                height: 100%;
+
+                @keyframes waves {
+                    0% {
+                        background-position-x: 0;
+                    }
+
+                    100% {
+                        background-position-x: 3000px;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    top: 10%;
+                    left: 46%;
+                    width: 40%;
+                    color: #4B4B4B;
+                    text-align: center;
+                    font-size: 1.7em;
+                    z-index: 99;
+
+                    @media screen and (max-width: 1600px) {
+                        left: 47%;
+                    }
+
+                    @media screen and (max-width: 1500px) {
+                        left: 52%;
+                    }
+
+                    @media screen and (max-width: 1400px) {
+                        left: 53%;
+                    }
+
+                    @media screen and (max-width: 1350px) {
+                        left: 58%;
+                        font-size: 1.2em;
+                        width: 33%;
+                    }
+
+                    @media screen and (max-width: 1300px) {
+                        left: 59%;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        left: 60%;
+                    }
+
+                    @media screen and (max-width: 1100px) {
+                        left: 61%;
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        left: 62%;
+                    }
+
+                    @media screen and (max-width: 950px) {
+                        left: 53%;
+
+                    }
+
+                    @media screen and (max-width: 850px) {
+                        left: 54%;
+
+                    }
+
+
+                    @media screen and (max-width: 800px) {
+                        left: 55%;
+
+                    }
+
+                    @media screen and (max-width: 700px) {
+                        display: none;
+
+                    }
+
+                    @media screen and (max-height: 550px) {
+                        font-size: 1.5em;
+                        left: 47%;
+                        width: 35%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1700px) {
+                        left: 47%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1600px) {
+                        left: 48%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1500px) {
+                        left: 54%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1400px) {
+                        left: 55%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1350px) {
+                        left: 58%;
+                        font-size: 1.2em;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1300px) {
+                        left: 58%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1150px) {
+                        left: 60%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 1000px) {
+                        left: 61%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 950px) {
+                        left: 57%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 900px) {
+                        left: 58%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 850px) {
+                        left: 54%;
+                    }
+
+                    @media screen and (max-height: 550px) and (max-width: 850px) {
+                        left: 55%;
+                    }
+
+
+                    @media screen and (max-height: 475px) {
+                        font-size: 1.2em;
+                        width: 35%;
+                        left: 47%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 1700px) {
+                        left: 48%;
+                    }
+
+
+                    @media screen and (max-height: 475px) and (max-width: 1500px) {
+                        left: 54%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 1400px) {
+                        left: 55%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 1350px) {
+                        left: 58%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 1150px) {
+                        left: 60%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 1000px) {
+                        left: 61%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 950px) {
+                        left: 57%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 900px) {
+                        left: 58%;
+                    }
+
+                    @media screen and (max-height: 475px) and (max-width: 850px) {
+                        left: 54%;
+                    }
+
+                    @media screen and (max-height: 390px) {
+                        left: 49%;
+                        width: 22%;
+                        font-size: 1em;
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 1500px) {
+                        left: 55%;
+                        ;
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 1350px) {
+                        left: 61%;
+                        ;
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 1250px) {
+                        left: 62%;
+                        ;
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 1150px) {
+                        left: 58%;
+                        width: 30%;
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 1050px) {
+                        left: 59%
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 950px) {
+                        left: 55%
+                    }
+
+                    @media screen and (max-height: 390px) and (max-width: 850px) {
+                        width: 40%;
+                        left: 51%;
+                    }
+
+
+                }
+
+                .boule {
+                    width: 100px;
+                    position: absolute;
+
+                    @media screen and (max-width: 1000px) {
+                        width: 80px;
+
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        width: 70px;
+
+                    }
+
+                    @media screen and (max-height: 475px) {
+                        width: 40px;
+
+                    }
+
+                }
+
+                #js {
+
+                    top: 11%;
+                    left: 22%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                }
+
+
+
+
+                #html {
+
+                    top: 73%;
+                    left: 37%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                }
+
+
+                #css {
+
+                    top: 84%;
+                    left: 55%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+
+                #php {
+
+                    top: 79%;
+                    left: 37%;
+
+                    img {
+                        width: 100%;
+                    }
+
+
+
+                }
+
+                #sql {
+
+                    top: 67%;
+                    left: 84%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                }
+
+
+                #python {
+
+                    top: 71%;
+                    left: 75%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .fish {
+                    position: absolute;
+                    width: 10%;
+
+
+                    @media screen and (max-width: 1000px) {
+                        width: 13%;
+                    }
+
+                    @media screen and (max-width: 650px) {
+                        width: 15%;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        display: none;
+                    }
+                }
+
+                #fish1 {
+                    top: 50%;
+                    left: 60%;
+                    animation: fish1 60s ease-in-out infinite;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                @keyframes fish1 {
+                    5% {
+                        transform: rotateY(180deg);
+                        top: 50%;
+                        left: 62%;
+                    }
+                
+                    18% {
+                        transform: rotateY(180deg);
+                        top: 58%;
+                        left: 40%;
+                    }
+                
+                    35% {
+                        top: 20%;
+                        left: 20%;
+                        transform: rotateY(180deg);
+                    }
+                
+                    36% {
+                        top: 20%;
+                        left: 20%;
+                        transform: rotateY(360deg);
+                    }
+                
+                    60% {
+                        top: 17%;
+                        left: 85%;
+                        transform: rotateY(360deg);
+                    }
+                
+                    61% {
+                        top: 17%;
+                        left: 85%;
+                        transform: rotateY(180deg);
+                    }
+                
+                    70% {
+                        top: 48%;
+                        left: 40%;
+                        transform: rotateY(180deg);
+                
+                    }
+                
+                    71% {
+                        top: 48%;
+                        left: 40%;
+                        transform: rotateY(360deg);
+                
+                    }
+                
+                
+                    100% {
+                        top: 50%;
+                        left: 60%;
+                        transform: rotateY(360deg);
+                    }
+                
+                
+                
+                }
+
+                #fish2 {
+                    position: absolute;
+                    left: 120%;
+                    top: 35%;
+                    animation: fish2 60s ease-in-out infinite;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        left: 77%;
+                    }
+
+                    @media screen and (max-width: 650px) {
+                        left: 74%;
+                    }
+                }
+
+                @keyframes fish2 {
+                    50% {
+                        top: 35%;
+                        left: 110%;
+                    }
+                
+                
+                
+                    95% {
+                        top: 30%;
+                        left: -10%;
+                    }
+                
+                    96% {
+                        top: -1000px;
+                        left: -10%;
+                    }
+                
+                    97% {
+                        top: -1000px;
+                        left: 110%;
+                
+                    }
+                
+                
+                    100% {
+                        left: 120%;
+                        top: 35%;
+                    }
+                
+                
+                
+                
+                
+                }
+
+
+
+                #fish3 {
+                    top: 20%;
+                    left: 8%;
+                    animation: fish3 60s ease-in-out infinite;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                @keyframes fish3 {
+                    0% {
+                        top: 20%;
+                        left: 8%;
+                    }
+
+                    70% {
+                        top: 25%;
+                        left: 140%;
+                    }
+
+                    71% {
+                        top: -1000%;
+                        left: 140%;
+                        display: none;
+                    }
+
+                    71% {
+                        top: -1000%;
+                        left: -40%;
+                    }
+
+                    72% {
+                        top: 20%;
+                        left: -40%;
+                        display: block;
+                    }
+
+                    100% {
+                        top: 20%;
+                        left: 8%;
+                    }
+
+                }
             }
         }
     }
@@ -2295,6 +2611,17 @@ main {
                             width: 90%;
                             margin-top: 10px;
 
+                            .succes{
+                                background-color: rgb(110, 187, 110);
+                                padding: 2px;
+                                margin-top: 2px;
+                            }
+                            .error{
+                                background-color: rgb(217, 107, 107);
+                                padding: 2px;
+                                margin-top: 2px;
+                            }
+
                             .label {
                                 color: #ffffff;
                                 font-size: 1.5em;
@@ -2545,32 +2872,16 @@ main {
 
 
 
-@keyframes bus1 {
-    5% {
-        transform: rotateY(180deg);
-        top: 95%;
-        left: 62%;
-    }
 
-    50% {
-        top: 80%;
-        left: 20%;
-        transform: rotateY(180deg);
-    }
 
-    51% {
-        top: 80%;
-        left: 20%;
-        transform: rotateY(360deg);
-    }
 
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(-40%);
+    }
 
     100% {
-        top: 95%;
-        left: 60%;
-        transform: rotateY(360deg);
+        transform: translateX(100%);
     }
-
-
-
 }
