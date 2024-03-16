@@ -30,14 +30,14 @@ if (!empty($_POST)) {
             user();
             // Ajout d'une erreur si l'email n'est pas valide
             $_SESSION["error"]["emailFaild"] = "L'adresse email est incorrecte";
-            header("Location: /Project/portfolio/index.php#contact");
+            header("Location: /PHP/portfolio/index.php#contact");
             exit;
         }
 
         if (!preg_match($phonePattern, $phone)) {
             user();
             $_SESSION["error"]["phoneInvalid"] = "Le numéro de téléphone doit contenir 10 chiffres et aucune lettre";
-            header("Location: /Project/portfolio/index.php#contact");
+            header("Location: /PHP/portfolio/index.php#contact");
             exit;
         }
 
@@ -45,7 +45,7 @@ if (!empty($_POST)) {
         if (!isset($_POST["confidentiality"])) {
             // Ajout d'une erreur si la case n'est pas cochée
             $_SESSION["error"]["confidentiality"] = "Vous devez accepter la politique de confidentialité pour envoyer le formulaire.";
-            header("Location: /Project/portfolio/index.php#contact");
+            header("Location: /PHP/portfolio/index.php#contact");
             exit;
         }
 
@@ -79,11 +79,11 @@ if (!empty($_POST)) {
                 unset($_SESSION["user"]);
                 unset($_SESSION["error"]);
                 $_SESSION["sendMail"]["succes"] = "Votre message a été envoyé avec succès";
-                header("Location: /Project/portfolio/index.php#contact");
+                header("Location: /PHP/portfolio/index.php#contact");
                 exit;
             } catch (Exception $e) {
                 $_SESSION["sendMail"]["error"] = "Erreur d'envoie";
-                header("Location: /Project/portfolio/index.php#contact");
+                header("Location: /PHP/portfolio/index.php#contact");
                 exit;
                 
             }
@@ -93,7 +93,7 @@ if (!empty($_POST)) {
         user();
         // Ajout d'une erreur si le formulaire est soumis mais incomplet
         $_SESSION["error"]["empty"] = "Le formulaire est incomplet";
-        header("Location: /Project/portfolio/index.php#contact");
+        header("Location: /PHP/portfolio/index.php#contact");
         exit;
     }
 }
