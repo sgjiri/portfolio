@@ -143,13 +143,16 @@ header nav ul #showSoumenu:hover #sousmenu {
   }
 }
 header #navMobil {
-  transform: translateX(-100%);
+  transform: translateX(-150%);
   position: absolute;
   top: 80px;
   height: 320px;
 }
 header #navMobil ul {
   flex-direction: column;
+}
+header #navMobil ul li {
+  width: 100%;
 }
 header #navMobil.active {
   transform: translateX(0%);
@@ -231,31 +234,123 @@ main #fullscreen #sky #clouds {
   height: 100%;
 }
 main #fullscreen #sky #clouds #cloud1 {
-  margin: 10px 2% 0 3%;
+  position: absolute;
+  left: 5%;
+  top: 5%;
   width: 400px;
   height: 100%;
+  animation: cloud1 500s linear infinite;
 }
 main #fullscreen #sky #clouds #cloud1 img {
   width: 100%;
   height: 28%;
 }
+@keyframes cloud1 {
+  0% {
+    left: 5%;
+    top: 5%;
+  }
+  70% {
+    left: 140%;
+    top: 5%;
+  }
+  71% {
+    top: -100%;
+    left: 140%;
+  }
+  72% {
+    left: -40%;
+    top: -100%;
+  }
+  73% {
+    left: -40%;
+    top: 5%;
+  }
+  100% {
+    left: 5%;
+    top: 5%;
+  }
+}
 main #fullscreen #sky #clouds #cloud2 {
-  margin: 8% 15% 8% 0;
+  position: absolute;
+  left: 35%;
+  top: -5%;
   width: 600px;
   height: 100%;
+  animation: cloud2 400s linear infinite;
+}
+@media screen and (max-width: 600px) {
+  main #fullscreen #sky #clouds #cloud2 {
+    width: 350px;
+  }
 }
 main #fullscreen #sky #clouds #cloud2 img {
   width: 100%;
   height: 67%;
 }
+@keyframes cloud2 {
+  0% {
+    left: 35%;
+    top: -5%;
+  }
+  50% {
+    left: 140%;
+    top: -5%;
+  }
+  51% {
+    top: -100%;
+    left: 140%;
+  }
+  52% {
+    left: -40%;
+    top: -100%;
+  }
+  53% {
+    left: -40%;
+    top: -5%;
+  }
+  100% {
+    left: 35%;
+    top: -5%;
+  }
+}
 main #fullscreen #sky #clouds #cloud3 {
-  margin: 9% 15% 7% 0;
+  position: absolute;
+  left: 75%;
+  top: 0%;
   width: 500px;
   height: 100%;
+  animation: cloud3 500s linear infinite;
 }
 main #fullscreen #sky #clouds #cloud3 img {
   width: 100%;
   height: 30%;
+}
+@keyframes cloud3 {
+  0% {
+    left: 75%;
+    top: 0%;
+  }
+  30% {
+    left: 140%;
+    top: 0%;
+  }
+  31% {
+    top: -100%;
+    left: 140%;
+  }
+  32% {
+    left: -40%;
+    top: -100%;
+  }
+  33% {
+    left: -40%;
+    top: 0%;
+  }
+  100% {
+    left: 75%;
+    top: 0%;
+  }
 }
 main #fullscreen #sky #imgPecheur {
   position: absolute;
@@ -263,6 +358,22 @@ main #fullscreen #sky #imgPecheur {
   bottom: -159px;
   height: 500px;
   width: 750px;
+  transform-origin: center;
+  animation: pecheur 4s linear infinite;
+}
+@keyframes pecheur {
+  0% {
+    rotate: 0;
+  }
+  25% {
+    rotate: 1deg;
+  }
+  75% {
+    rotate: -1deg;
+  }
+  100% {
+    rotate: 0;
+  }
 }
 main #fullscreen #sky #imgPecheur #pecheur {
   position: relative;
@@ -963,22 +1074,51 @@ main #fullscreen #sky #text h2 {
     left: -16%;
   }
 }
-main #sea {
-  height: 30%;
+main #sea-relative {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  top: -48px;
+}
+@media screen and (max-height: 500px) {
+  main #sea-relative {
+    height: 115%;
+  }
+}
+@media screen and (max-height: 400px) {
+  main #sea-relative {
+    height: 130%;
+  }
+}
+@media screen and (max-height: 300px) {
+  main #sea-relative {
+    height: 180%;
+  }
+}
+main #sea-relative #waves {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url(./Img/sea.svg);
+  animation: waves 120s linear infinite;
+  overflow: hidden;
+  opacity: 0.8;
+}
+main #sea-relative #sea-color {
+  background-color: #e4f3ff;
+  top: 47px;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+main #sea-relative #sea-color #sea {
+  height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: #c4e6ff;
   opacity: 0.8;
-}
-main #sea::before {
-  content: "";
-  position: absolute;
-  top: calc(70% - 24px);
-  left: 0;
-  width: 100%;
-  height: 14%;
-  background: url(./Img/sea.svg);
-  animation: waves 120s linear infinite;
 }
 @keyframes waves {
   0% {
@@ -988,9 +1128,9 @@ main #sea::before {
     background-position-x: 3000px;
   }
 }
-main #sea p {
+main #sea-relative #sea-color #sea p {
   position: absolute;
-  top: 70%;
+  top: 10%;
   left: 46%;
   width: 40%;
   color: #4B4B4B;
@@ -999,345 +1139,445 @@ main #sea p {
   z-index: 99;
 }
 @media screen and (max-width: 1600px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 47%;
   }
 }
 @media screen and (max-width: 1500px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 52%;
   }
 }
 @media screen and (max-width: 1400px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 53%;
   }
 }
 @media screen and (max-width: 1350px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
     font-size: 1.2em;
     width: 33%;
   }
 }
 @media screen and (max-width: 1300px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 59%;
   }
 }
 @media screen and (max-width: 1200px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 60%;
   }
 }
 @media screen and (max-width: 1100px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 61%;
   }
 }
 @media screen and (max-width: 1000px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 62%;
   }
 }
 @media screen and (max-width: 950px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 53%;
   }
 }
 @media screen and (max-width: 850px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 54%;
   }
 }
 @media screen and (max-width: 800px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 55%;
   }
 }
 @media screen and (max-width: 700px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     display: none;
   }
 }
 @media screen and (max-height: 550px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     font-size: 1.5em;
     left: 47%;
     width: 35%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1700px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 47%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1600px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 48%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1500px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1400px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1350px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
     font-size: 1.2em;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1300px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1150px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 60%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 1000px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 61%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 950px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 57%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 900px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 850px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 550px) and (max-width: 850px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 475px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     font-size: 1.2em;
     width: 35%;
     left: 47%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1700px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 48%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1500px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1400px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1350px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1150px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 60%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 1000px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 61%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 950px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 57%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 900px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
   }
 }
 @media screen and (max-height: 475px) and (max-width: 850px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 54%;
   }
 }
 @media screen and (max-height: 390px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 49%;
     width: 22%;
     font-size: 1em;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1500px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1350px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 61%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1250px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 62%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1150px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 58%;
     width: 30%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 1050px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 59%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 950px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     left: 55%;
   }
 }
 @media screen and (max-height: 390px) and (max-width: 850px) {
-  main #sea p {
+  main #sea-relative #sea-color #sea p {
     width: 40%;
     left: 51%;
   }
 }
-main #sea .boule {
+main #sea-relative #sea-color #sea .boule {
   width: 100px;
   position: absolute;
 }
 @media screen and (max-width: 1000px) {
-  main #sea .boule {
+  main #sea-relative #sea-color #sea .boule {
     width: 80px;
   }
 }
 @media screen and (max-width: 450px) {
-  main #sea .boule {
+  main #sea-relative #sea-color #sea .boule {
     width: 70px;
   }
 }
 @media screen and (max-height: 475px) {
-  main #sea .boule {
+  main #sea-relative #sea-color #sea .boule {
     width: 40px;
   }
 }
-main #sea #js {
-  top: 71%;
+main #sea-relative #sea-color #sea #js {
+  top: 11%;
   left: 22%;
 }
-main #sea #js img {
+main #sea-relative #sea-color #sea #js img {
   width: 100%;
 }
-main #sea #html {
+main #sea-relative #sea-color #sea #html {
   top: 73%;
   left: 37%;
 }
-main #sea #html img {
+main #sea-relative #sea-color #sea #html img {
   width: 100%;
 }
-main #sea #css {
+main #sea-relative #sea-color #sea #css {
   top: 84%;
   left: 55%;
 }
-main #sea #css img {
+main #sea-relative #sea-color #sea #css img {
   width: 100%;
 }
-main #sea #php {
+main #sea-relative #sea-color #sea #php {
   top: 79%;
   left: 37%;
 }
-main #sea #php img {
+main #sea-relative #sea-color #sea #php img {
   width: 100%;
 }
-main #sea #sql {
+main #sea-relative #sea-color #sea #sql {
   top: 67%;
   left: 84%;
 }
-main #sea #sql img {
+main #sea-relative #sea-color #sea #sql img {
   width: 100%;
 }
-main #sea #python {
+main #sea-relative #sea-color #sea #python {
   top: 71%;
   left: 75%;
 }
-main #sea #python img {
+main #sea-relative #sea-color #sea #python img {
   width: 100%;
 }
-main #sea .fish {
+main #sea-relative #sea-color #sea .fish {
   position: absolute;
   width: 10%;
 }
 @media screen and (max-width: 1000px) {
-  main #sea .fish {
-    width: 20%;
+  main #sea-relative #sea-color #sea .fish {
+    width: 13%;
   }
 }
 @media screen and (max-width: 650px) {
-  main #sea .fish {
-    width: 25%;
+  main #sea-relative #sea-color #sea .fish {
+    width: 15%;
   }
 }
 @media screen and (max-width: 500px) {
-  main #sea .fish {
+  main #sea-relative #sea-color #sea .fish {
     display: none;
   }
 }
-main #sea #fish1 {
-  top: 95%;
+main #sea-relative #sea-color #sea #fish1 {
+  top: 50%;
   left: 60%;
-  animation: bus1 18s ease-in-out infinite;
+  animation: fish1 60s ease-in-out infinite;
 }
-main #sea #fish1 img {
+main #sea-relative #sea-color #sea #fish1 img {
   width: 100%;
   height: 100%;
 }
-main #sea #fish2 {
-  top: 80%;
-  left: 83%;
+@keyframes fish1 {
+  5% {
+    transform: rotateY(180deg);
+    top: 50%;
+    left: 62%;
+  }
+  18% {
+    transform: rotateY(180deg);
+    top: 58%;
+    left: 40%;
+  }
+  35% {
+    top: 20%;
+    left: 20%;
+    transform: rotateY(180deg);
+  }
+  36% {
+    top: 20%;
+    left: 20%;
+    transform: rotateY(360deg);
+  }
+  60% {
+    top: 17%;
+    left: 85%;
+    transform: rotateY(360deg);
+  }
+  61% {
+    top: 17%;
+    left: 85%;
+    transform: rotateY(180deg);
+  }
+  70% {
+    top: 48%;
+    left: 40%;
+    transform: rotateY(180deg);
+  }
+  71% {
+    top: 48%;
+    left: 40%;
+    transform: rotateY(360deg);
+  }
+  100% {
+    top: 50%;
+    left: 60%;
+    transform: rotateY(360deg);
+  }
 }
-main #sea #fish2 img {
+main #sea-relative #sea-color #sea #fish2 {
+  position: absolute;
+  left: 120%;
+  top: 35%;
+  animation: fish2 60s ease-in-out infinite;
+}
+main #sea-relative #sea-color #sea #fish2 img {
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 1000px) {
-  main #sea #fish2 {
+  main #sea-relative #sea-color #sea #fish2 {
     left: 77%;
   }
 }
 @media screen and (max-width: 650px) {
-  main #sea #fish2 {
+  main #sea-relative #sea-color #sea #fish2 {
     left: 74%;
   }
 }
-main #sea #fish3 {
-  top: 70%;
-  left: 8%;
+@keyframes fish2 {
+  50% {
+    top: 35%;
+    left: 110%;
+  }
+  95% {
+    top: 30%;
+    left: -10%;
+  }
+  96% {
+    top: -1000px;
+    left: -10%;
+  }
+  97% {
+    top: -1000px;
+    left: 110%;
+  }
+  100% {
+    left: 120%;
+    top: 35%;
+  }
 }
-main #sea #fish3 img {
+main #sea-relative #sea-color #sea #fish3 {
+  top: 20%;
+  left: 8%;
+  animation: fish3 60s ease-in-out infinite;
+}
+main #sea-relative #sea-color #sea #fish3 img {
   width: 100%;
   height: 100%;
+}
+@keyframes fish3 {
+  0% {
+    top: 20%;
+    left: 8%;
+  }
+  70% {
+    top: 25%;
+    left: 140%;
+  }
+  71% {
+    top: -1000%;
+    left: 140%;
+    display: none;
+  }
+  71% {
+    top: -1000%;
+    left: -40%;
+  }
+  72% {
+    top: 20%;
+    left: -40%;
+    display: block;
+  }
+  100% {
+    top: 20%;
+    left: 8%;
+  }
 }
 @media screen and (max-height: 350px) {
   main #sea::before {
@@ -2141,6 +2381,16 @@ main #contact .content .padding form .zonneForm1 .champ {
   width: 90%;
   margin-top: 10px;
 }
+main #contact .content .padding form .zonneForm1 .champ .succes {
+  background-color: rgb(110, 187, 110);
+  padding: 2px;
+  margin-top: 2px;
+}
+main #contact .content .padding form .zonneForm1 .champ .error {
+  background-color: rgb(217, 107, 107);
+  padding: 2px;
+  margin-top: 2px;
+}
 main #contact .content .padding form .zonneForm1 .champ .label {
   color: #ffffff;
   font-size: 1.5em;
@@ -2376,25 +2626,11 @@ main #contact .content .padding form .zonneForm2 .contactRight .mesReseaux a img
   }
 }
 
-@keyframes bus1 {
-  5% {
-    transform: rotateY(180deg);
-    top: 95%;
-    left: 62%;
-  }
-  50% {
-    top: 80%;
-    left: 20%;
-    transform: rotateY(180deg);
-  }
-  51% {
-    top: 80%;
-    left: 20%;
-    transform: rotateY(360deg);
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-40%);
   }
   100% {
-    top: 95%;
-    left: 60%;
-    transform: rotateY(360deg);
+    transform: translateX(100%);
   }
 }/*# sourceMappingURL=style.css.map */

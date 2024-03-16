@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once './detailProject/connection.php';
 ?>
 
@@ -78,7 +79,7 @@ include_once './detailProject/connection.php';
                     </figure>
                     <div id="text">
                         <h1>Jirka Fischer</h1>
-                        <h2 class="h2">Developpeur web</h2>
+                        <h2 class="h2">Développeur web</h2>
 
 
 
@@ -86,43 +87,49 @@ include_once './detailProject/connection.php';
 
 
                 </div>
-                <figure id="sea">
-                    <img src="./Img/sea.svg" alt="sea">
+                <div id="sea-relative">
+                    <div id="waves"></div>
+                    <div id="sea-color">
+                        <div id="sea">
+
+                            <img src="./Img/sea.svg" alt="sea">
 
 
 
-                    <p>
-                        Issue de l’agroalimentaire et de la théologie je suis un professionnel polyvalent, engagé et creatif, prêt à apporter une contribution significative à tout projet.
-                    </p>
-                    <figure id="js" class="boule">
-                        <img src="./Img/JS.png" alt="JS">
-                    </figure>
-                    <figure id="html" class="boule">
-                        <img src="./Img/html.png" alt="html">
-                    </figure>
-                    <figure id="css" class="boule">
-                        <img src="./Img/CSS.png" alt="css">
-                    </figure>
-                    <figure id="php" class="boule">
-                        <img src="./Img/PHP.png" alt="php">
-                    </figure>
-                    <figure id="sql" class="boule">
-                        <img src="./Img/SQL.png" alt="sql">
-                    </figure>
-                    <figure id="python" class="boule">
-                        <img src="./Img/Python.png" alt="python">
-                    </figure>
-                    <figure class="fish" id="fish1">
-                        <img src="./Img/Fish1.png" alt="fish">
-                    </figure>
-                    <figure class="fish" id="fish2">
-                        <img src="./Img/Fish2.png" alt="fish">
-                    </figure>
-                    <figure class="fish" id="fish3">
-                        <img src="./Img/Fish3.png" alt="fish">
-                    </figure>
+                            <p>
+                                Issue de l’agroalimentaire et de la théologie, je suis un professionnel polyvalent, engagé et créatif, prêt à apporter une contribution significative à tout projet.
+                            </p>
+                            <figure id="js" class="boule">
+                                <img src="./Img/JS.png" alt="JS">
+                            </figure>
+                            <figure id="html" class="boule">
+                                <img src="./Img/html.png" alt="html">
+                            </figure>
+                            <figure id="css" class="boule">
+                                <img src="./Img/CSS.png" alt="css">
+                            </figure>
+                            <figure id="php" class="boule">
+                                <img src="./Img/PHP.png" alt="php">
+                            </figure>
+                            <figure id="sql" class="boule">
+                                <img src="./Img/SQL.png" alt="sql">
+                            </figure>
+                            <figure id="python" class="boule">
+                                <img src="./Img/Python.png" alt="python">
+                            </figure>
+                            <figure class="fish" id="fish1">
+                                <img src="./Img/Fish1.png" alt="fish">
+                            </figure>
+                            <figure class="fish" id="fish2">
+                                <img src="./Img/Fish2.png" alt="fish">
+                            </figure>
+                            <figure class="fish" id="fish3">
+                                <img src="./Img/Fish3.png" alt="fish">
+                            </figure>
+                        </div>
 
-                </figure>
+                    </div>
+                </div>
 
 
 
@@ -164,7 +171,7 @@ include_once './detailProject/connection.php';
                 <div class="card cardVache">
                     <div class="textCard" id="textVache">
                         <h3>Homeaway</h3>
-                        <p>Réalisation d'un site de location chez habitants</p>
+                        <p>Réalisation d'un site de location de logements</p>
                     </div>
                     <div class="divGrid vache"></div>
                 </div>
@@ -241,7 +248,7 @@ include_once './detailProject/connection.php';
                         <a target="_blank" class="btn" href="./asset/JiriFischerCV.pdf"> Télécharger mon CV</a>
                     </div>
                     <div class="text">
-                        <h2 class="h2 h2Presentation">Qui est Jirka</h2>
+                        <h2 class="h2 h2Presentation">Qui est Jirka?</h2>
                         <div class="contentPresentation">
                             <p>
                                 Je suis Jirka Fischer, un développeur web passionné par la technologie et la création de sites web.
@@ -252,7 +259,7 @@ include_once './detailProject/connection.php';
                             </p>
                             <br>
                             <p>
-                                Ma formation en développement web m'a permise d'acquérir de solides compétences en HTML, CSS, JavaScript, ainsi que des connaissances en PHP et en bases de données. Je suis également familié avec les outils tels que Git et les frameworks tels que React.
+                                Ma formation en développement web m'a permise d'acquérir de solides compétences en HTML, CSS, JavaScript, ainsi que des connaissances en PHP et en bases de données. Je suis également familier avec les outils tels que Git et les frameworks.
                             </p>
                             <br>
                             <p>
@@ -278,86 +285,94 @@ include_once './detailProject/connection.php';
             </div>
         </section>
         <section class="section" id="contact">
-
             <div class="content" id="contentContact">
                 <div id="lien contact"></div>
                 <div class="padding">
                     <h2 class="h2 h2Presentation">Contact</h2>
-
-
-                    <!-- <?php
-
-                            // if (isset($_POST['message'])) {
-                            // // on récupère les données du formulaire
-
-                            // $firstname = $_POST['firstname'];
-                            // $lastname = $_POST['lastname'];
-                            // $email = $_POST['email'];
-                            // $phone = $_POST['phone'];
-                            // $object = $_POST['object'];
-                            // $message = $_POST['message'];
-
-
-                            // // notre email 
-
-                            // $to = "fischerdev01@gmail.com";
-
-                            // // sujet du message
-
-                            // $subject = "Message de contact depuis votre portfolio";
-
-                            // // message 
-
-                            // $body = "Firstname: $firstname\Lastname: $lastname\Email: $email\Phone: $phone\Object: $object\Message: $message";
-                            // $retour = (mail($to, $subject, $body,''));
-
-                            // if ($retour){
-                            //     echo "Votre message a bien été envoyé";
-                            // } else {
-                            //     echo "Une erreur est survenue lors de l'envoi de votre message.";
-                            // }
-
-
-
-                            // }
-                            ?>     -->
 
                     <form action="mail.php" method="post" id='formContact'>
                         <div class="zonneForm zonneForm1">
                             <div class="name deuxinfo">
                                 <div class="champ lastname">
                                     <label class="label" for="lastname">Nom*</label>
-                                    <input id="lastname" type="text" class="info" name="lastname" required>
+                                    <input id="lastname" type="text" class="info" name="lastname" value="<?php if (isset($_SESSION["user"])) : ?><?= $_SESSION["user"]["lastname"]; ?><?php endif; ?>">
                                 </div>
                                 <div class="firstname champ">
                                     <label for="firstname" class="label">Prénom*</label>
-                                    <input id="firstname" type="text" class="info" name="firstname" required>
+                                    <input id="firstname" type="text" class="info" name="firstname" value="<?php if (isset($_SESSION["user"])) : ?><?= $_SESSION["user"]["firstname"]; ?><?php endif; ?>">
                                 </div>
                             </div>
                             <div class="contacts deuxinfo">
                                 <div class="champ email">
                                     <label for="email" class="label">E-mail*</label>
-                                    <input id="email" type="email" class="info" name="email" required>
+                                    <input id="email" type="email" class="info" name="email" value="<?php if (isset($_SESSION["user"])) : ?><?= $_SESSION["user"]["email"]; ?><?php endif; ?>">
+                                    <?php
+                                    if (isset($_SESSION["error"]["emailFaild"])) :
+                                    ?>
+                                        <div class="message">
+                                            <p class="error"><?= $_SESSION["error"]["emailFaild"] ?></p>
+                                        </div>
+                                    <?php
+                                        unset($_SESSION["error"]["emailFaild"]);
+                                    endif;
+                                    ?>
                                 </div>
+
                                 <div class="champ tel">
                                     <label for="phone" class="label">Telephone*</label>
-                                    <input id="phone" class="info" type="text" name="phone" required>
+                                    <input id="phone" class="info" type="text" name="phone" value="<?php if (isset($_SESSION["user"])) : ?><?= $_SESSION["user"]["phone"] ?><?php endif; ?>">
+                                    <?php
+                                    if (isset($_SESSION["error"]["phoneInvalid"])) :
+                                    ?>
+                                        <div class="message">
+                                            <p class="error"><?= $_SESSION["error"]["phoneInvalid"] ?></p>
+                                        </div>
+                                    <?php
+                                        unset($_SESSION["error"]["phoneInvalid"]);
+                                    endif;
+                                    ?>
                                 </div>
 
                             </div>
 
                             <div class="champ object">
                                 <label for="object" class="label">Object*</label>
-                                <input id="object" type="text" class="info" name="object" required>
+                                <input id="object" type="text" class="info" name="object" value="<?php if (isset($_SESSION["user"])) : ?><?= $_SESSION["user"]["object"] ?><?php endif; ?>">
                             </div>
                             <div class="champ message">
                                 <label for="message" class="label">Message*</label>
-                                <textarea name="message" id="message" cols="30" rows="10" class="info"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" class="info"><?php if (isset($_SESSION["user"])) : ?><?= $_SESSION["user"]["message"] ?><?php endif; ?></textarea>
                             </div>
                             <div class="champ confidencionality">
                                 <input type="checkbox" class="info" name="confidentiality" id="Check">
                                 <label for="confidencionality" class="label"> En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la <a target="_blank" href="./asset/Confidencialité.pdf">Politique de confidentialité</a>.</label>
                             </div>
+                            <?php
+                            if (isset($_SESSION["error"]["empty"])) :
+                            ?>
+                                <div class="message champ">
+                                    <p class="error"><?= $_SESSION["error"]["empty"] ?></p>
+                                </div>
+                            <?php
+                                unset($_SESSION["error"]["empty"]);
+                            endif;
+                            if (isset($_SESSION["sendMail"]["error"])) :
+                            ?>
+                                <div class="message champ">
+                                    <p class="error"><?= $_SESSION["sendMail"]["error"] ?></p>
+                                </div>
+                            <?php
+                                unset($_SESSION["sendMail"]["error"]);
+                            endif;
+                            if (isset($_SESSION["sendMail"]["succes"])) :
+                            ?>
+                                <div class="message champ">
+                                    <p class="succes"><?= $_SESSION["sendMail"]["succes"] ?></p>
+                                </div>
+                            <?php
+                                unset($_SESSION["sendMail"]["succes"]);
+                            endif;
+                            ?>
                             <input class="champ submit" type="submit" name="submit" value="envoyer" />
                         </div>
                         <div class="zonneForm zonneForm2">
